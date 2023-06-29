@@ -3378,12 +3378,7 @@
 	farmers = {
 		culture = fula
 		religion =  sunni 
-		size = 17764
-	 } 
-	farmers = {
-		culture = arab_saharan
-		religion =  sunni 
-		size = 500
+		size = 18264
 	 } 
 }
 #Arlit - Arlit (635000158750 POPS)
@@ -3406,70 +3401,40 @@
 	farmers = {
 		culture = tuareg
 		religion =  sunni 
-		size = 62345
-	 } 
-	farmers = {
-		culture = hausa
-		religion =  sunni 
-		size = 55562
-	 } 
+		size = 121907
+	 }  
 	farmers = {
 		culture = fula
 		religion =  sunni 
 		size = 28575
 	 } 
-	farmers = {
-		culture = arab_saharan
-		religion =  sunni 
-		size = 4000
-	 } 
 }
 #Madama - Madama (70001750 POPS)
 1814 = {
-	officers = {
-		culture = tuareg
-		religion =  sunni 
-		size = 5
-	 } 
-	soldiers = {
-		culture = tuareg
-		religion =  sunni 
-		size = 21
-	 } 
 	aristocrats = {
-		culture = tuareg
+		culture = arab_saharan
 		religion =  sunni 
-		size = 70
+		size = 86
 	 } 
 	bureaucrats = {
-		culture = tuareg
+		culture = arab_saharan
 		religion =  sunni 
 		size = 1
 	 } 
 	capitalists = {
-		culture = tuareg
+		culture = arab_saharan
 		religion =  sunni 
-		size = 8
+		size = 18
 	 } 
 	clergymen = {
-		culture = tuareg
+		culture = arab_saharan
 		religion =  sunni 
 		size = 17
-	 } 
-	artisans = {
-		culture = tuareg
-		religion =  sunni 
-		size = 11
-	 } 
-	farmers = {
-		culture = tuareg
-		religion =  sunni 
-		size = 1617
 	 } 
 	farmers = {
 		culture = arab_saharan
 		religion =  sunni 
-		size = 500
+		size = 2128
 	 } 
 }
 #Zinder - Zinder (675000168750 POPS)
@@ -3500,19 +3465,9 @@
 		size = 123647
 	 } 
 	farmers = {
-		culture = fula
-		religion =  sunni 
-		size = 18562
-	 } 
-	farmers = {
 		culture = kanuri
 		religion =  catholic 
-		size = 13432
-	 } 
-	farmers = {
-		culture = kanuri
-		religion = secularism
-		size = 67
+		size = 32061
 	 } 
 }
 #Kufe - Kufe (11300028250 POPS)
@@ -3525,17 +3480,7 @@
 	farmers = {
 		culture = fula
 		religion =  sunni 
-		size = 3469
-	 } 
-	farmers = {
-		culture = kanuri
-		religion =  catholic 
-		size = 22487
-	 } 
-	farmers = {
-		culture = kanuri
-		religion = secularism
-		size = 113
+		size = 26069
 	 } 
 }
 #Bilma - Bilma (70001750 POPS)
@@ -8130,7 +8075,7 @@
 		size = 26272
 	 } 
 }
-#Bourbon - Bourbon (557000139250 POPS)
+#Reunion - Reunion (557000139250 POPS)
 2126 = {
 	officers = {
 		culture = chinese
@@ -8155,22 +8100,12 @@
 	aristocrats = {
 		culture = chinese
 		religion =  taoism 
-		size = 1702
+		size = 2836
 	 } 
 	aristocrats = {
 		culture = chinese
 		religion = secularism
-		size = 386
-	 } 
-	aristocrats = {
-		culture = indian
-		religion =  hindu 
-		size = 1134
-	 } 
-	aristocrats = {
-		culture = indian
-		religion = secularism
-		size = 257
+		size = 643
 	 } 
 	bureaucrats = {
 		culture = indian
@@ -8278,22 +8213,12 @@
 	capitalists = {
 		culture = french
 		religion =  catholic 
-		size = 208
+		size = 312
 	 } 
 	capitalists = {
 		culture = french
 		religion = secularism
-		size = 47
-	 } 
-	capitalists = {
-		culture = indian
-		religion =  hindu 
-		size = 104
-	 } 
-	capitalists = {
-		culture = indian
-		religion = secularism
-		size = 23
+		size = 70
 	 } 
 	clergymen = {
 		culture = indian
@@ -8308,22 +8233,12 @@
 	artisans = {
 		culture = indian
 		religion =  hindu 
-		size = 1460
+		size = 1578
 	 } 
 	artisans = {
 		culture = indian
 		religion = secularism
-		size = 331
-	 } 
-	artisans = {
-		culture = black_french
-		religion =  catholic 
-		size = 118
-	 } 
-	artisans = {
-		culture = black_french
-		religion = secularism
-		size = 27
+		size = 358
 	 } 
 	farmers = {
 		culture = black_french
@@ -8381,22 +8296,12 @@
 	capitalists = {
 		culture = french
 		religion =  catholic 
-		size = 218
+		size = 327
 	 } 
 	capitalists = {
 		culture = french
 		religion = secularism
-		size = 49
-	 } 
-	capitalists = {
-		culture = indian
-		religion =  hindu 
-		size = 109
-	 } 
-	capitalists = {
-		culture = indian
-		religion = secularism
-		size = 24
+		size = 73
 	 } 
 	clergymen = {
 		culture = indian
