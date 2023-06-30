@@ -3802,7 +3802,7 @@
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 381177
+		size = 331177
 	 } 
 	farmers = {
 		culture = white_anglo
@@ -3810,34 +3810,14 @@
 		size = 37698
 	 } 
 	farmers = {
-		culture = mesoamerican_white_spanish
-		religion =  catholic 
-		size = 18386
-	 } 
-	farmers = {
-		culture = mesoamerican_white_spanish
-		religion = secularism
-		size = 1818
-	 } 
-	farmers = {
 		culture = afro_american
 		religion =  protestant 
-		size = 257411
+		size = 217411
 	 } 
 	farmers = {
 		culture = afro_american
 		religion = secularism
 		size = 25458
-	 } 
-	farmers = {
-		culture = mestizo
-		religion =  catholic 
-		size = 18386
-	 } 
-	farmers = {
-		culture = mestizo
-		religion = secularism
-		size = 1818
 	 } 
 }
 #Austin - Austin (1806000/451500 POPS)
@@ -4058,7 +4038,7 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 99523
+		size = 182081
 	 } 
 	craftsmen = {
 		culture = white_anglo
@@ -4068,7 +4048,7 @@
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 570182
+		size = 100182
 	 } 
 	farmers = {
 		culture = white_anglo
@@ -4076,34 +4056,14 @@
 		size = 56391
 	 } 
 	farmers = {
-		culture = mesoamerican_white_spanish
-		religion =  catholic 
-		size = 9752
-	 } 
-	farmers = {
-		culture = mesoamerican_white_spanish
-		religion = secularism
-		size = 964
-	 } 
-	farmers = {
 		culture = afro_american
 		religion =  protestant 
-		size = 117035
+		size = 67035
 	 } 
 	farmers = {
 		culture = afro_american
 		religion = secularism
 		size = 11574
-	 } 
-	farmers = {
-		culture = mestizo
-		religion =  catholic 
-		size = 19505
-	 } 
-	farmers = {
-		culture = mestizo
-		religion = secularism
-		size = 1929
 	 } 
 }
 #Lubbock - Lubbock (271000/67750 POPS)
@@ -16208,7 +16168,7 @@
 	labourers = {
 		culture = white_anglo
 		religion = secularism
-		size = 200000
+		size = 800000
 	 } 
 	labourers = {
 		culture = jewish
@@ -20425,7 +20385,7 @@
 		size = 12777
 	 } 
 }
-#Mannheim - Baden-Württemberg (840000/210000 POPS)
+#Mannheim - Baden-Wï¿½rttemberg (840000/210000 POPS)
 569 = {
 	officers = {
 		culture = german
@@ -20528,7 +20488,7 @@
 		size = 25737
 	 } 
 }
-#Stuttgart - Baden-Württemberg (840000/210000 POPS)
+#Stuttgart - Baden-Wï¿½rttemberg (840000/210000 POPS)
 589 = {
 	officers = {
 		culture = german
@@ -20631,7 +20591,7 @@
 		size = 25737
 	 } 
 }
-#Heilbronn - Baden-Württemberg (840000/210000 POPS)
+#Heilbronn - Baden-Wï¿½rttemberg (840000/210000 POPS)
 590 = {
 	officers = {
 		culture = german
