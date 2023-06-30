@@ -1,3 +1,52 @@
+#OPEC
+#Kick out of OPEC
+country_event = {
+	id = 1400013
+	title = "Expelled from OPEC"
+	desc = "The OPEC Council has deemed our membership as invalid due to 1. Either we are a vassal or 2. We do not produce oil anymore or 3. Our gov type is incompatible."
+	picture = "kickedoutofopec"
+
+	trigger = {
+		has_country_modifier = opecmember
+		OR = { 
+			NOT = { any_owned_province = { trade_goods = petroleum } } 
+			is_vassal = yes 
+			government = proletarian_dictatorship 
+			government = proletarian_dictatorship1 
+			government = theocracy
+		}
+	}
+	
+	option = {
+		name = "We can go it alone!"
+		prestige = -10
+		
+		remove_country_modifier = opecmember
+		any_owned = { 
+			remove_province_modifier = oil_high 
+			remove_province_modifier = oil_medium 
+			remove_province_modifier = oil_low 
+		}
+		clr_country_flag = oil_high
+		clr_country_flag = oil_medium
+		clr_country_flag = oil_low
+	}
+	
+}
+
+#Oil Crisis
+country_event = {
+	id = 1400051
+	title = "Oil Crisis of $YEAR$"
+	desc = "$COUNTRY$ has managed to persuade the OPEC countries to dramatically reduce their oil output causing an acute oil shortage!"
+	picture = "austrian_lands"
+	major = yes
+is_triggered_only = yes
+
+option = {
+name = "We shall punish those nations for their misdeeds!"
+		}
+}
 
 #Enable Canals
 country_event = {
