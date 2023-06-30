@@ -988,7 +988,7 @@
 	 } 
 	farmers = {
 		culture = indian
-		religion =  sunni 
+		religion =  hindu 
 		size = 50490
 	 } 
 	farmers = {
@@ -1402,22 +1402,22 @@
 		size = 2639
 	 } 
 	farmers = {
-		culture = karen
-		religion =  protestant 
+		culture = shan
+		religion =  buddhist 
 		size = 37893
 	 } 
 	farmers = {
-		culture = karen
+		culture = shan
 		religion = secularism
 		size = 286
 	 } 
 	farmers = {
-		culture = burmese
+		culture = shan
 		religion =  buddhist 
 		size = 36700
 	 } 
 	farmers = {
-		culture = burmese
+		culture = shan
 		religion = secularism
 		size = 277
 	 } 
@@ -1523,32 +1523,32 @@
 #Myitkyina - Kashin (236000/59000 POPS)
 1342 = {
 	officers = {
-		culture = chinese
-		religion =  taoism 
+		culture = kachin
+		religion =  protestant 
 		size = 175
 	 } 
 	officers = {
-		culture = chinese
+		culture = kachin
 		religion = secularism
 		size = 1
 	 } 
 	soldiers = {
-		culture = chinese
-		religion =  taoism 
+		culture = kachin
+		religion =  protestant 
 		size = 702
 	 } 
 	soldiers = {
-		culture = chinese
+		culture = kachin
 		religion = secularism
 		size = 5
 	 } 
 	aristocrats = {
-		culture = chinese
-		religion =  taoism 
+		culture = kachin
+		religion =  protestant 
 		size = 2049
 	 } 
 	aristocrats = {
-		culture = chinese
+		culture = kachin
 		religion = secularism
 		size = 15
 	 } 
@@ -1724,77 +1724,77 @@
 #Mergui - Tanintharyi (533000/133250 POPS)
 1344 = {
 	officers = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 396
 	 } 
 	officers = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 2
 	 } 
 	soldiers = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 1587
 	 } 
 	soldiers = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 11
 	 } 
 	aristocrats = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 5290
 	 } 
 	aristocrats = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 39
 	 } 
 	bureaucrats = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 132
 	 } 
 	capitalists = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 661
 	 } 
 	capitalists = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 4
 	 } 
 	clergymen = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 1322
 	 } 
 	clergymen = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 9
 	 } 
 	artisans = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 1541
 	 } 
 	artisans = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 11
 	 } 
 	farmers = {
-		culture = burmese
-		religion =  buddhist 
+		culture = karen
+		religion =  protestant 
 		size = 59162
 	 } 
 	farmers = {
-		culture = burmese
+		culture = karen
 		religion = secularism
 		size = 447
 	 } 
@@ -1892,17 +1892,17 @@
 		size = 1278
 	 } 
 	farmers = {
-		culture = rohingya
-		religion =  sunni 
+		culture = rakhine
+		religion =  buddhist 
 		size = 72967
 	 } 
 	farmers = {
-		culture = chin
+		culture = rakhine
 		religion =  buddhist 
 		size = 40141
 	 } 
 	farmers = {
-		culture = chin
+		culture = rakhine
 		religion = secularism
 		size = 303
 	 } 
@@ -1992,7 +1992,7 @@
 	artisans = {
 		culture = chinese
 		religion = taoism 
-		size = 140680
+		size = 100680
 	 } 
 	craftsmen = {
 		culture = chinese
@@ -2012,12 +2012,12 @@
 	craftsmen = {
 		culture = indian
 		religion =  hindu 
-		size = 17094
+		size = 19694
 	 } 
 	farmers = {
-		culture = indian
+		culture = chinese
 		religion = secularism
-		size = 2610
+		size = 40010
 	 } 
 }
 #Malacca - Malacca (185000/46250 POPS)
@@ -2103,12 +2103,12 @@
 		size = 291
 	 } 
 	farmers = {
-		culture = indian
-		religion =  hindu 
+		culture = chinese
+		religion =  taoism 
 		size = 3607
 	 } 
 	farmers = {
-		culture = indian
+		culture = chinese
 		religion = secularism
 		size = 92
 	 } 
@@ -2201,13 +2201,13 @@
 		size = 897
 	 } 
 	farmers = {
-		culture = indian
-		religion =  hindu 
+		culture = malay
+		religion =  sunni 
 		size = 10442
 	 } 
 	farmers = {
-		culture = indian
-		religion = secularism
+		culture = malay
+		religion = sunni
 		size = 267
 	 } 
 	farmers = {
@@ -2219,74 +2219,69 @@
 #Brunei - Brunei (45000/11250 POPS)
 1393 = {
 	officers = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 32
 	 } 
 	soldiers = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 134
 	 } 
 	aristocrats = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 447
 	 } 
 	aristocrats = {
-		culture = chinese
-		religion = secularism
+		culture = malay
+		religion = sunni
 		size = 2
 	 } 
 	bureaucrats = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 10
 	 } 
 	capitalists = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 55
 	 } 
 	clergymen = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 111
 	 } 
 	artisans = {
-		culture = chinese
-		religion =  taoism 
+		culture = malay
+		religion =  sunni 
 		size = 300
 	 } 
 	artisans = {
-		culture = chinese
-		religion = secularism
-		size = 1
-	 } 
-	farmers = {
-		culture = chinese
-		religion =  taoism 
-		size = 1200
-	 } 
-	farmers = {
-		culture = chinese
-		religion = secularism
-		size = 6
-	 } 
-	farmers = {
-		culture = indian
-		religion =  hindu 
-		size = 346
-	 } 
-	farmers = {
-		culture = indian
-		religion = secularism
+		culture = malay
+		religion = sunni
 		size = 1
 	 } 
 	farmers = {
 		culture = malay
 		religion =  sunni 
-		size = 7191
+		size = 1200
+	 } 
+	farmers = {
+		culture = malay
+		religion = sunni
+		size = 6
+	 } 
+	farmers = {
+		culture = malay
+		religion =  sunni 
+		size = 346
+	 } 
+	farmers = {
+		culture = malay
+		religion =  sunni 
+		size = 7192
 	 } 
 }
 #Kuching - Kuching (393000/98250 POPS)
@@ -2382,8 +2377,8 @@
 		size = 1080
 	 } 
 	farmers = {
-		culture = malay
-		religion =  sunni 
+		culture = chinese
+		religion =  taoism 
 		size = 16094
 	 } 
 }
@@ -2470,18 +2465,18 @@
 		size = 199
 	 } 
 	farmers = {
-		culture = kalimatan
-		religion =  protestant 
+		culture = chinese
+		religion =  taoism 
 		size = 18768
 	 } 
 	farmers = {
-		culture = kalimatan
+		culture = chinese
 		religion = secularism
 		size = 481
 	 } 
 	farmers = {
-		culture = malay
-		religion =  sunni 
+		culture = chinese
+		religion =  taoism 
 		size = 7165
 	 } 
 }
@@ -2578,95 +2573,95 @@
 		size = 797
 	 } 
 	farmers = {
-		culture = malay
-		religion =  sunni 
+		culture = kalimatan
+		religion =  protestant 
 		size = 24200
 	 } 
 	farmers = {
-		culture = indonesian
-		religion =  sunni 
+		culture = kalimatan
+		religion =  protestant 
 		size = 30122
 	 } 
 }
 #Sandakan - Sandakan (292000/73000 POPS)
 1397 = {
 	officers = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 213
 	 } 
 	officers = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 5
 	 } 
 	soldiers = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 854
 	 } 
 	soldiers = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 21
 	 } 
 	aristocrats = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 2847
 	 } 
 	aristocrats = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 73
 	 } 
 	bureaucrats = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 142
 	 } 
 	bureaucrats = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 3
 	 } 
 	capitalists = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 355
 	 } 
 	capitalists = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 9
 	 } 
 	clergymen = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 711
 	 } 
 	clergymen = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 18
 	 } 
 	artisans = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 1828
 	 } 
 	artisans = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 46
 	 } 
 	farmers = {
-		culture = chinese
-		religion =  taoism 
+		culture = kalimatan
+		religion =  protestant 
 		size = 164
 	 } 
 	farmers = {
-		culture = chinese
+		culture = kalimatan
 		religion = secularism
 		size = 4
 	 } 
@@ -2677,36 +2672,36 @@
 	 } 
 	farmers = {
 		culture = kalimatan
-		religion = secularism
+		religion = protestant
 		size = 529
 	 } 
 	farmers = {
-		culture = malay
-		religion =  sunni 
+		culture = kalimatan
+		religion =  protestant 
 		size = 16060
 	 } 
 	farmers = {
-		culture = indonesian
-		religion =  sunni 
+		culture = kalimatan
+		religion =  protestant 
 		size = 19988
 	 } 
 }
 #Aden - Aden (286000/71500 POPS)
 1412 = {
 	capitalists = {
-		culture = jewish
-		religion =  jewish 
+		culture = british
+		religion =  protestant 
 		size = 356
 	 } 
 	officers = {
-		culture = jewish
-		religion =  jewish 
+		culture = british
+		religion =  protestant 
 		size = 213
 	 } 
 	soldiers = {
-		culture = jewish
-		religion =  jewish 
-		size = 143
+		culture = british
+		religion =  protestant 
+		size = 2227
 	 } 
 	aristocrats = {
 		culture = arab_gulf
@@ -2717,11 +2712,6 @@
 		culture = arab_gulf
 		religion =  sunni 
 		size = 62034
-	 } 
-	farmers = {
-		culture = somali
-		religion =  sunni 
-		size = 2084
 	 } 
 
 	#For Pan-Arab and National Arab
@@ -2750,7 +2740,7 @@
 		size = 773
 	 } 
 	capitalists = {
-		culture = chinese
+		culture = chinese_cantonese
 		religion = taoism 
 		size = 3000
 	 } 
@@ -2777,30 +2767,25 @@
 	aristocrats = {
 		culture = british
 		religion =  protestant 
-		size = 5999
+		size = 7545
 	 } 
 	aristocrats = {
-		culture = british
-		religion = secularism
-		size = 1546
-	 } 
-	aristocrats = {
-		culture = chinese
+		culture = chinese_cantonese
 		religion =  taoism 
 		size = 17994
 	 } 
 	aristocrats = {
-		culture = chinese
+		culture = chinese_cantonese
 		religion = secularism
 		size = 4639
 	 } 
 	bureaucrats = {
-		culture = chinese
+		culture = chinese_cantonese
 		religion =  taoism 
 		size = 599
 	 } 
 	bureaucrats = {
-		culture = chinese
+		culture = chinese_cantonese
 		religion = secularism
 		size = 154
 	 } 
@@ -2829,28 +2814,23 @@
 		religion =  taoism 
 		size = 230000
 	 }
-	 artisans = {
+	artisans = {
 		culture = chinese_cantonese
 		religion =  taoism 
-		size = 330943
+		size = 300943
 	 } 
 	clerks = {
 		culture = chinese_cantonese
 		religion = secularism
-		size = 136910
-	 } 
-	artisans = {
-		culture = indonesian
-		religion =  sunni 
-		size = 14335
+		size = 86910
 	 } 
 	farmers = {
-		culture = filipino
-		religion =  catholic 
-		size = 11996
+		culture = chinese_cantonese
+		religion =  taoism 
+		size = 106331
 	 } 
 	farmers = {
-		culture = filipino
+		culture = chinese_cantonese
 		religion = secularism
 		size = 3093
 	 } 
@@ -2860,23 +2840,13 @@
 	capitalists = {
 		culture = jewish
 		religion =  jewish 
-		size = 229
+		size = 540
 	 } 
 	capitalists = {
 		culture = libyan
 		religion = secularism
 		size = 11
 	 } 
-	capitalists = {
-		culture = italian
-		religion = catholic
-		size = 306
-	}
-	capitalists = {
-		culture = italian
-		religion = secularism
-		size = 5
-	} 
 	officers = {
 		culture = jewish
 		religion =  jewish 
@@ -2900,23 +2870,13 @@
 	aristocrats = {
 		culture = jewish
 		religion =  jewish 
-		size = 2827
+		size = 4349
 	 } 
 	aristocrats = {
 		culture = libyan
 		religion = secularism
 		size = 438
 	 }
-	aristocrats = {
-		culture = italian
-		religion = catholic
-		size = 1462
-	}
-	aristocrats = {
-		culture = italian
-		religion = secularism
-		size = 60
-	} 
 	bureaucrats = {
 		culture = jewish
 		religion =  jewish 
@@ -2945,18 +2905,8 @@
 	artisans = {
 		culture = jewish
 		religion = secularism
-		size = 57
+		size = 1000
 	 }
-	artisans = {
-		culture = italian
-		religion = catholic
-		size = 910
-	}
-	artisans = {
-		culture = italian
-		religion = secularism
-		size = 33
-	}  
 	farmers = {
 		culture = jewish
 		religion =  jewish 
@@ -2973,12 +2923,12 @@
 		size = 62546
 	 }
 	farmers = {
-		culture = italian
-		religion = catholic
+		culture = jewish
+		religion = secularism
 		size = 20140
 	}
 	farmers = {
-		culture = italian
+		culture = jewish
 		religion = secularism
 		size = 2523
 	}
@@ -3035,11 +2985,6 @@
 		size = 58
 	} 
 	farmers = {
-		culture = berber
-		religion =  sunni 
-		size = 15621
-	 } 
-	farmers = {
 		culture = italian
 		religion = catholic
 		size = 598
@@ -3059,18 +3004,12 @@
 	farmers = {
 		culture = arab
 		religion =  sunni 
-		size = 1000
+		size = 16621
 	 } 
 
 }
 #Sirt - Sirt (29000/7250 POPS)
 1734 = {
-	farmers = {
-		culture = berber
-		religion =  sunni 
-		size = 5603
-	 } 
-
 	#For Pan-Arab and National Arab
 	farmers = {
 		culture = libyan
@@ -3080,21 +3019,16 @@
 	farmers = {
 		culture = arab
 		religion =  sunni 
-		size = 1000
+		size = 6603
 	 } 
 
 }
 #Benghazi - Benghazi (155000/38750 POPS)
 1735 = {
 	aristocrats = {
-		culture = libyan
-		religion =  sunni 
-		size = 1550
-	 } 
-	aristocrats = {
 		culture = italian
 		religion = catholic
-		size = 1203
+		size = 2753
 	}
 	aristocrats = {
 		culture = italian
@@ -3134,14 +3068,9 @@
 
 	#For Pan-Arab and National Arab
 	farmers = {
-		culture = libyan
-		religion =  sunni 
-		size = 1000
-	 } 
-	farmers = {
 		culture = arab
 		religion =  sunni 
-		size = 1000
+		size = 2000
 	 } 
 
 }
@@ -3153,16 +3082,11 @@
 		size = 11398
 	 } 
 
-	#For Pan-Arab and National Arab
-	farmers = {
-		culture = libyan
-		religion =  sunni 
-		size = 1000
-	 } 
+	#For Pan-Arab and National Arab 
 	farmers = {
 		culture = arab
 		religion =  sunni 
-		size = 1000
+		size = 2000
 	 } 
 
 }
@@ -3429,37 +3353,37 @@
 		size = 16
 	 } 
 	aristocrats = {
-		culture = mande
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 1016
 	 } 
 	artisans = {
-		culture = mande
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 1371
 	 } 
 	farmers = {
-		culture = mande
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 24986
 	 } 
 	farmers = {
-		culture = fula
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 12195
 	 } 
 	farmers = {
-		culture = wolof
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 10840
 	 } 
 	farmers = {
-		culture = african_minor
-		religion =  catholic 
+		culture = black_anglo
+		religion =  protestant 
 		size = 8023
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = black_anglo
 		religion = secularism
 		size = 81
 	 } 
@@ -6545,33 +6469,33 @@
 #Makurdi - Benue (923000/230750 POPS)
 1936 = {
 	soldiers = {
-		culture = tiv
-		religion =  sunni 
+		culture = ibo
+		religion =  protestant 
 		size = 2769
 	 } 
 	aristocrats = {
-		culture = tiv
-		religion =  sunni 
+		culture = ibo
+		religion =  protestant 
 		size = 9230
 	 } 
 	capitalists = {
-		culture = tiv
-		religion =  sunni 
+		culture = ibo
+		religion =  protestant 
 		size = 1153
 	 } 
 	clergymen = {
-		culture = tiv
-		religion =  sunni 
+		culture = ibo
+		religion =  protestant 
 		size = 2307
 	 } 
 	artisans = {
-		culture = tiv
-		religion =  sunni 
+		culture = ibo
+		religion =  protestant 
 		size = 4044
 	 } 
 	farmers = {
-		culture = tiv
-		religion =  sunni 
+		culture = ibo
+		religion =  protestant 
 		size = 178020
 	 } 
 	farmers = {
@@ -6588,28 +6512,28 @@
 #Tukari - Taraba (586000/146500 POPS)
 1937 = {
 	soldiers = {
-		culture = nupe
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 1758
 	 } 
 	aristocrats = {
-		culture = nupe
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 5860
 	 } 
 	clergymen = {
-		culture = nupe
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 1465
 	 } 
 	artisans = {
-		culture = nupe
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 2567
 	 } 
 	farmers = {
-		culture = nupe
-		religion =  sunni 
+		culture = black_anglo
+		religion =  protestant 
 		size = 124448
 	 } 
 }
