@@ -259,48 +259,6 @@ country_migration_target = {
 		is_secondary_power = no
 		NOT = { literacy = 0.20 }
 	}
-	
-	#Less immigration from less developed nations
-	
-	modifier = { 
-		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
-		THIS = { NOT = { literacy = 0.05 } }
-		literacy = 0.05
-	}
-
-	modifier = { 
-		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
-		THIS = { NOT = { literacy = 0.10 } }
-		literacy = 0.10
-	}
-
-	modifier = { 
-		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
-		THIS = { NOT = { literacy = 0.15 } }
-		literacy = 0.15
-	}
-	
-	modifier = { 
-		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
-		THIS = { NOT = { literacy = 0.20 } }
-		literacy = 0.20
-	}
-	
-	modifier = { 
-		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
-		THIS = { NOT = { literacy = 0.25 } }
-		literacy = 0.25
-	}
 
 	#Unemployment increases immigration - Craftsmen
 

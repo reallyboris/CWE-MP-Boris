@@ -986,17 +986,7 @@
 	artisans = {
 		culture = japanese
 		religion =  shinto 
-		size = 57412
-	 } 
-	artisans = {
-		culture = japanese
-		religion = secularism
-		size = 12390
-	 } 
-	artisans = {
-		culture = japanese
-		religion =  shinto 
-		size = 184328
+		size = 507207
 	 } 
 	artisans = {
 		culture = japanese
@@ -1014,16 +1004,6 @@
 		size = 228277
 	 } 
 	farmers = {
-		culture = chinese
-		religion =  taoism 
-		size = 69386
-	 } 
-	farmers = {
-		culture = chinese
-		religion = secularism
-		size = 14973
-	 } 
-	farmers = {
 		culture = korean
 		religion =  taoism 
 		size = 86732
@@ -1032,26 +1012,6 @@
 		culture = korean
 		religion = secularism
 		size = 18717
-	 } 
-	farmers = {
-		culture = filipino
-		religion =  catholic 
-		size = 104079
-	 } 
-	farmers = {
-		culture = filipino
-		religion = secularism
-		size = 22460
-	 } 
-	farmers = {
-		culture = ryukyuan
-		religion =  shinto 
-		size = 34693
-	 } 
-	farmers = {
-		culture = ryukyuan
-		religion = secularism
-		size = 7486
 	 } 
 }
 #Chiba - Chiba (4145000/1036250 POPS)
