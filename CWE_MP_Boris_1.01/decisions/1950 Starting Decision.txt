@@ -59,7 +59,14 @@ political_decisions = {
 				relation = { who = USA value = 200 }
 			}
 			
-			
+			#commonwealth
+
+			ENG = {
+            set_global_flag = commonwealthofnations
+            tech_school = commonwealth
+            add_country_modifier = { name = commonwealthmembereng duration = -1 }
+            }
+
 			#Commonwealth members
 			any_country = {
 				limit = { in_sphere = ENG OR = { government = hms_government government = hms_government1 } NOT = { capital_scope = { continent = mena } } }
