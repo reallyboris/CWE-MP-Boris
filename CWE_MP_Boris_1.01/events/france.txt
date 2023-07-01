@@ -378,45 +378,45 @@ country_event = {
 }
 
 #End the IAR
-#country_event = { # FROM = GER THIS = FRA
-#	id = 1005702
-#	title = end_international_authority_over_ruhr_title
-#	desc = end_international_authority_over_ruhr_desc
-#	picture = "nwo2_occupation_zones_in_germany"
-#
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVT_1005702_A 
-#		ai_chance = { factor = 0.90 }
-#		GER = { inherit = IAR }
-#		prestige = 5
-#		relation = { who = GER value = 50 }
-#		diplomatic_influence = { who = GER value = 50 }
-#	}
-#	
-#	option = {
-#		name = EVT_1005702_B 
-#		ai_chance = { factor = 0.10 }
-#		any_pop = {
-#			limit = {
-#				culture = german
-#			}
-#			consciousness = 2
-#			militancy = 8
-#		}		
-#		GER = {
-#			casus_belli = {
-#				target = FRA
-#				type = acquire_core_state
-#				months = 12
-#			}
-#			relation = { who = FRA value = -100 }
-#		}
-#		diplomatic_influence = { who = GER value = -50 }
-#		badboy = 5
-#	}
-#}
+country_event = { # FROM = GER THIS = FRA
+	id = 1005702
+	title = end_international_authority_over_ruhr_title
+	desc = end_international_authority_over_ruhr_desc
+	picture = "nwo2_occupation_zones_in_germany"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVT_1005702_A 
+		ai_chance = { factor = 0.90 }
+		GER = { inherit = IAR }
+		prestige = 5
+		relation = { who = GER value = 50 }
+		diplomatic_influence = { who = GER value = 50 }
+	}
+	
+	option = {
+		name = EVT_1005702_B 
+		ai_chance = { factor = 0.10 }
+		any_pop = {
+			limit = {
+				culture = german
+			}
+			consciousness = 2
+			militancy = 8
+		}		
+		GER = {
+			casus_belli = {
+				target = FRA
+				type = acquire_core_state
+				months = 12
+			}
+			relation = { who = FRA value = -100 }
+		}
+		diplomatic_influence = { who = GER value = -50 }
+		badboy = 5
+	}
+}
 
 # 1987 New Caledonia indpedence referendum
 country_event = {
