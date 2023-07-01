@@ -1,5 +1,25 @@
 #
 
+#Germania built
+country_event = {
+	id = 1412228
+title = "$COUNTRY_ADJ$ia"
+	desc = EVTDESC1412228
+	picture = "germania"
+
+trigger = {
+has_country_flag = germania
+NOT = { has_country_modifier = germania }
+}
+
+option = {
+name = "A city that will last a 1000 years"
+prestige = 1000
+random_owned = { limit = { is_capital = yes } life_rating = 5 add_province_modifier = { name = new_capital duration = -1 } }
+clr_country_flag = germania
+		}
+}
+
 #Bankruptcy
 country_event = {
 	id = 1412180
