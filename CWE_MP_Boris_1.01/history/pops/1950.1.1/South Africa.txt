@@ -275,77 +275,77 @@
 #Linyati - Linyati (174000/43500 POPS)
 2081 = {
 	officers = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 127
 	 } 
 	officers = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 2
 	 } 
 	soldiers = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 511
 	 } 
 	soldiers = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 10
 	 } 
 	aristocrats = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 1705
 	 } 
 	aristocrats = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 34
 	 } 
 	bureaucrats = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 42
 	 } 
 	capitalists = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 212
 	 } 
 	capitalists = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 4
 	 } 
 	clergymen = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 426
 	 } 
 	clergymen = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 8
 	 } 
 	artisans = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 578
 	 } 
 	artisans = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 11
 	 } 
 	farmers = {
-		culture = lozi
+		culture = ovambo
 		religion =  protestant 
 		size = 1938
 	 } 
 	farmers = {
-		culture = lozi
+		culture = ovambo
 		religion = secularism
 		size = 39
 	 } 

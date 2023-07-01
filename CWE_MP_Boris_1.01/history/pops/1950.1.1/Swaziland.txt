@@ -71,32 +71,32 @@
 		size = 3
 	 } 
 	farmers = {
-		culture = afrikaaner
+		culture = british
 		religion =  protestant 
 		size = 202
 	 } 
 	farmers = {
-		culture = afrikaaner
+		culture = british
 		religion = secularism
 		size = 4
 	 } 
 	farmers = {
-		culture = zulu
+		culture = british
 		religion =  protestant 
 		size = 3384
 	 } 
 	farmers = {
-		culture = zulu
+		culture = british
 		religion = secularism
 		size = 77
 	 } 
 	farmers = {
-		culture = tsonga
+		culture = british
 		religion =  protestant 
 		size = 1353
 	 } 
 	farmers = {
-		culture = tsonga
+		culture = british
 		religion = secularism
 		size = 31
 	 } 

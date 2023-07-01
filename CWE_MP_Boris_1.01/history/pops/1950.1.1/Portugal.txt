@@ -677,22 +677,12 @@
 	farmers = {
 		culture = ovimbundu
 		religion =  protestant 
-		size = 45300
+		size = 56106
 	 } 
 	farmers = {
 		culture = ovimbundu
 		religion = secularism
 		size = 1161
-	 } 
-	farmers = {
-		culture = bakongo
-		religion =  catholic 
-		size = 10614
-	 } 
-	farmers = {
-		culture = bakongo
-		religion = secularism
-		size = 272
 	 } 
 }
 #Cabinda - Cabinda (88000/22000 POPS)

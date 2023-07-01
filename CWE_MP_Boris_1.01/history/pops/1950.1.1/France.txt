@@ -285,88 +285,88 @@
 #Pleiku - Pleiku (707000176750 POPS)
 1378 = {
 	officers = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 471
 	 } 
 	officers = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 58
 	 } 
 	soldiers = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 6887
 	 } 
 	soldiers = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 233
 	 } 
 	aristocrats = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 6292
 	 } 
 	aristocrats = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 777
 	 } 
 	bureaucrats = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 156
 	 } 
 	bureaucrats = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 19
 	 } 
 	capitalists = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 785
 	 } 
 	capitalists = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 97
 	 } 
 	clergymen = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 1572
 	 } 
 	clergymen = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 194
 	 } 
 	artisans = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 1723
 	 } 
 	artisans = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 212
 	 } 
 	farmers = {
-		culture = tay
+		culture = asian_minor
 		religion =  buddhist 
 		size = 39021
 	 } 
 	farmers = {
-		culture = tay
+		culture = asian_minor
 		religion = secularism
 		size = 4822
 	 } 
 	farmers = {
 		culture = asian_minor
-		religion =  protestant 
+		religion =  buddhist 
 		size = 89664
 	 } 
 	farmers = {

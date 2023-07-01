@@ -156,12 +156,12 @@
 		size = 390
 	 }
 	farmers = {
-		culture = tay
+		culture = vietnamese
 		religion = secularism
 		size = 4002
 	 }
 	farmers = {
-		culture = miao
+		culture = vietnamese
 		religion = secularism
 		size = 9640
 	 } 
@@ -402,27 +402,27 @@
 		size = 284
 	 } 
 	farmers = {
-		culture = asian_minor
-		religion =  protestant 
+		culture = vietnamese
+		religion = secularism 
 		size = 6832
 	 }
 	farmers = {
-		culture = asian_minor
-		religion =  catholic 
+		culture = vietnamese
+		religion = secularism 
 		size = 3720
 	 } 
 	farmers = {
-		culture = asian_minor
+		culture = vietnamese
 		religion = secularism
 		size = 2854
 	 }
 	farmers = {
-		culture = tay
+		culture = vietnamese
 		religion = secularism
 		size = 72502
 	 }
 	farmers = {
-		culture = tay
+		culture = vietnamese
 		religion =  buddhist
 		size = 7500
 	 }
@@ -535,18 +535,18 @@
 		size = 1392
 	 } 
 	farmers = {
-		culture = asian_minor
-		religion =  protestant 
+		culture = vietnamese
+		religion = secularism 
 		size = 13774
 	 } 
 	farmers = {
-		culture = asian_minor
+		culture = vietnamese
 		religion = secularism
 		size = 2225
 	 }
 	farmers = {
-		culture = asian_minor
-		religion =  catholic
+		culture = vietnamese
+		religion = secularism
 		size = 9725
 	 }
 	farmers = {
@@ -688,12 +688,12 @@
 		size = 1300
 	 }
 	farmers = {
-		culture = tay
+		culture = vietnamese
 		religion =  buddhist
 		size = 6830
 	 } 
 	farmers = {
-		culture = tay
+		culture = vietnamese
 		religion = secularism
 		size = 39940
 	 } 
@@ -910,16 +910,16 @@
 	 }
 	farmers = {
 		culture = vietnamese
-		religion = catholic
+		religion = secularism
 		size = 43700
 	 }
 	farmers = {
-		culture = asian_minor
+		culture = vietnamese
 		religion = catholic
 		size = 14500
 	 }
 	farmers = {
-		culture = asian_minor
+		culture = vietnamese
 		religion = secularism
 		size = 2500
 	 }
@@ -930,7 +930,7 @@
 	 } 
 	artisans = {
 		culture = vietnamese
-		religion = secularism
+		religion = catholic
 		size = 1250
 	 }
 	artisans = {
