@@ -164,12 +164,12 @@
 		size = 11067
 	 } 
 	farmers = {
-		culture = oromo
-		religion =  protestant 
+		culture = amhara
+		religion =  secularism 
 		size = 24337
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 624
 	 } 
@@ -252,22 +252,22 @@
 		size = 181
 	 } 
 	farmers = {
-		culture = oromo
-		religion =  protestant 
+		culture = amhara
+		religion =  secularism 
 		size = 5861
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 150
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = amhara
 		religion =  coptic 
 		size = 29310
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = amhara
 		religion = secularism
 		size = 751
 	 } 
@@ -355,12 +355,12 @@
 		size = 3801
 	 } 
 	farmers = {
-		culture = oromo
-		religion =  protestant 
+		culture = amhara
+		religion =  secularism 
 		size = 304513
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 7808
 	 } 
@@ -368,32 +368,32 @@
 #Aksum - Aksum (1195000/298750 POPS)
 1856 = {
 	officers = {
-		culture = amhara
+		culture = tigray
 		religion =  coptic 
 		size = 69
 	 } 
 	officers = {
-		culture = amhara
+		culture = tigray
 		religion = secularism
 		size = 1
 	 } 
 	soldiers = {
-		culture = amhara
+		culture = tigray
 		religion =  coptic 
 		size = 276
 	 } 
 	soldiers = {
-		culture = amhara
+		culture = tigray
 		religion = secularism
 		size = 7
 	 } 
 	aristocrats = {
-		culture = amhara
+		culture = tigray
 		religion =  coptic 
 		size = 8391
 	 } 
 	aristocrats = {
-		culture = amhara
+		culture = tigray
 		religion = secularism
 		size = 215
 	 } 
@@ -599,13 +599,13 @@
 		size = 6
 	 } 
 	farmers = {
-		culture = afar
-		religion =  sunni 
+		culture = amhara
+		religion =  coptic 
 		size = 86458
 	 } 
 	farmers = {
-		culture = black_muslim
-		religion =  sunni 
+		culture = amhara
+		religion =  coptic 
 		size = 4875
 	 } 
 }
@@ -692,12 +692,12 @@
 		size = 2557
 	 } 
 	farmers = {
-		culture = oromo
-		religion =  protestant 
+		culture = amhara
+		religion =  secularism 
 		size = 45678
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 1171
 	 } 
@@ -712,12 +712,12 @@
 		size = 468
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = tigray
 		religion =  coptic 
 		size = 50246
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = tigray
 		religion = secularism
 		size = 1288
 	 } 
@@ -808,88 +808,88 @@
 #Aselia - Oromia (2770000/692500 POPS)
 1861 = {
 	officers = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 159
 	 } 
 	officers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 4
 	 } 
 	soldiers = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 642
 	 } 
 	soldiers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 16
 	 } 
 	aristocrats = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 27007
 	 } 
 	aristocrats = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 692
 	 } 
 	bureaucrats = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 674
 	 } 
 	bureaucrats = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 17
 	 } 
 	capitalists = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 3375
 	 } 
 	capitalists = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 86
 	 } 
 	clergymen = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 6751
 	 } 
 	clergymen = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 173
 	 } 
 	artisans = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 4112
 	 } 
 	artisans = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 105
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 564944
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 14485
 	 } 
 	farmers = {
 		culture = african_minor
-		religion =  coptic 
+		religion =  protestant 
 		size = 67518
 	 } 
 	farmers = {
@@ -966,12 +966,12 @@
 		size = 229
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = nuer
 		religion =  coptic 
 		size = 10237
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = nuer
 		religion = secularism
 		size = 262
 	 } 
@@ -979,82 +979,82 @@
 #Asosa - Oromia (2770000/692500 POPS)
 1863 = {
 	officers = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 159
 	 } 
 	officers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 4
 	 } 
 	soldiers = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 642
 	 } 
 	soldiers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 16
 	 } 
 	aristocrats = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 27007
 	 } 
 	aristocrats = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 692
 	 } 
 	bureaucrats = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 674
 	 } 
 	bureaucrats = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 17
 	 } 
 	capitalists = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 3375
 	 } 
 	capitalists = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 86
 	 } 
 	clergymen = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 6751
 	 } 
 	clergymen = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 173
 	 } 
 	artisans = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 4112
 	 } 
 	artisans = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 105
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion =  protestant 
 		size = 632463
 	 } 
 	farmers = {
-		culture = oromo
+		culture = amhara
 		religion = secularism
 		size = 16217
 	 } 

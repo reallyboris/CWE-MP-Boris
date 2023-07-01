@@ -23,12 +23,13 @@ country_event = {
 		name = "It is the end of Communist rule!"
 
 		remove_country_modifier = uss_timer
+		remove_country_modifier = soviet_stability
 
 		clr_country_flag = economic_malaise
 		remove_country_modifier = economic_malaise
 		
 		#Hit to development levels
-		any_pop = { literacy = -0.08 }
+		any_pop = { literacy = -0.04 }
 
 		#Dissolution of the Warsaw Pact
 		random_owned = { 
@@ -94,12 +95,13 @@ country_event = {
 		badboy = 15
 		
 		remove_country_modifier = uss_timer
+		remove_country_modifier = soviet_stability
 
 		clr_country_flag = economic_malaise
 		remove_country_modifier = economic_malaise
 		
 		#Hit to development levels
-		any_pop = { literacy = -0.15 }
+		any_pop = { literacy = -0.06 }
 
 		#Dissolution of the Warsaw Pact
 		random_owned = { 

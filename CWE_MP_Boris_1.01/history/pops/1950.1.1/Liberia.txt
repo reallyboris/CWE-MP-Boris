@@ -31,72 +31,72 @@
 		size = 1
 	 } 
 	aristocrats = {
-		culture = kpelle
+		culture = black_anglo
 		religion =  protestant 
 		size = 3327
 	 } 
 	aristocrats = {
-		culture = kpelle
+		culture = black_anglo
 		religion = secularism
 		size = 59
 	 } 
 	bureaucrats = {
-		culture = kpelle
+		culture = black_anglo
 		religion =  protestant 
 		size = 85
 	 } 
 	bureaucrats = {
-		culture = kpelle
+		culture = black_anglo
 		religion = secularism
 		size = 1
 	 } 
 	capitalists = {
-		culture = kpelle
+		culture = black_anglo
 		religion =  protestant 
 		size = 428
 	 } 
 	capitalists = {
-		culture = kpelle
+		culture = black_anglo
 		religion = secularism
 		size = 7
 	 } 
 	clergymen = {
-		culture = kpelle
+		culture = black_anglo
 		religion =  protestant 
 		size = 856
 	 } 
 	clergymen = {
-		culture = kpelle
+		culture = black_anglo
 		religion = secularism
 		size = 15
 	 } 
 	artisans = {
-		culture = kpelle
+		culture = black_anglo
 		religion =  protestant 
 		size = 1424
 	 } 
 	artisans = {
-		culture = kpelle
+		culture = black_anglo
 		religion = secularism
 		size = 25
 	 } 
 	farmers = {
-		culture = kpelle
+		culture = black_anglo
 		religion =  protestant 
 		size = 734
 	 } 
 	farmers = {
-		culture = kpelle
+		culture = black_anglo
 		religion = secularism
 		size = 13
 	 } 
 	farmers = {
-		culture = african_minor
-		religion =  catholic 
+		culture = black_anglo
+		religion =  protestant 
 		size = 70642
 	 } 
 	farmers = {
-		culture = african_minor
+		culture = black_anglo
 		religion = secularism
 		size = 1258
 	 } 
@@ -182,160 +182,160 @@
 #Bopolu - Bopolu (118000/29500 POPS)
 1889 = {
 	officers = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 224
 	 } 
 	officers = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 4
 	 } 
 	soldiers = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 899
 	 } 
 	soldiers = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 16
 	 } 
 	aristocrats = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 1159
 	 } 
 	aristocrats = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 20
 	 } 
 	bureaucrats = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 28
 	 } 
 	capitalists = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 144
 	 } 
 	capitalists = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 2
 	 } 
 	clergymen = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 289
 	 } 
 	clergymen = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 5
 	 } 
 	artisans = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 481
 	 } 
 	artisans = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 8
 	 } 
 	farmers = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 1119
 	 } 
 	farmers = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 19
 	 } 
 	farmers = {
-		culture = black_muslim
-		religion =  sunni 
+		culture = african_minor
+		religion =  protestant 
 		size = 23425
 	 } 
 }
 #Gbarnga - Gbarnga (118000/29500 POPS)
 1890 = {
 	officers = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 224
 	 } 
 	officers = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 4
 	 } 
 	soldiers = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 899
 	 } 
 	soldiers = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 16
 	 } 
 	aristocrats = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 1159
 	 } 
 	aristocrats = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 20
 	 } 
 	bureaucrats = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 28
 	 } 
 	capitalists = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 144
 	 } 
 	capitalists = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 2
 	 } 
 	clergymen = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 289
 	 } 
 	clergymen = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 5
 	 } 
 	artisans = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 481
 	 } 
 	artisans = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 8
 	 } 
 	farmers = {
-		culture = kpelle
+		culture = african_minor
 		religion =  protestant 
 		size = 24134
 	 } 
 	farmers = {
-		culture = kpelle
+		culture = african_minor
 		religion = secularism
 		size = 429
 	 } 

@@ -1,3 +1,4 @@
+##All eventss have been moved forward by 5 years
 country_event = { # Medium Oil Field 15+ bill barels
   id = 1100
   title = EVT_1100_NAME
@@ -13,7 +14,7 @@ country_event = { # Medium Oil Field 15+ bill barels
 		AND = { year = 1967 owns = 3 3 = { NOT = { has_province_modifier = oil_field_medium } } } # Prudhoe Bay
 		AND = { year = 1963 owns = 1136 1136 = { NOT = { has_province_modifier = oil_field_medium } } } # Marun Field
 	}
-    year = 1953 
+    year = 1948 
   }
 
   mean_time_to_happen = { months = 12 }
@@ -55,7 +56,7 @@ country_event = { # Large Oil Field 30+ bill barels
 		AND = { year = 1927 owns = 1132 1132 = { NOT = { has_province_modifier = oil_field } } } # Gachsaran Field
 ####		AND = { year = 1953 owns = 932 932 = { NOT = { has_province_modifier = oil_field } } } # Rumaila Field
 	}
-    year = 1953 
+    year = 1948 
   }
 
   mean_time_to_happen = { months = 12 }
@@ -90,15 +91,16 @@ country_event = { # Custom Oil Field
 
   trigger = {
 	OR = {
-		AND = { year = 1965 owns = 1167 1167 = { NOT = { has_province_modifier = oil_field_custom } } } # Zakum Field 
-		AND = { year = 1965 owns = 1162 1162 = { NOT = { has_province_modifier = oil_field_custom } } }
-		AND = { year = 1951 owns = 2586 2586 = { NOT = { has_province_modifier = oil_field_custom } } } # Ghawar Field
+		AND = { year = 1960 owns = 1167 1167 = { NOT = { has_province_modifier = oil_field_custom } } } # Zakum Field 
+		AND = { year = 1960 owns = 1162 1162 = { NOT = { has_province_modifier = oil_field_custom } } }
+		AND = { year = 1960 owns = 1165 1165 = { NOT = { has_province_modifier = oil_field_custom } } } # Qatar
+		AND = { year = 1946 owns = 2586 2586 = { NOT = { has_province_modifier = oil_field_custom } } } # Ghawar Field
 ###		AND = { year = 1953 owns = 932 932 = { NOT = { has_province_modifier = oil_field_custom } } } # Rumaila Field, iraq
-		AND = { year = 1959 owns = 1738 1738 = { NOT = { has_province_modifier = oil_field_custom } } } # libya
-		AND = { year = 1959 owns = 1743 1743 = { NOT = { has_province_modifier = oil_field_custom } } } # libya
-		AND = { year = 1951 owns = 1163 1163 = { NOT = { has_province_modifier = oil_field_custom } } } # Safaniya Oil Field
+		AND = { year = 1954 owns = 1738 1738 = { NOT = { has_province_modifier = oil_field_custom } } } # libya
+		AND = { year = 1954 owns = 1743 1743 = { NOT = { has_province_modifier = oil_field_custom } } } # libya
+		AND = { year = 1946 owns = 1163 1163 = { NOT = { has_province_modifier = oil_field_custom } } } # Safaniya Oil Field
 	}
-    year = 1953 
+    year = 1948 
   }
 
   mean_time_to_happen = { months = 12 }
@@ -112,6 +114,7 @@ country_event = { # Custom Oil Field
 				AND = { province_id = 2586 NOT = { has_province_modifier = oil_field_custom } }
 ###				AND = { province_id = 932 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 1162 NOT = { has_province_modifier = oil_field_custom } }
+				AND = { province_id = 1165 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 1738 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 1743 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 1163 NOT = { has_province_modifier = oil_field_custom } }
@@ -132,12 +135,12 @@ country_event = { # Custom Oil Field small
 
   trigger = {
 	OR = {
-		AND = { year = 1953 owns = 932 932 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Rumaila Field, iraq
+		AND = { year = 1948 owns = 932 932 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Rumaila Field, iraq
 		AND = { year = 1922 owns = 2270 2270 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Bolivar Coastal Field
 		AND = { year = 1948 owns = 935 935 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Burgan Field
 
 	}
-    year = 1953 
+    year = 1948 
   }
 
   mean_time_to_happen = { months = 12 }
@@ -190,7 +193,7 @@ country_event = { # Rich soil/ore deposit
 		AND = { year = 1945 owns = 193 193 = { NOT = { has_province_modifier = oil_field_custom_small } } }
 
 	}
-    year = 1946 
+    year = 1945 
   }
 
   mean_time_to_happen = { months = 12 }

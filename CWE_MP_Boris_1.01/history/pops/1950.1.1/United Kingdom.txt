@@ -7205,8 +7205,8 @@
 		size = 2579
 	 } 
 	farmers = {
-		culture = fula
-		religion =  sunni 
+		culture = kanuri
+		religion =  catholic 
 		size = 73320
 	 } 
 }
