@@ -86,7 +86,7 @@ country_event = {
 		
 		NOT = { ruling_party_ideology = communist_social }
 		
-#		has_global_flag = blocsenabled
+		has_global_flag = blocsenabled
 	}
 
 	mean_time_to_happen = { months = 5 }
@@ -220,7 +220,7 @@ country_event = {
 		NOT = { year = 1990 }
 		is_vassal = no
 		government = proletarian_dictatorship
-#		has_global_flag = blocsenabled
+		has_global_flag = blocsenabled
 		
 		NOT = { has_country_modifier = centrallow }
 	}
@@ -278,7 +278,7 @@ country_event = {
 		NOT = { year = 1990 }
 		is_vassal = no
 		government = proletarian_dictatorship
-#		has_global_flag = blocsenabled
+		has_global_flag = blocsenabled
 		has_country_flag = rankovic_removed
 		
 		is_possible_vassal = CRO
