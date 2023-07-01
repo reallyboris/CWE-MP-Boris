@@ -5,6 +5,17 @@
 
 #######
 
+#China mob debuff
+china_mob_debuff = {
+	trigger = {
+		OR = { tag = CHI tag = KMT }
+		
+		#China must be large
+		number_of_states = 10
+	}
+	mobilisation_size = -0.5
+}
+
 #Apartheid
 
 apartheid_system = {
