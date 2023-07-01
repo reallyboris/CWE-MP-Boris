@@ -55,3 +55,102 @@ country_event = {
 		add_country_modifier = { name = us_immigration_start_fix duration = 365 } 
 	}
 }
+
+#First Civil Rights movement - 1955
+country_event = {
+  id = 8015844
+  title = "The Civil Rights Movement"
+  desc = EVTDESC8015844
+  picture = "nwo2_first_civil_rights_movement"
+  
+	fire_only_once = yes
+
+	trigger = {
+		tag = USA
+		year = 1955
+		NOT = { year = 1968 }
+		
+		government = democracy
+		
+		#African Americans are not accepted cultures
+		minorities_reform = minorities_oppression
+		NOT = { accepted_culture = afro_american }
+	}
+
+	mean_time_to_happen = { months = 5 }
+
+	option = {
+		name = "Give some concessions to the Black community"
+		
+		any_pop = { 
+			limit = { culture = afro_american }
+			militancy = -5
+			ideology = {
+				factor = 0.25
+				value = progressive
+			}
+		}
+		
+		#Grant the right to vote to African Americans
+		political_reform = minorities_equal_rights
+		
+		#Racists are furious
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				factor = 5
+				ideology = conservative
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = traditionalist
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = populist
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = nationalist
+			}
+		}
+		
+		ai_chance = { 
+			factor = 0.8 
+			modifier = { factor = 0 citizenship_policy = residency }
+		}
+	}
+
+	option = {
+		name = "We shall never give in!"
+		
+		#African Americans are furious
+		any_pop = { 
+			limit = { culture = afro_american }
+			militancy = 10
+			ideology = {
+				factor = 0.25
+				value = nationalist
+			}
+		}
+		
+		#Socialists are not happy
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				factor = 5
+				ideology = socialist
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = communist
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = communist_social
+			}
+		}
+		
+		ai_chance = { factor = 0.2 }
+	}
+}
