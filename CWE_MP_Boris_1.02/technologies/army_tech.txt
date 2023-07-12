@@ -1641,6 +1641,8 @@ first_generation_subsonic_jet_fighters = {
 
 	#Interceptor Fighter
 	activate_unit = cavalry 
+
+	activate_building = aeroplane_factory
 	
 	ai_chance = {
 		factor = 1.1
