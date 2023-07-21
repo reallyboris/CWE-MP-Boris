@@ -14,11 +14,11 @@ rebel =
 }
 
 life_needs = {
-	grain = 2.75
+	grain = 3
 }
 
 everyday_needs = {
-	grain = 4
+	grain = 2
 	fish = 1
 	cattle = 1
 	fruit = 0.75
@@ -27,12 +27,12 @@ everyday_needs = {
 	coffee = 0.65
 	tea = 0.65
 	sugar = 0.4
-    canned_food = 2
+    canned_food = 4
 	furniture = 0.5
-	beverages = 1
+	beverages = 4
 	pharmaceuticals = 0.25
 	cigarettes = 0.2	
-	heating_electricity = 0.75
+	heating_electricity = 1
 	cement = 0.5
 	fuel = 0.2
 	paper = 0.1		

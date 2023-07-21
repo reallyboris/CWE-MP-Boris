@@ -643,8 +643,9 @@ integrated_circuits_factory = {
 	template = advanced_factory_template
 	input_goods = {    
 		inorganic_chemicals = 4	
-		copper_wire = 2
-		other_minerals = 1
+		copper_wire = 3
+		other_minerals = 4
+		aluminium = 1
 	}
 	output_goods = integrated_circuits 
 	value = 6.5
@@ -667,13 +668,13 @@ integrated_circuits_factory = {
 optics_factory = {       
 	template = advanced_factory_template
 	input_goods = {    
-		plastics = 5
-		glass = 4
-		aluminium = 4
+		plastics = 4
+		glass = 3
+		aluminium = 3
 		machine_parts = 1
 	}
 	output_goods = optics 
-	value = 11
+	value = 6
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -704,7 +705,7 @@ electric_gear_factory = {
 		aluminium = 4.5
 	}
 	output_goods = electric_gear 
-	value = 30
+	value = 6
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -1940,7 +1941,7 @@ RGO_template_credit = {
         {
             poptype = farmers
             effect = throughput
-            amount = 10
+            amount = 11
         }
 	}
 	
@@ -2231,12 +2232,12 @@ artisan_luxury_tailor = {
 
 artisan_juicer = {       
 	input_goods = { 
-		fruit = 2
-		coffee = 1
-		tea = 1
+		fruit = 1
+		coffee = 0.5
+		tea = 0.5
 	}
 	output_goods = beverages
-	value = 10
+	value = 2
 	
 	owner = {
 		poptype = artisans 
@@ -2304,7 +2305,7 @@ artisan_luxury_carpenter = {
 
 artisan_jeweller = {       
 	input_goods = { 
-		gold_silver = 2
+		gold_silver = 3
 		glass = 2
 	}
 	output_goods = jewellery
@@ -2322,11 +2323,11 @@ artisan_jeweller = {
 
 artisan_cigaratte = {       
 	input_goods = {    
-		paper = 1
-		tobacco = 1
+		paper = 2
+		tobacco = 2
 	}
 	output_goods = cigarettes 
-	value = 8
+	value = 4
 	owner = {
 		poptype = artisans 
 		effect = output
@@ -2345,7 +2346,7 @@ artisan_electric_gear = {
 		aluminium = 1
 	}
 	output_goods = electric_gear 
-	value = 8
+	value = 4
 	owner = {
 		poptype = artisans 
 		effect = output
