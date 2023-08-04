@@ -23,62 +23,6 @@ country_event = {
 	}
 }
 
-#The Spiegel Affair
-country_event = {
-  id = 8004522
-  title = "The Spiegel Affair"
-  desc = EVT_8004522_DESC
-  picture = "nwo2_spiegel_affair"
-  fire_only_once = yes
-
-	trigger = {
-		tag = GER
-		year = 1962
-		NOT = { year = 1967 }
-		
-		OR = { government = democracy government = democracy1 }
-		is_vassal = no
-		war = no
-		election = no
-		
-		#CDU
-		ruling_party_ideology = conservative
-	
-		#East Germany
-		DDR = { exists = yes ruling_party_ideology = communist }
-	}
-
-	mean_time_to_happen = { months = 10 }
-
-	option = {
-		name = "Suppress the Press!"
-		
-		any_pop = { 
-			militancy = -2
-			consciousness = -3
-		}
-		
-		#Undermine the Press
-		political_reform = firewall_publishing
-		
-		add_country_modifier = { name = ruling_party_scandal duration = 365 }
-		
-		set_country_flag = spiegel_affair_flag
-	}
-	
-	option = {
-		name = "Admit our mistake"
-		prestige = -40
-		
-		#Opposition becomes more popular
-		any_pop = { 
-			militancy = 2
-			consciousness = 3
-			ideology = { factor = 0.10 value = socialist }
-		}
-	}
-}
-
 #The Fall of Konrad Adenauer, 1963
 country_event = {
   id = 8004506
@@ -422,7 +366,7 @@ country_event = {
 	fire_only_once = yes
  
 	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
+		OR = { tag = GER }
 		year = 1967
 		NOT = { year = 1990 }
 		
@@ -535,42 +479,6 @@ country_event = {
 	}
 }
 
-#Munich Massacre ( special event for West Germany if Olympics host )
-country_event = {
-  id = 8004331
-  title = EVT_8004331_NAME
-  desc = EVT_8004331_DESC
-  picture = "munich_massacre"
-  
-	fire_only_once = yes
-
-	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
-		has_country_modifier = years_of_lead
-		NOT = { year = 1990 }
-		
-		OR = { government = democracy government = democracy1 government = hms_government }
-		
-		has_country_flag = olympics_ongoing
-		
-		NOT = { has_country_flag = munich_massacre_happened }
-	}
-
-	mean_time_to_happen = { days = 7 }
-
-	option = {
-		name = EVT_8004331_A
-		prestige = -25
-		
-		any_pop = { consciousness = 2 }
-		
-		any_owned = { limit = { has_province_modifier = olympics_city } add_province_modifier = { name = terrorist_chaos duration = 365 } }
-		add_country_modifier = { name = recent_terrorist_attack duration = 183 }
-		
-		set_country_flag = munich_massacre_happened
-	}
-}
-
 #The German Autumn
 country_event = { 
   id = 8004332
@@ -581,7 +489,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
+		OR = { tag = GER }
 		year = 1977
 		NOT = { year = 1990 }
 	
@@ -613,7 +521,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
+		OR = { tag = GER }
 		year = 1980 
 		month = 9
 		NOT = { year = 1990 }
@@ -633,113 +541,6 @@ country_event = {
 		any_pop = { consciousness = 2 }
 		599 = { add_province_modifier = { name = terrorist_chaos duration = 365 } } #Munich
 		add_country_modifier = { name = recent_terrorist_attack duration = 183 }
-	}
-}
-
-#West Berlin discotheque bombing
-country_event = {
-  id = 8004334
-  title = EVT_8004334_NAME
-  desc = EVT_8004334_DESC
-  picture = "west_berlin_bombing"
-  
-	fire_only_once = yes
-
-	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
-		year = 1986
-		NOT = { year = 1990 }
-		
-		OR = { government = democracy government = democracy1 government = hms_government }
-		is_vassal = no
-		war = no
-		
-		#Owns Berlin
-		owns = 549
-		
-		#Cold War ongoing
-		has_global_flag = blocsenabled
-		
-		has_country_modifier = years_of_lead
-		
-		#Good relations with USA
-		relation = { who = USA value = 100 }
-
-		#Gaddafi
-		LBY = { 
-			exists = yes 
-			is_vassal = no 
-			OR = { government = nationalist_dictatorship government = populist_dictatorship government = theocracy } 
-		}
-	}
-
-	mean_time_to_happen = { months = 4 }
-
-	option = {
-		name = EVT_8004334_A
-		prestige = -25
-		relation = { who = LBY value = -100 }
-		any_pop = { consciousness = 2 }
-		549 = { add_province_modifier = { name = terrorist_chaos duration = 365 } } #Berlin
-		add_country_modifier = { name = recent_terrorist_attack duration = 183 }
-		USA = { country_event = 8004435 }
-	}
-}
-
-#West Berlin discotheque bombing - USA response
-country_event = {
-  id = 8004335
-  title = EVT_8004335_NAME
-  desc = EVT_8004335_DESC
-  picture = "west_berlin_bombing"
-  
-	is_triggered_only = yes
-
-	option = {
-		name = EVT_8004335_A
-		relation = { who = LBY value = -100 }
-		casus_belli = { target = LBY type = cut_down_to_size months = 24 }
-		money = -100000
-		ai_chance = { factor = 0.9 }
-	}
-	
-	option = {
-		name = EVT_8004335_B
-		prestige = -25
-		ai_chance = { factor = 0.1 }
-	}
-}
-
-#Weiterstadt Prison bombing / End of the years of lead
-country_event = {
-  id = 8004336
-  title = EVT_8004336_NAME
-  desc = EVT_8004336_DESC
-  picture = "weiterstadt_prison_bombing"
-  
-	fire_only_once = yes
-
-	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
-		year = 1993
-		has_country_modifier = years_of_lead
-		
-		OR = { government = democracy government = democracy1 government = hms_government }
-		is_vassal = no
-		war = no
-		
-		#Darmstadt
-		owns = 2560
-	}
-
-	mean_time_to_happen = { months = 3 }
-
-	option = {
-		name = EVT_8004336_A
-		prestige = -25
-		2560 = { infrastructure = -1 } #Darmstadt
-		remove_country_modifier = years_of_lead
-		any_pop = { militancy = -3 }
 	}
 }
 
