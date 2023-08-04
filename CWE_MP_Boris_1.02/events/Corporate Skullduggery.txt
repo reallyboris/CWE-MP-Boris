@@ -65,7 +65,7 @@ title = "Multi-National Companies Gain in Influence"
 NOT = { has_country_modifier = mnc_corruption }
 capital_scope = { has_province_modifier = mnc_start }
 OR = { has_country_modifier = mnchigh has_country_modifier = mncmedium }
-NOT = { OR = { has_country_modifier = low_government_corruption has_country_modifier = minimal_government_corruption } }
+#NOT = { OR = { has_country_modifier = low_government_corruption has_country_modifier = minimal_government_corruption } }
 NOT = { ruling_party_ideology = communist }
 	}
 	
@@ -73,10 +73,6 @@ mean_time_to_happen = {
 		months = 120
 modifier = { factor = 0.5 has_country_modifier = mnchigh }
 modifier = { factor = 0.75 has_country_modifier = mncmedium }
-modifier = { factor = 0.90 has_country_modifier = low_societal_corruption }
-modifier = { factor = 0.80 has_country_modifier = medium_societal_corruption }
-modifier = { factor = 0.60 has_country_modifier = large_societal_corruption }
-modifier = { factor = 0.50 has_country_modifier = massive_societal_corruption }
 	}
 
 	option = {
@@ -97,7 +93,7 @@ has_country_modifier = mnc_corruption
 NOT = { has_country_modifier = mnc_corrupt_leadership }
 capital_scope = { has_province_modifier = mnc_start }
 OR = { has_country_modifier = mnchigh has_country_modifier = mncmedium }
-NOT = { OR = { has_country_modifier = low_government_corruption has_country_modifier = minimal_government_corruption } }
+#NOT = { OR = { has_country_modifier = low_government_corruption has_country_modifier = minimal_government_corruption } }
 NOT = { ruling_party_ideology = communist }
 	}
 	
@@ -105,9 +101,6 @@ mean_time_to_happen = {
 		months = 120
 modifier = { factor = 0.5 has_country_modifier = mnchigh }
 modifier = { factor = 0.75 has_country_modifier = mncmedium }
-modifier = { factor = 0.80 has_country_modifier = medium_societal_corruption }
-modifier = { factor = 0.60 has_country_modifier = large_societal_corruption }
-modifier = { factor = 0.50 has_country_modifier = massive_societal_corruption }
 	}
 
 	option = {

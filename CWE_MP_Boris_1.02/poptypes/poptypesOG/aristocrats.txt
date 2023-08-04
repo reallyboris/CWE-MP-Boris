@@ -24,33 +24,33 @@ everyday_needs = {
 	fruit = 3
 	clothes = 4
 	footwear = 3
-	coffee = 1
-	tea = 1
-	sugar = 0.5
+	coffee = 3
+	tea = 3
+	sugar = 2
     canned_food = 5
 	furniture = 3
-	beverages = 8
+	beverages = 3
 	cigarettes = 2	
 	pharmaceuticals = 1
 	heating_electricity = 5
-	cement = 4
+	cement = 5
 	fuel = 2
 	paper = 1
 	telecommunications = 3
-	transport = 2.5
+	transport = 2
 	small_arms = 0.5
 	natural_gas = 0.4
 }
 
 luxury_needs = {
 	furniture_houseware = 2
-	beverage_tobacco = 4	
+	beverage_tobacco = 3	
 	automobiles = 10
 	jewellery = 10
 	health = 2
 	communication = 5
 	education_rnd = 5
-	culture = 10
+	culture = 5
 	recreation = 15
 	financial_services = 15
 	clothes_footwear = 4
@@ -61,8 +61,8 @@ luxury_needs = {
 
 country_migration_target = {
 	factor = 1
-
-		#Immigrants go for low tax places only
+	
+	#Immigrants go for low tax places only
 	modifier = {
 		factor = 0.50
 		rich_tax = 0.50
@@ -76,22 +76,10 @@ country_migration_target = {
 		rich_tax = 0.70
 	}
 	
-	#Immigrants love some continents
-	modifier = {
-        factor = 0.25
-		
-		THIS = { 
-			NOT = { 
-				capital_scope = { 
-					OR = { 
-						continent = europe
-						continent = north_america 
-						continent = oceania
-					} 
-				}
-			}
-		}
-		
+	#Immigration to democracies is encouraged
+	modifier = { 
+		factor = 1.50
+		number_of_states = 2
 		OR = { 
 			government = socialist_democracy 
 			government = democracy 
@@ -99,15 +87,7 @@ country_migration_target = {
 			government = hms_government 
 			government = hms_government1 
 		}
-		
-		capital_scope = { 
-			OR = { 
-				continent = europe
-				continent = north_america 
-				continent = oceania
-			} 
-		}
-    }
+	}
 	
 	#Immigration to radical dictatorships is discouraged
 	modifier = { 
@@ -158,7 +138,7 @@ country_migration_target = {
 		literacy = 0.15
 		number_of_states = 2
 	}
-
+	
 	#Immigrants like GPs and SPs
 	modifier = {
 		factor = 1.50
@@ -216,7 +196,7 @@ country_migration_target = {
 		factor = 0.50
 		revolt_percentage = 0.5
 	}
-
+	
 	#Immigrants like low militancy places
 	modifier = {
 		factor = 0.8
@@ -250,267 +230,105 @@ country_migration_target = {
 		factor = 1.25
 		minorities_reform = minorities_affirmative_action
 	}
-
-	#Rich and middle love colonial nations
-	modifier = {
-		factor = 0.25
-		THIS = { colonial_nation = no }
-		colonial_nation = yes
-	}
-
-	#Immigration policy
 	
-	modifier = {
-		factor = -0.50
-		immigration_policy = quota_immigration
-	}
-	modifier = {
-		factor = 0.25
-		immigration_policy = naturalization
-	}
-	modifier = {
-		factor = 0.50
-		immigration_policy = promoted_immigration
+	#Less welcoming government decreases immigration
+	modifier = { 
+		factor = 0.50 
+		citizenship_policy = residency 
 	}
 	
-	#Go for low tax places only
-	modifier = {
-		factor = -0.5
-		rich_tax = 0.50
-	}
-	modifier = {
-		factor = -0.5
-		rich_tax = 0.60
-	}
-	modifier = {
-		factor = -0.5
-		rich_tax = 0.70
-	}
-
-	#Reduce immigration between continents
-
+	#More welcoming government increases immigration
 	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = europe } }
-		capital_scope = { continent = europe }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = asia } }
-		capital_scope = { continent = asia }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = mena } }
-		capital_scope = { continent = mena }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = africa } }
-		capital_scope = { continent = africa }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = north_america } }
-		capital_scope = { continent = north_america }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = south_america } }
-		capital_scope = { continent = south_america }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = oceania } }
-		capital_scope = { continent = oceania }
-	}
-
-	#Rebellions encourage immigration
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.1
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.2
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.3
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.4
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.5
-	}
-
-	#Immigration to democracies is encouraged
-
-	modifier = { 
-		factor = 0.5
-
-		OR = { 
-			government = socialist_democracy 
-			government = democracy 
-			government = democracy1 
-			government = hms_government 
-			government = hms_government1 
-		}
-
-	}
-	
-	#Minorities - immigrants don't go to countries that oppress minorities
-	
-	modifier = { 
-		factor = -0.25
-		minorities_reform = minorities_oppression
-		THIS = { NOT = { is_culture_group = THIS  } }
-	}
-	modifier = { 
-		factor = 0.25
-		minorities_reform = minorities_affirmative_action
-		THIS = { NOT = { is_culture_group = THIS  } }
+		factor = 1.25 
+		citizenship_policy = full_citizenship 
 	}
 
 	#Less immigration to underdeveloped nations
-
 	modifier = { 
 		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
 		NOT = { literacy = 0.05 }
 	}
-
 	modifier = { 
 		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
 		NOT = { literacy = 0.10 }
 	}
-
 	modifier = { 
 		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
 		NOT = { literacy = 0.20 }
 	}
+	modifier = { 
+		factor = 0.5
+		NOT = { literacy = 0.25 }
+	}
 
-	#Unemployment increases immigration - Craftsmen
-
+	#National unemployment decreases immigration
     modifier = {
-        factor = -0.1
-        unemployment = 0.05
-    }
-    modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.1
     }
     modifier = {
-        factor = -0.1
-        unemployment = 0.15
-    }
-    modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.2
     }
     modifier = {
-        factor = -0.1
-        unemployment = 0.25
-    }
-    modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.3
     }
     modifier = {
-        factor = -0.1
-        unemployment = 0.35
+        factor = 0.75
+        unemployment = 0.4
     }
     modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.5
     }
-
-	#Neighbouring nations are preferred
-
-	modifier = { 
-		factor = 0.75
-		NOT = { war_with = THIS } 
-		neighbour = THIS 
-	}
-
-	modifier = { 
-		factor = 0.25
-		is_greater_power = no
-		is_secondary_power = no
-		NOT = { neighbour = THIS }
-	}
-
-	modifier = { 
-		factor = 0.50
-		is_secondary_power = yes
-		NOT = { neighbour = THIS }
-	}
-
-	modifier = { 
-		factor = 0.75
-		is_greater_power = yes
-		NOT = { neighbour = THIS }
-	}
-
-	#Immigration by war
-
-	modifier = { 
-		factor = 2
-		war = no
-		THIS = { war = yes }
-		NOT = { war_with = THIS } 
-		neighbour = THIS 
-	}
-
-	modifier = { 
-		factor = 1.5 
-		THIS = { war = yes }
-		NOT = { war_with = THIS }
-		neighbour = THIS  
-	}
-
-	#More welcoming government increases immigration
-
-	modifier = { factor = -0.75 citizenship_policy = residency }
-
-	modifier = { factor = 0.25 citizenship_policy = full_citizenship }
+    modifier = {
+        factor = 0.75
+        unemployment = 0.6
+    }
+    modifier = {
+        factor = 0.75
+        unemployment = 0.7
+    }
+    modifier = {
+        factor = 0.75
+        unemployment = 0.8
+    }
 
 	#Cultural immigration
-
 	modifier = { 
-		factor = 0.5
+		factor = 1.5
 		is_culture_group = THIS 
 	}
-	
 	modifier = { 
-		factor = 0.5
+		factor = 1.5
 		is_primary_culture = THIS
 	}
 	
-	#Genocide - Primary and accepted culture stays
+	#Genocide - Primary and accepted culture
 	modifier = { 
-		factor = -0.50
-		THIS = { has_country_flag = ethnic_cleansed }
-		is_culture_group = THIS 
+		factor = 0.1
+		has_country_flag = ethnic_cleansed
+		NOT = { is_culture_group = THIS }
+	}
+	
+	### Better Education Funding ###
+
+	modifier = { 
+		factor = 1.1
+		education = public_education
+	}
+	modifier = { 
+		factor = 1.2
+		education = subsidised_higher_education
+	}
+	modifier = { 
+		factor = 1.3
+		education = public_higher_education
+	}
+	modifier = { 
+		factor = 1.4
+		education = unlimited_education
 	}
 	
 }
@@ -604,6 +422,11 @@ migration_target = {
         is_overseas = yes
         country = { immigration_policy = nobody_gets_out }
     }
+	###Pop will avoid overseas provinces###
+	modifier = {
+        factor = 0.1
+        is_overseas = yes
+    }
 	###Pop prefers provinces where their culture is present###
     modifier = {
         factor = 1.2
@@ -617,6 +440,7 @@ migration_target = {
 	###Pop will *greatly* prefers provinces and states with a majority of their culture if they have factories###
     modifier = {
         factor = 2
+		is_overseas = no
         OR = {
             is_accepted_culture = yes
             is_primary_culture = yes
@@ -642,6 +466,7 @@ migration_target = {
 	###Pop prefers state capitals###
     modifier = {
         factor = 2
+		is_overseas = no
         is_state_capital = yes
     }
 	###Pop prefers the national capital###
@@ -658,13 +483,8 @@ migration_target = {
 	
 	### Urbanisation ###
 	modifier = {
-		factor = 2
+		factor = 1.50
 		is_state_capital = yes
-		country = { has_country_flag = urban_focus }	
-	}		
-	modifier = {
-		factor = 2
-		is_capital = yes
 		country = { has_country_flag = urban_focus }
 	}
 }
@@ -847,11 +667,14 @@ promote_to = {
 	{
 		factor = 0.01
 		group = {
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.10 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.15 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.20 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.25 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.30 } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.10 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.15 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.20 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.25 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.30 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.35 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.40 } } }
+			modifier = { factor = 5 location = { unemployment_by_type = { type = aristocrats value = 0.45 } } }
 		}
 	
 	}
@@ -872,12 +695,47 @@ promote_to = {
 			}
 		}
 		
+		#Executives demote in colonial states as there are no factories
+		modifier = {
+			factor = 25
+			location = { is_colonial = yes }
+			NOT = { state_scope = { work_available = { worker = aristocrats } } }
+		}
+
+		#Unemployed aristocrats turn into artisans
 		group = {
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.10 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.15 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.20 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.25 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.30 } }
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.1 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.2 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.3 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.4 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.5 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.6 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.7 } }  
+			}
+			modifier = {
+				factor = 5
+				location = { unemployment_by_type = { type = aristocrats value = 0.8 } }  
+			}
 		}
 	
 	}
@@ -1144,56 +1002,7 @@ promote_to = {
 			}
 			modifier = {
 				factor = -100
-				state_scope = { bureaucrats = 0.1 }
-			}
-		}
-		modifier = {
-			factor = -100 
-			OR = {
-				AND = {
-					country = { has_country_flag = crat_1 }
-					state_scope = { bureaucrats = 0.01 }
-				}
-				AND = {
-					country = { has_country_flag = crat_2 }
-					state_scope = { bureaucrats = 0.02 }
-				}
-				AND = {
-					country = { has_country_flag = crat_3 }
-					state_scope = { bureaucrats = 0.03 }
-				}
-				AND = {
-					country = { has_country_flag = crat_4 }
-					state_scope = { bureaucrats = 0.04 }
-				}
-				AND = {
-					country = { has_country_flag = crat_4 }
-					state_scope = { bureaucrats = 0.4 }
-				}
-				AND = {
-					country = { has_country_flag = crat_5 }
-					state_scope = { bureaucrats = 0.05 }
-				}
-				AND = {
-					country = { has_country_flag = crat_6 }
-					state_scope = { bureaucrats = 0.06 }
-				}
-				AND = {
-					country = { has_country_flag = crat_7 }
-					state_scope = { bureaucrats = 0.07 }
-				}
-				AND = {
-					country = { has_country_flag = crat_8 }
-					state_scope = { bureaucrats = 0.08 }
-				}
-				AND = {
-					country = { has_country_flag = crat_9 }
-					state_scope = { bureaucrats = 0.09 }
-				}
-				AND = {
-					country = { has_country_flag = crat_10 }
-					state_scope = { bureaucrats = 0.1 }
-				}
+				state_scope = { bureaucrats = 0.040 }
 			}
 		}
 		
@@ -1276,7 +1085,7 @@ promote_to = {
 		}		
 		modifier = {
 			factor = 3
-	security_reform  = security_clearance_for_gov_services
+			security_reform  = security_clearance_for_gov_services
 		}
 		modifier = {
 			factor = 4
@@ -1285,50 +1094,50 @@ promote_to = {
 		
 		group = {
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.1
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.2
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.3
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.4
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.5
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.6
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.7
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.8
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.9
 			}
 			modifier = {
-				factor = 5
+				factor = 2
 				crime_fighting = 0.99
 			}
 		}
 		modifier = {
 			factor = 6
 			crime_fighting = 0.74
-	location = { is_colonial = yes owner = { ai = yes } }
+			location = { is_colonial = yes owner = { ai = yes } }
 		}
 	}
 
@@ -2041,7 +1850,6 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 			literacy = 0.15
 			country = {
 				NOT = { government = absolute_monarchy }
-				NOT = { has_country_flag = semi_democratic_dictatorship }
 				has_country_flag = president_for_life
 			}
 		}
@@ -2188,7 +1996,6 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 			literacy = 0.15
 			country = {
 				NOT = { government = absolute_monarchy }
-				NOT = { has_country_flag = semi_democratic_dictatorship }
 				has_country_flag = president_for_life
 			}
 		}
@@ -4289,6 +4096,134 @@ issues = {
 	# first_past_the_post
 	#jefferson_method
 	#proportional_representation
+	
+incarceration = {
+    factor = 1
+
+	#Not next reform
+	modifier = {
+		factor = 0
+		NOT = { is_next_reform = incarceration }
+	}
+
+    modifier = {
+        factor = 1.2
+        OR = {
+            pop_majority_ideology = liberal
+            pop_majority_ideology = socialist
+			pop_majority_ideology = progressive
+        }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 7
+        state_scope = { is_colonial = no }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 8
+        state_scope = { is_colonial = no }
+    }
+
+    modifier = {
+        factor = 1.4
+        consciousness = 7
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.4
+        consciousness = 8
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 9
+    }
+
+    modifier = {
+        factor = 1.3
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.2
+        OR = { is_accepted_culture = yes is_primary_culture = yes }
+		OR = {
+			nationalvalue = nv_equality
+			nationalvalue = nv_liberty
+			nationalvalue = nv_progressivism
+		}
+	}
+
+    modifier = {
+        factor = 1.3
+        literacy = 0.20
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.5
+        literacy = 0.25
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.6
+        literacy = 0.30
+    }
+}
+
+rehabilitation = {
+    factor = 1
+	
+	#Not next reform
+	modifier = {
+		factor = 0
+		NOT = { is_next_reform = rehabilitation }
+	}
+
+    modifier = {
+        factor = 1.2
+        OR = {
+            pop_majority_ideology = liberal
+            pop_majority_ideology = socialist
+			pop_majority_ideology = progressive
+        }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 7
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 8
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 9
+    }
+
+    modifier = {
+        factor = 1.2
+        OR = { is_accepted_culture = yes is_primary_culture = yes }
+		OR = {
+			nationalvalue = nv_equality
+			nationalvalue = nv_liberty
+			nationalvalue = nv_progressivism
+		}
+    }
+    modifier = {
+        factor = 1.6
+        literacy = 0.35
+    }
+}
 
 # Social Reforms 
 

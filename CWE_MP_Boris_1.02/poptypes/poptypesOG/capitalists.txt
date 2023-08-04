@@ -1,11 +1,12 @@
-sprite = 1
-color = { 11 40 93 }
+sprite = 4
+color = { 18 129 10 }
 strata = rich
-unemployment = yes
-can_work_factory = yes
 #state_capital_only = yes
-can_build = yes
-rebel = {
+
+#demote_migrant = yes
+
+rebel =
+{
 	artillery = 0.2 #Artillery
 	cavalry = 0.1	#Interceptor
 	bomber = 0.1	#Bomber
@@ -14,55 +15,57 @@ rebel = {
 	tank = 0.2 #tank
 }
 
+can_build = yes
+
 life_needs = {
-	grain = 3
+	grain = 3.3
 }
 
 everyday_needs = {
-	fish = 3
-	cattle = 5
-	fruit = 3
-	clothes = 4
-	footwear = 3
-	coffee = 1
-	tea = 1
-	sugar = 0.5
+	clothes = 5
+	footwear = 5
+	fish = 2
+	cattle = 4
+	fruit = 2
+	coffee = 3
+	tea = 3
+	sugar = 2
     canned_food = 5
-	furniture = 3
-	beverages = 8
-	cigarettes = 2	
+	furniture = 5
+	beverages = 10
+	cigarettes = 3	
 	pharmaceuticals = 1
 	heating_electricity = 5
-	cement = 4
-	fuel = 2
+	cement = 3
+	fuel = 5
 	paper = 1
-	telecommunications = 3
-	transport = 2.5
-	small_arms = 0.5
-	natural_gas = 0.4
+	telecommunications = 4
+	transport = 4
+	natural_gas = 0.5
 }
 
 luxury_needs = {
-	furniture_houseware = 2
-	beverage_tobacco = 4	
-	automobiles = 10
-	jewellery = 10
+	furniture_houseware = 5
+	beverage_tobacco = 6	
+	automobiles = 8
+	jewellery = 5
 	health = 2
-	communication = 5
-	education_rnd = 5
-	culture = 10
-	recreation = 15
-	financial_services = 15
+	communication = 10
+	education_rnd = 7.5
+	culture = 5
+	recreation = 10
+	financial_services = 22.5
 	clothes_footwear = 4
-	aeroplanes = 4
-	ships = 4
-	gold_silver = 2
+	aeroplanes = 2
+	ships = 2	
+	gold_silver = 0.5
+	computers = 0.1
 }
 
 country_migration_target = {
 	factor = 1
-
-		#Immigrants go for low tax places only
+	
+	#Immigrants go for low tax places only
 	modifier = {
 		factor = 0.50
 		rich_tax = 0.50
@@ -76,22 +79,10 @@ country_migration_target = {
 		rich_tax = 0.70
 	}
 	
-	#Immigrants love some continents
-	modifier = {
-        factor = 0.25
-		
-		THIS = { 
-			NOT = { 
-				capital_scope = { 
-					OR = { 
-						continent = europe
-						continent = north_america 
-						continent = oceania
-					} 
-				}
-			}
-		}
-		
+	#Immigration to democracies is encouraged
+	modifier = { 
+		factor = 1.50
+		number_of_states = 2
 		OR = { 
 			government = socialist_democracy 
 			government = democracy 
@@ -99,15 +90,7 @@ country_migration_target = {
 			government = hms_government 
 			government = hms_government1 
 		}
-		
-		capital_scope = { 
-			OR = { 
-				continent = europe
-				continent = north_america 
-				continent = oceania
-			} 
-		}
-    }
+	}
 	
 	#Immigration to radical dictatorships is discouraged
 	modifier = { 
@@ -158,7 +141,7 @@ country_migration_target = {
 		literacy = 0.15
 		number_of_states = 2
 	}
-
+	
 	#Immigrants like GPs and SPs
 	modifier = {
 		factor = 1.50
@@ -216,7 +199,7 @@ country_migration_target = {
 		factor = 0.50
 		revolt_percentage = 0.5
 	}
-
+	
 	#Immigrants like low militancy places
 	modifier = {
 		factor = 0.8
@@ -250,267 +233,105 @@ country_migration_target = {
 		factor = 1.25
 		minorities_reform = minorities_affirmative_action
 	}
-
-	#Rich and middle love colonial nations
-	modifier = {
-		factor = 0.25
-		THIS = { colonial_nation = no }
-		colonial_nation = yes
-	}
-
-	#Immigration policy
 	
-	modifier = {
-		factor = -0.50
-		immigration_policy = quota_immigration
-	}
-	modifier = {
-		factor = 0.25
-		immigration_policy = naturalization
-	}
-	modifier = {
-		factor = 0.50
-		immigration_policy = promoted_immigration
+	#Less welcoming government decreases immigration
+	modifier = { 
+		factor = 0.50 
+		citizenship_policy = residency 
 	}
 	
-	#Go for low tax places only
-	modifier = {
-		factor = -0.5
-		rich_tax = 0.50
-	}
-	modifier = {
-		factor = -0.5
-		rich_tax = 0.60
-	}
-	modifier = {
-		factor = -0.5
-		rich_tax = 0.70
-	}
-
-	#Reduce immigration between continents
-
+	#More welcoming government increases immigration
 	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = europe } }
-		capital_scope = { continent = europe }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = asia } }
-		capital_scope = { continent = asia }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = mena } }
-		capital_scope = { continent = mena }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = africa } }
-		capital_scope = { continent = africa }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = north_america } }
-		capital_scope = { continent = north_america }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = south_america } }
-		capital_scope = { continent = south_america }
-	}
-
-	modifier = { 
-		factor = 0.25
-		THIS = { capital_scope = { continent = oceania } }
-		capital_scope = { continent = oceania }
-	}
-
-	#Rebellions encourage immigration
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.1
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.2
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.3
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.4
-	}
-
-	modifier = { 
-		factor = -0.75
-		revolt_percentage = 0.5
-	}
-
-	#Immigration to democracies is encouraged
-
-	modifier = { 
-		factor = 0.5
-
-		OR = { 
-			government = socialist_democracy 
-			government = democracy 
-			government = democracy1 
-			government = hms_government 
-			government = hms_government1 
-		}
-
-	}
-	
-	#Minorities - immigrants don't go to countries that oppress minorities
-	
-	modifier = { 
-		factor = -0.25
-		minorities_reform = minorities_oppression
-		THIS = { NOT = { is_culture_group = THIS  } }
-	}
-	modifier = { 
-		factor = 0.25
-		minorities_reform = minorities_affirmative_action
-		THIS = { NOT = { is_culture_group = THIS  } }
+		factor = 1.25 
+		citizenship_policy = full_citizenship 
 	}
 
 	#Less immigration to underdeveloped nations
-
 	modifier = { 
 		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
 		NOT = { literacy = 0.05 }
 	}
-
 	modifier = { 
 		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
 		NOT = { literacy = 0.10 }
 	}
-
 	modifier = { 
 		factor = 0.5
-		is_greater_power = no
-		is_secondary_power = no
 		NOT = { literacy = 0.20 }
 	}
+	modifier = { 
+		factor = 0.5
+		NOT = { literacy = 0.25 }
+	}
 
-	#Unemployment increases immigration - Craftsmen
-
+	#National unemployment decreases immigration
     modifier = {
-        factor = -0.1
-        unemployment = 0.05
-    }
-    modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.1
     }
     modifier = {
-        factor = -0.1
-        unemployment = 0.15
-    }
-    modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.2
     }
     modifier = {
-        factor = -0.1
-        unemployment = 0.25
-    }
-    modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.3
     }
     modifier = {
-        factor = -0.1
-        unemployment = 0.35
+        factor = 0.75
+        unemployment = 0.4
     }
     modifier = {
-        factor = -0.1
+        factor = 0.75
         unemployment = 0.5
     }
-
-	#Neighbouring nations are preferred
-
-	modifier = { 
-		factor = 0.75
-		NOT = { war_with = THIS } 
-		neighbour = THIS 
-	}
-
-	modifier = { 
-		factor = 0.25
-		is_greater_power = no
-		is_secondary_power = no
-		NOT = { neighbour = THIS }
-	}
-
-	modifier = { 
-		factor = 0.50
-		is_secondary_power = yes
-		NOT = { neighbour = THIS }
-	}
-
-	modifier = { 
-		factor = 0.75
-		is_greater_power = yes
-		NOT = { neighbour = THIS }
-	}
-
-	#Immigration by war
-
-	modifier = { 
-		factor = 2
-		war = no
-		THIS = { war = yes }
-		NOT = { war_with = THIS } 
-		neighbour = THIS 
-	}
-
-	modifier = { 
-		factor = 1.5 
-		THIS = { war = yes }
-		NOT = { war_with = THIS }
-		neighbour = THIS  
-	}
-
-	#More welcoming government increases immigration
-
-	modifier = { factor = -0.75 citizenship_policy = residency }
-
-	modifier = { factor = 0.25 citizenship_policy = full_citizenship }
+    modifier = {
+        factor = 0.75
+        unemployment = 0.6
+    }
+    modifier = {
+        factor = 0.75
+        unemployment = 0.7
+    }
+    modifier = {
+        factor = 0.75
+        unemployment = 0.8
+    }
 
 	#Cultural immigration
-
 	modifier = { 
-		factor = 0.5
+		factor = 1.5
 		is_culture_group = THIS 
 	}
-	
 	modifier = { 
-		factor = 0.5
+		factor = 1.5
 		is_primary_culture = THIS
 	}
 	
-	#Genocide - Primary and accepted culture stays
+	#Genocide - Primary and accepted culture
 	modifier = { 
-		factor = -0.50
-		THIS = { has_country_flag = ethnic_cleansed }
-		is_culture_group = THIS 
+		factor = 0.1
+		has_country_flag = ethnic_cleansed
+		NOT = { is_culture_group = THIS }
+	}
+	
+	### Better Education Funding ###
+
+	modifier = { 
+		factor = 1.1
+		education = public_education
+	}
+	modifier = { 
+		factor = 1.2
+		education = subsidised_higher_education
+	}
+	modifier = { 
+		factor = 1.3
+		education = public_higher_education
+	}
+	modifier = { 
+		factor = 1.4
+		education = unlimited_education
 	}
 	
 }
@@ -590,7 +411,7 @@ migration_target = {
 
     modifier = {
         factor = 0
-        NOT = { state_scope = { work_available = { worker = craftsmen } } }
+        NOT = { state_scope = { work_available = { worker = clerks } } }
         can_build_factory = no
 		NOT = {
 			unemployment_by_type = { type = aristocrats value = 0.03 }
@@ -617,6 +438,7 @@ migration_target = {
 	###Pop will *greatly* prefers provinces and states with a majority of their culture if they have factories###
     modifier = {
         factor = 2
+		is_overseas = no
         OR = {
             is_accepted_culture = yes
             is_primary_culture = yes
@@ -642,6 +464,7 @@ migration_target = {
 	###Pop prefers state capitals###
     modifier = {
         factor = 2
+		is_overseas = no
         is_state_capital = yes
     }
 	###Pop prefers the national capital###
@@ -658,678 +481,68 @@ migration_target = {
 	
 	### Urbanisation ###
 	modifier = {
-		factor = 2
+		factor = 1.50
 		is_state_capital = yes
-		country = { has_country_flag = urban_focus }	
-	}		
-	modifier = {
-		factor = 2
-		is_capital = yes
 		country = { has_country_flag = urban_focus }
 	}
+	
 }
 
-promote_to = {
+promote_to =
+{
 
-	capitalists = 
-	{
-		factor = 0.01
-		modifier = {
-			factor = -1
-			state_scope = {
-				has_factories = no
-				NOT = { total_pops = 100000 }
-			}
-		}	
-		modifier = {
-			factor = -1 
-			is_accepted_culture = no
-		}
-		modifier = {
-			factor = -10
-			NOT = { literacy = 0.15 }
-		}
-		
-		modifier = {
-			factor = 3
-			economic_policy = laissez_faire 
-		}
-		
-		group = {
-			modifier = {
-				factor = -1
-				state_scope = { capitalists = 0.001 }
-				country = { ai = no }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { capitalists = 0.003 }
-				country = { ai = no }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { capitalists = 0.005 }
-				country = { ai = no }
-			}
-			modifier = {
-				factor = -100
-				state_scope = { capitalists = 0.007 }
-			}
-		}
-		
-		modifier = {
-			factor = -100
-			OR = {
-				state_scope = { is_colonial = yes }
-				country = { civilized = no }
-				country = { economic_policy = planned_economy }
-			}
-		}
-		
-		#No capitalists in marxist coommunist dictatorships
-		modifier = {
-			factor = -100
-			country = { 
-				OR = {
-					government = proletarian_dictatorship
-					government = proletarian_dictatorship1
-				}
-				economic_policy = planned_economy 
-			}
-		}
-		
-		group = {
-			modifier = {
-				factor = 0.5
-				literacy = 0.15
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.20
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.25
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.30
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.35
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.40
-			}
-		}
-		group = {
-			modifier = {
-				factor = 2
-				luxury_needs = 0.1
-			}
-			modifier = {
-				factor = 2
-				luxury_needs = 0.2
-			}
-			modifier = {
-				factor = 2
-				luxury_needs = 0.3
-			}
-			modifier = {
-				factor = 2
-				luxury_needs = 0.4
-			}
-			modifier = {
-				factor = 2
-				luxury_needs = 0.5
-			}
-		}
-	}
+	aristocrats = { 
+		factor = 0.01 
 
-	officers = {
-		factor = 0.01
-		
-		modifier = {
-			factor = -5
-			state_scope = { officers = 0.002 }
-		}
-		
-		modifier = {
-			factor = -100
-			location = { is_colonial = yes }
-			is_primary_culture = no
-			is_accepted_culture = no
-		}
-		
-		group = {
-			modifier = {
-				factor = 1.5
-				military_spending = 0.6
-			}
-			modifier = {
-				factor = 1.5
-				military_spending = 0.7
-			}
-		}
-
-		group = {
-			modifier = {
-				factor = -0.5
-				luxury_needs = 0.1
-			}
-			modifier = {
-				factor = -0.5
-				luxury_needs = 0.2
-			}
-			modifier = {
-				factor = -0.5
-				luxury_needs = 0.3
-			}
-			modifier = {
-				factor = -0.5
-				luxury_needs = 0.4
-			}
-			modifier = {
-				factor = -0.5
-				luxury_needs = 0.5
-			}
-			modifier = {
-				factor = -0.5
-				luxury_needs = 0.6
-			}
-		}
+	group = { 
+modifier = { factor = 2 luxury_needs = 0.9 }
+modifier = { factor = 2 luxury_needs = 0.8 }
+modifier = { factor = 2 luxury_needs = 0.7 }
+modifier = { factor = 2 luxury_needs = 0.6 }
+modifier = { factor = 2 luxury_needs = 0.5 }
+modifier = { factor = 2 luxury_needs = 0.4 }
+		} 
 
 	}
-	
-	clerks =
-	{
-		factor = 0.01
-		group = {
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.10 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.15 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.20 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.25 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.30 } }
-		}
-	
-	}
-	
-	artisans =
-	{
-		factor = 0.01
-		
-		#No capitalists in marxist coommunist dictatorships
-		modifier = {
-			factor = -100
-			country = { 
-				OR = {
-					government = proletarian_dictatorship
-					government = proletarian_dictatorship1
-				}
-				economic_policy = planned_economy 
-			}
-		}
-		
-		group = {
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.10 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.15 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.20 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.25 } }
-			modifier = { factor = 5 unemployment_by_type = { type = aristocrats value = 0.30 } }
-		}
-	
+
+#Demoted
+
+	clerks = { 
+		factor = 0.01 
+
+	group = { 
+modifier = { factor = 2 NOT = { everyday_needs = 0.5 } } 
+modifier = { factor = 2 NOT = { everyday_needs = 0.4 } }
+modifier = { factor = 2 NOT = { everyday_needs = 0.3 } }
+modifier = { factor = 2 NOT = { everyday_needs = 0.2 } }
+modifier = { factor = 2 NOT = { everyday_needs = 0.1 } }
+		} 
+
+	group = { 
+modifier = { factor = 2 NOT = { luxury_needs = 0.5 } } 
+modifier = { factor = 2 NOT = { luxury_needs = 0.4 } }
+modifier = { factor = 2 NOT = { luxury_needs = 0.3 } }
+modifier = { factor = 2 NOT = { luxury_needs = 0.2 } }
+modifier = { factor = 2 NOT = { luxury_needs = 0.1 } }
+		} 
+
 	}
 
-	clergymen =
-	{
-		factor = 0.01
-		group = {
-			modifier = {
-				factor = 0.5
-				literacy = 0.15
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.20
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.25
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.30
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.35
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.40
-			}
-		}
-		group = {
-			modifier = {
-				factor = 2
-				education_spending = 0.1
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.2
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.3
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.4
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.5
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.6
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.7
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.8
-			}
-			modifier = {
-				factor = 2
-				education_spending = 0.9
-			}
-			modifier = {
-				factor = 2
-				education_spending =0.99
-			}
-		}
-		group = {		
-			modifier = {
-				factor = -2
-				clergymen = 0.004
-			}
-			modifier = {
-				factor = -2
-				clergymen = 0.008
-			}
-			modifier = {
-				factor = -2
-				clergymen = 0.012
-			}			
-			modifier = {
-				factor = -2
-				clergymen = 0.016
-			}			
-			modifier = {
-				factor = -2
-				clergymen = 0.02
-			}			
-			modifier = {
-				factor = -2
-				clergymen = 0.024
-			}			
-			modifier = {
-				factor = -2
-				clergymen = 0.028
-			}			
-			modifier = {
-				factor = -2
-				clergymen = 0.032
-			}			
-			modifier = {
-				factor = -2
-				clergymen = 0.036
-			}			
-			modifier = {
-				factor = -100
-				clergymen = 0.04
-			}						
-		}
-		group = {
-			modifier = {
-				factor = -0.5
-				consciousness = 2
-			}
-			modifier = {
-				factor = -0.5
-				consciousness = 4
-			}
-			modifier = {
-				factor = -0.5
-				consciousness = 5
-			}
-			modifier = {
-				factor = -1
-				consciousness = 6
-			}
-			modifier = {
-				factor = -1.5
-				consciousness = 7
-			}
-			modifier = {
-				factor = -2
-				consciousness = 8
-			}
-		}
-	}
+	craftsmen = { 
+		factor = 0.01 
 
-	bureaucrats = {
-		factor = 0.01
-		modifier = {
-			factor = -100 
-			NOT = { is_accepted_culture = yes }
-			NOT = { is_primary_culture = yes }
-		}
-		
-		group = {
-			modifier = {
-				factor = 0.25
-				literacy = 0.05
-			}
-			modifier = {
-				factor = 0.25
-				literacy = 0.10
-			}
-			modifier = {
-				factor = 0.5
-				literacy = 0.15
-			}
-			modifier = {
-				factor = 0.5
-				literacy = 0.20
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.25
-			}
-			modifier = {
-				factor = 1
-				literacy = 0.30
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.35
-			}
-			modifier = {
-				factor = 2
-				literacy = 0.40
-			}
-		}
-		group = {
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.002 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.004 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.006 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.008 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.010 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.012 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.014 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.016 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.018 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.020 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.022 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.024 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.026 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.028 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.030 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.032 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.034 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.036 }
-			}
-			modifier = {
-				factor = -2
-				state_scope = { bureaucrats = 0.038 }
-			}
-			modifier = {
-				factor = -100
-				state_scope = { bureaucrats = 0.1 }
-			}
-		}
-		modifier = {
-			factor = -100 
-			OR = {
-				AND = {
-					country = { has_country_flag = crat_1 }
-					state_scope = { bureaucrats = 0.01 }
-				}
-				AND = {
-					country = { has_country_flag = crat_2 }
-					state_scope = { bureaucrats = 0.02 }
-				}
-				AND = {
-					country = { has_country_flag = crat_3 }
-					state_scope = { bureaucrats = 0.03 }
-				}
-				AND = {
-					country = { has_country_flag = crat_4 }
-					state_scope = { bureaucrats = 0.04 }
-				}
-				AND = {
-					country = { has_country_flag = crat_4 }
-					state_scope = { bureaucrats = 0.4 }
-				}
-				AND = {
-					country = { has_country_flag = crat_5 }
-					state_scope = { bureaucrats = 0.05 }
-				}
-				AND = {
-					country = { has_country_flag = crat_6 }
-					state_scope = { bureaucrats = 0.06 }
-				}
-				AND = {
-					country = { has_country_flag = crat_7 }
-					state_scope = { bureaucrats = 0.07 }
-				}
-				AND = {
-					country = { has_country_flag = crat_8 }
-					state_scope = { bureaucrats = 0.08 }
-				}
-				AND = {
-					country = { has_country_flag = crat_9 }
-					state_scope = { bureaucrats = 0.09 }
-				}
-				AND = {
-					country = { has_country_flag = crat_10 }
-					state_scope = { bureaucrats = 0.1 }
-				}
-			}
-		}
-		
-		#Health Care
-		modifier = {
-			factor = 2
-			health_care = trinket_health_care
-		}
-		modifier = {
-			factor = 2.5
-			health_care = low_health_care
-		}
-		modifier = {
-			factor = 3
-			health_care = acceptable_health_care
-		}
-		modifier = {
-			factor = 4
-			health_care = good_health_care  
-		}
-		#Education
-		modifier = {
-			factor = 2
-			education = public_education
-		}		
-		modifier = {
-			factor = 3
-			education = subsidised_higher_education
-		}	
-		modifier = {
-			factor = 4
-			education = public_higher_education 
-		}
-		modifier = {
-			factor = 5
-			education = unlimited_education
-		}
-		#Social Service Reform
-		modifier = {
-			factor = 2
-			social_service_reform = social_services
-		}
-		modifier = {
-			factor = 2.5
-		social_service_reform = social_abuse_protection
-		}		
-		modifier = {
-			factor = 3
-		social_service_reform = anti_terror_surveillance
-		}
-		modifier = {
-			factor = 4
-			social_service_reform = the_safety_grid
-		}
-		#child_care
-		modifier = {
-			factor = 2
-			child_care = limited_child_care
-		}
-		modifier = {
-			factor = 2.5
-			child_care = supported_child_care
-		}		
-		modifier = {
-			factor = 3
-			child_care  = parental_leave_child_care
-		}
-		modifier = {
-			factor = 4
-			child_care = state_provided_child_care 
-		}
-		#security_reform
-		modifier = {
-			factor = 2
-			security_reform = security_service
-		}
-		modifier = {
-			factor = 2.5
-			security_reform = security_data_cohesion
-		}		
-		modifier = {
-			factor = 3
-	security_reform  = security_clearance_for_gov_services
-		}
-		modifier = {
-			factor = 4
-			security_reform = preemptive_security_actions
-		}
-		
-		group = {
-			modifier = {
-				factor = 5
-				crime_fighting = 0.1
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.2
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.3
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.4
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.5
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.6
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.7
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.8
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.9
-			}
-			modifier = {
-				factor = 5
-				crime_fighting = 0.99
-			}
-		}
-		modifier = {
-			factor = 6
-			crime_fighting = 0.74
-	location = { is_colonial = yes owner = { ai = yes } }
-		}
+	group = { 
+modifier = { factor = 2 NOT = { life_needs = 0.9 } }
+modifier = { factor = 2 NOT = { life_needs = 0.8 } }
+modifier = { factor = 2 NOT = { life_needs = 0.7 } }
+modifier = { factor = 2 NOT = { life_needs = 0.6 } }
+modifier = { factor = 2 NOT = { life_needs = 0.5 } }
+modifier = { factor = 2 NOT = { life_needs = 0.4 } }
+modifier = { factor = 2 NOT = { life_needs = 0.3 } }
+modifier = { factor = 2 NOT = { life_needs = 0.2 } }
+modifier = { factor = 2 NOT = { life_needs = 0.1 } }
+		} 
+
 	}
 
 }
@@ -1340,7 +553,7 @@ ideologies = {
 
 		modifier = {
 			factor = 1.05
-		 	country = { is_disarmed = yes }
+		 	is_disarmed = yes
 		}
 
 		modifier = {
@@ -1354,7 +567,8 @@ ideologies = {
 		modifier = {
 			factor = 4
 			country = {
-				OR = { government = nationalist_dictatorship government = populist_dictatorship }
+OR = { government = nationalist_dictatorship 
+	government = populist_dictatorship }
 			}
 			OR = {
 				is_primary_culture = yes
@@ -1378,42 +592,19 @@ country = { minorities_reform = minorities_oppression }
 
 		}
 
-modifier = { factor = 1.5 militancy = 8
-country = { is_vassal = yes } }
-
-modifier = { factor = 1.5 militancy = 7
-country = { is_vassal = yes } }
-
-modifier = { factor = 1.5 militancy = 6
-country = { is_vassal = yes } }
+modifier = { factor = 1.5 militancy = 3
+country = { government = colonial_government is_vassal = yes } }
 
 modifier = { factor = 1.5 militancy = 5
-country = { is_vassal = yes } }
-
-modifier = { factor = 1.5 militancy = 4
-country = { is_vassal = yes } }
-
-modifier = { factor = 1.5 militancy = 3
-country = { is_vassal = yes } }
-
-modifier = { factor = 0.25 country = { government = sar_government } }
+country = { NOT = { government = sar_government } is_vassal = yes } }
 
 ###################################################
 
-		# Dynamic Decisions
+# Dynamic Decisions
 
-		modifier = { factor = 1.2 country = { war = yes } }
+modifier = { factor = 1.2 country = { war = yes } }
 
-		modifier = { factor = 1.5 country = { has_country_flag = nationalist_surge } }
-
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = nationalist
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
+modifier = { factor = 1.5 country = { has_country_flag = nationalist_surge } }
 
 
 		modifier = {
@@ -1565,15 +756,6 @@ modifier = { factor = 1.1 country = { has_country_flag = recent_terrorist_attack
 
 modifier = { factor = 1.5 country = { has_country_flag = populist_surge } }
 
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = populist
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
-
 
 		# Immigration Influence
 modifier = { factor = 0.5 NOT = { militancy = 4 } }
@@ -1583,13 +765,26 @@ modifier = { factor = 2.0 location = { has_national_minority = yes } }
 	}
 
 	traditionalist = { 
-		factor = 1 	
+		factor = 1 		
 
-#Starting Ideology Boost
+	modifier = {
+			factor = 0.5
+			NOT = {
+				militancy = 6
+				country = {
+					ruling_party_ideology = traditionalist
+					OR = {
+						government = absolute_monarchy
+						government = theocracy
+					}
+				}
+			}
+		}
 
-modifier = { factor = 4 country = { ruling_party_ideology = traditionalist } everyday_needs = 0.5 NOT = { state_scope = { poor_strata_militancy = 3 } } }
-modifier = { factor = 0.25 country = { ruling_party_ideology = traditionalist } NOT = { everyday_needs = 0.5 } }
-	
+	modifier = {
+			factor = 1.2
+			ruling_party_ideology = traditionalist
+		}
 
 	modifier = {
 			factor = 1.2
@@ -1608,6 +803,18 @@ modifier = { factor = 0.25 country = { ruling_party_ideology = traditionalist } 
 			}
 		}
 
+	modifier = {
+			factor = 0.5
+			consciousness = 6
+		}
+		
+		modifier = {
+			factor = 0.1
+			NOT = {
+				is_accepted_culture = yes
+				is_primary_culture = yes
+			}
+		}
 		modifier = {
 			factor = 1.1
 			NOT = { political_reform_want = 0.05 }
@@ -1666,21 +873,8 @@ modifier = { factor = 1.25 country = { has_country_flag = terror_groups_in } }
 
 modifier = { factor = 1.5 country = { has_country_flag = traditionalist_surge } }
 
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = traditionalist
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
-
 
 # Religious Influence
-
-modifier = { factor = 2 location = { OR = { pop_majority_religion = sunni pop_majority_religion = shiite } } }
-
-modifier = { factor = 2 NOT = { literacy = 0.15 } NOT = { religion = secularism } }
 
 modifier = { factor = 0.05 religion = secularism }
 
@@ -1695,36 +889,31 @@ NOT = { religion = secularism } }
 	}
 
 	conservative = { 
-		factor = 1.4
+		factor = 1.2
 
 		modifier = {
 			factor = 1.5
-			country = { OR = { ruling_party_ideology = socialist ruling_party_ideology = communist ruling_party_ideology = communist_social } }
+country = { OR = { ruling_party_ideology = socialist ruling_party_ideology = communist ruling_party_ideology = communist_social } }
 		}
 
 		modifier = {
 			factor = 1.1
-			literacy = 0.10
 			country = { rich_tax = 0.60 }
 		}
 		modifier = {
 			factor = 1.1
-			literacy = 0.10
 			country = { rich_tax = 0.50 }
 		}
 		modifier = {
 			factor = 1.1
-			literacy = 0.10
 			country = { rich_tax = 0.40 }
 		}
 		modifier = {
 			factor = 1.1
-			literacy = 0.10
 			country = { rich_tax = 0.30 }
 		}
 		modifier = {
 			factor = 1.1
-			literacy = 0.10
 			country = { rich_tax = 0.20 }
 		}
 		
@@ -1819,20 +1008,13 @@ NOT = { religion = secularism } }
 
 # Dynamic Decisions
 
+modifier = { factor = 1.15 country = { has_country_flag = trump } }
+
 modifier = { factor = 1.2 country = { has_country_flag = recent_terrorist_attack } }
 
 modifier = { factor = 1.5 country = { has_country_flag = conservative_surge } }
 
 modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
-
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = conservative
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
 
 
 	}
@@ -1841,27 +1023,6 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 
 	big_tent = { 
 		factor = 1 
-
-		modifier = {
-			factor = 1.1
-			state_scope = { unemployment = 0.25 }
-		}
-		modifier = {
-			factor = 1.1
-			state_scope = { unemployment = 0.20 }
-		}
-		modifier = {
-			factor = 1.1
-			state_scope = { unemployment = 0.15 }
-		}
-		modifier = {
-			factor = 1.1
-			state_scope = { unemployment = 0.10 }
-		}
-		modifier = {
-			factor = 1.1
-			state_scope = { unemployment = 0.05 }
-		}
 
 		modifier = {
 			factor = 1.1
@@ -2029,19 +1190,9 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 		
 		modifier = { 
 			factor = 1.5 
-			country = { 
-				ruling_party_ideology = big_tent
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
-		
-		modifier = { 
-			factor = 1.5 
 			literacy = 0.15
 			country = {
 				NOT = { government = absolute_monarchy }
-				NOT = { has_country_flag = semi_democratic_dictatorship }
 				has_country_flag = president_for_life
 			}
 		}
@@ -2049,7 +1200,39 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 	}
 
 	liberal = { 
-		factor = 0.8
+		factor = 1.4
+
+		modifier = {
+			factor = 1.5
+			literacy = 0.15
+			country = { OR = { ruling_party_ideology = socialist ruling_party_ideology = communist ruling_party_ideology = communist_social } }
+		}
+
+		modifier = {
+			factor = 1.1
+			literacy = 0.15
+			country = { rich_tax = 0.70 }
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.15
+			country = { rich_tax = 0.60 }
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.15
+			country = { rich_tax = 0.50 }
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.15
+			country = { rich_tax = 0.40 }
+		}
+		modifier = {
+			factor = 1.1
+			literacy = 0.15
+			country = { rich_tax = 0.30 }
+		}
 
 		modifier = {
 			factor = 0.5
@@ -2175,20 +1358,10 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 		modifier = { factor = 1.5 country = { has_country_flag = liberal_surge } }
 		
 		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = liberal
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
-		
-		modifier = { 
 			factor = 1.25 
 			literacy = 0.15
 			country = {
 				NOT = { government = absolute_monarchy }
-				NOT = { has_country_flag = semi_democratic_dictatorship }
 				has_country_flag = president_for_life
 			}
 		}
@@ -2206,6 +1379,27 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 				is_accepted_culture = yes
 				is_primary_culture = yes
 			}
+		}
+
+		modifier = {
+			factor = 1.1
+			state_scope = { unemployment = 0.25 }
+		}
+		modifier = {
+			factor = 1.1
+			state_scope = { unemployment = 0.20 }
+		}
+		modifier = {
+			factor = 1.1
+			state_scope = { unemployment = 0.15 }
+		}
+		modifier = {
+			factor = 1.1
+			state_scope = { unemployment = 0.10 }
+		}
+		modifier = {
+			factor = 1.1
+			state_scope = { unemployment = 0.05 }
 		}
 		
 		modifier = {
@@ -2339,14 +1533,7 @@ modifier = { factor = 4 country = { election = yes has_country_flag = elcmedium 
 
 modifier = { factor = 1.5 country = { has_country_flag = socialist_surge } }
 
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = socialist
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
+
 
 	}
 
@@ -2376,7 +1563,7 @@ country = { OR = { government = proletarian_dictatorship government = proletaria
 				
 		modifier = {
 			factor = 2
-			country = { ruling_party_ideology = communist }
+			ruling_party_ideology = communist 
 		}
 		
 		modifier = {
@@ -2463,21 +1650,14 @@ country = { OR = { government = proletarian_dictatorship government = proletaria
 		}
 
 # Cold War and Post Cold War Communism
+		
+modifier = { factor = 0 country = { has_global_flag = blocsenabled } }
+
+modifier = { factor = 0 country = { NOT = { has_global_flag = blocsenabled } } }
 
 modifier = { factor = 1.5 country = { has_country_flag = communist_surge } }
 
 modifier = { factor = 1.1 country = { has_global_flag = blocsenabled has_global_flag = cominform_flag } }
-
-modifier = { factor = 0.1 country = { NOT = { has_global_flag = blocsenabled } } }
-
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = communist
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
 
 	}
 
@@ -2592,23 +1772,17 @@ country = { OR = { government = proletarian_dictatorship government = proletaria
 
 		# ideology special
 
-		modifier = { factor = 0.1 country = { NOT = { has_global_flag = blocsenabled } } }
+modifier = {
+factor = 0 
+country = { NOT = { OR = { government = proletarian_dictatorship government = proletarian_dictatorship1 government = socialist_democracy } } }
+}
 
-		modifier = { factor = 1.5 country = { has_country_flag = communist_social_surge } }
-
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = communist_social
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
-				
+modifier = { factor = 1.5 country = { has_country_flag = communist_social_surge } }
+		
 	}
 
 	progressive = { # political reformist
-		factor = 0.75
+		factor = 1
 		# government and ruling_party_ideology
 		modifier = { factor = 4 country = { ruling_party_ideology = progressive } everyday_needs = 0.5 }
 		modifier = { factor = 0.25 country = { ruling_party_ideology = progressive } NOT = { everyday_needs = 0.5 } }
@@ -2619,18 +1793,7 @@ country = { OR = { government = proletarian_dictatorship government = proletaria
 
 # Dynamic Decisions
 
-modifier = { factor = 1.15 country = { has_country_flag = trump } }
-
 modifier = { factor = 1.5 country = { has_country_flag = progressive_surge } }
-
-		modifier = { 
-			factor = 1.5 
-			country = { 
-				ruling_party_ideology = progressive
-				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
-			} 
-		}
 
 
 		# ideology special
@@ -4289,6 +3452,134 @@ issues = {
 	# first_past_the_post
 	#jefferson_method
 	#proportional_representation
+	
+incarceration = {
+    factor = 1
+
+	#Not next reform
+	modifier = {
+		factor = 0
+		NOT = { is_next_reform = incarceration }
+	}
+
+    modifier = {
+        factor = 1.2
+        OR = {
+            pop_majority_ideology = liberal
+            pop_majority_ideology = socialist
+			pop_majority_ideology = progressive
+        }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 7
+        state_scope = { is_colonial = no }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 8
+        state_scope = { is_colonial = no }
+    }
+
+    modifier = {
+        factor = 1.4
+        consciousness = 7
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.4
+        consciousness = 8
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 9
+    }
+
+    modifier = {
+        factor = 1.3
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.2
+        OR = { is_accepted_culture = yes is_primary_culture = yes }
+		OR = {
+			nationalvalue = nv_equality
+			nationalvalue = nv_liberty
+			nationalvalue = nv_progressivism
+		}
+	}
+
+    modifier = {
+        factor = 1.3
+        literacy = 0.20
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.5
+        literacy = 0.25
+        state_scope = { is_colonial = yes }
+    }
+
+    modifier = {
+        factor = 1.6
+        literacy = 0.30
+    }
+}
+
+rehabilitation = {
+    factor = 1
+	
+	#Not next reform
+	modifier = {
+		factor = 0
+		NOT = { is_next_reform = rehabilitation }
+	}
+
+    modifier = {
+        factor = 1.2
+        OR = {
+            pop_majority_ideology = liberal
+            pop_majority_ideology = socialist
+			pop_majority_ideology = progressive
+        }
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 7
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 8
+    }
+
+    modifier = {
+        factor = 1.2
+        consciousness = 9
+    }
+
+    modifier = {
+        factor = 1.2
+        OR = { is_accepted_culture = yes is_primary_culture = yes }
+		OR = {
+			nationalvalue = nv_equality
+			nationalvalue = nv_liberty
+			nationalvalue = nv_progressivism
+		}
+    }
+    modifier = {
+        factor = 1.6
+        literacy = 0.35
+    }
+}
 
 # Social Reforms 
 

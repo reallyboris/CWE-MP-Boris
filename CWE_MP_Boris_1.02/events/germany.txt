@@ -535,45 +535,6 @@ country_event = {
 	}
 }
 
-#Frankfurt bombings of 1968
-country_event = {
-  id = 8004330
-  title = "The Frankfurt Bombings of $YEAR$"
-  desc = EVT_8004330_DESC
-  picture = "kaufhaus_frankfurt_bombing"
-  
-	fire_only_once = yes
-
-	trigger = {
-		OR = { tag = GER tag = NGF tag = SGF }
-		year = 1968 
-		month = 4
-		NOT = { year = 1990 }
-		
-		OR = { government = democracy government = democracy1 government = hms_government }
-		is_vassal = no
-		war = no
-		
-		#Not a progressive government
-		NOT = { OR = { ruling_party_ideology = progressive ruling_party_ideology = liberal } }
-		
-		#Cold War ongoing
-		has_global_flag = blocsenabled
-	
-		has_country_flag = germany_1968_movement
-	}
-
-	mean_time_to_happen = { months = 1 }
-
-	option = {
-		name = EVT_8004330_A
-		clr_country_flag = germany_1968_movement
-		add_country_modifier = { name = years_of_lead duration = 15000 }
-		any_pop = { militancy = 3 consciousness = 3 }
-		add_country_modifier = { name = recent_terrorist_attack duration = 183 }
-	}
-}
-
 #Munich Massacre ( special event for West Germany if Olympics host )
 country_event = {
   id = 8004331

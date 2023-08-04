@@ -239,6 +239,145 @@ country_event = {
 
 ############################
 
+### The 1989 Revolution ###
+
+############################
+
+#1989 revolution - Start
+country_event = { 
+  id = 8002840
+  title = "The Tiananmen Square Protests"
+  desc = EVTDESC8002840
+  picture = "nwo2_chinese_protests"
+  
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHI
+		year = 1989 
+		NOT = { year = 1990 }
+		
+		government = proletarian_dictatorship
+		war = no
+		is_greater_power = yes
+		ruling_party_ideology = communist_social
+	}
+
+	mean_time_to_happen = { months = 4 }
+
+	option = {
+		name = "Crackdown on the protestors!"
+		
+		badboy = 5
+		add_country_modifier = { name = revolution_chaos duration = 365 }
+		
+		#Democratic nations are appalled
+		any_country = { 
+			limit = { OR = { government = socialist_democracy government = democracy government = democracy1 government = hms_government government = hms_government1 } }
+			relation = { who = THIS value = -100 }
+		}
+		
+		#Liberals get angry
+		any_pop = {
+			scaled_consciousness = {
+				factor = 5
+				ideology = big_tent
+			}
+			scaled_consciousness = {
+				factor = 10
+				ideology = progressive
+			}
+			scaled_consciousness = {
+				factor = 10
+				ideology = liberal
+			}
+			scaled_militancy = {
+				factor = 5
+				ideology = big_tent
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = progressive
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = liberal
+			}
+		}
+		ai_chance = { factor = 0.95 }
+	}
+
+	option = {
+		name = "Concede to the student's demands for democracy"
+		prestige_factor = -0.50
+		government = socialist_democracy
+		country_event = 800054
+		
+		add_country_modifier = { name = revolution_chaos duration = 3650 }
+		
+		#Release TIB and East Turkestan as a puppet
+		random_owned = {
+			limit = { owner = { is_possible_vassal = TIB } }
+			owner = { 
+				release_vassal = TIB
+				THIS = { diplomatic_influence = { who = TIB value = 200 } }
+				TIB = { 
+					government = sar_government 
+					country_event = 800054 
+					ruling_party_ideology = nationalist
+					set_country_flag = former_devolved_nation
+				}
+			}
+		}
+		random_owned = {
+			limit = { owner = { is_possible_vassal = ETS } }
+			owner = { 
+				release_vassal = ETS
+				THIS = { diplomatic_influence = { who = ETS value = 200 } }
+				ETS = { 
+					government = sar_government 
+					country_event = 800054 
+					ruling_party_ideology = nationalist
+					set_country_flag = former_devolved_nation
+				}
+			}
+		}
+		
+		#Communists and socialists get angry
+		any_pop = {
+			scaled_consciousness = {
+				factor = 5
+				ideology = socialist
+			}
+			scaled_consciousness = {
+				factor = 10
+				ideology = communist
+			}
+			scaled_consciousness = {
+				factor = 10
+				ideology = communist_social
+			}
+			scaled_militancy = {
+				factor = 5
+				ideology = socialist
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = communist
+			}
+			scaled_militancy = {
+				factor = 10
+				ideology = communist_social
+			}
+		}
+		
+		ai_chance = { factor = 0.05 }
+	}
+	
+}
+
+############################
+
 ### China joins the UNSC ###
 
 ############################

@@ -674,7 +674,7 @@ reducing_corruption = {
 political_reform_desire = 0.5
 research_points_modifier = -0.1
 leadership_modifier = -0.2
-tax_efficiency = 0.1
+tax_efficiency = 0.05
 icon = 5
 }
 
@@ -4076,7 +4076,6 @@ low_government_corruption = {
 minimal_government_corruption = {
 
 	#Political effects
-	global_pop_militancy_modifier = -0.02
 	global_pop_consciousness_modifier = -0.02
 	
 	icon = 1

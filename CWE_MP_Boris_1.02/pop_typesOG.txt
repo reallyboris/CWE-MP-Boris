@@ -2,31 +2,31 @@ promotion_chance = { # 0.4
 	factor = 0.4
 	group = {
 		modifier = {
-			factor = 0.07
+			factor = 0.03
 			literacy = 0.02
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.03
 			literacy = 0.04 
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.03
 			literacy = 0.1
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.03
 			literacy = 0.12
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.04
 			literacy = 0.16
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.05
 			literacy = 0.2
 		}
 		modifier = {
-			factor = 0.07
+			factor = 0.06
 			literacy = 0.24
 		}
 		modifier = {
@@ -83,53 +83,10 @@ promotion_chance = { # 0.4
 			life_needs = 0.7
 			strata = poor
 		}
-		modifier = {
+				modifier = {
 			factor = 0.075
 			life_needs = 0.6
 			strata = poor
-		}
-	}
-	
-	group = {
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.1
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.2
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.3
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.4
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.5
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.6
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.7
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.8
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.9
-		}
-		modifier = {
-			factor = 0.015
-			everyday_needs = 0.99
 		}
 	}
 	group = {
@@ -196,8 +153,8 @@ promotion_chance = { # 0.4
 	modifier = {
 		factor = -0.05
 		state_scope = {
-				is_slave = yes
-			}
+			is_slave = yes
+		}
 	}	
 	modifier = {
 		factor = -100
@@ -293,7 +250,7 @@ demotion_chance = { # 1
 			factor = 0.1
 			not = { life_needs = 0.7 }
 		}
-		modifier = {
+				modifier = {
 			factor = 0.1
 			not = { life_needs = 0.6 }
 		}
@@ -478,13 +435,13 @@ migration_chance = { # 1
             not = { everyday_needs = 0.1 }
             not = { luxury_needs = 0.1 }
         }
-		modifier = {
+				modifier = {
             factor = 0.1
             not = { life_needs = 0.6 }
             not = { everyday_needs = 0.1 }
             not = { luxury_needs = 0.1 }
-        }
-		modifier = {
+    }
+    modifier = {
             factor = 0.1
             not = { life_needs = 0.5 }
             not = { everyday_needs = 0.1 }
@@ -815,11 +772,17 @@ emigration_chance = { # 0.5
 			country = { national_provinces_occupied = 0.9 }
 		}
 	}
+	
+	#Less immigration if everyone is in fallout shelters
+	modifier = {
+		factor = -0.5
+		country = { has_country_flag = nuke_protection }
+	}
 
-#More immigration between 1946 and 2000 to compensate for smaller immigrant pool
+	#More immigration between 1946 and 2000 to compensate for smaller immigrant pool
 	group = {
 
-		modifier = { factor = 0.1 NOT = { year = 1960 } }
+		modifier = { factor = 0.2 NOT = { year = 1960 } }
 
 		modifier = { factor = 0.1 NOT = { year = 1970 } }
 
@@ -849,7 +812,7 @@ emigration_chance = { # 0.5
         }
     }
 	
-		group = {
+	group = {
         modifier = {
             factor = -0.05
 			NOT = { consciousness = 1 }
@@ -953,35 +916,29 @@ emigration_chance = { # 0.5
         modifier = {
             factor = 0.1
             unemployment = 0.1
-			location = { controlled_by = owner }
         }
         modifier = {
             factor = 0.1
             unemployment = 0.2
-			location = { controlled_by = owner }
         }
         modifier = {
             factor = 0.1
             unemployment = 0.3
-			location = { controlled_by = owner }
         }
         modifier = {
             factor = 0.1
             unemployment = 0.4
-			location = { controlled_by = owner }
         }
         modifier = {
             factor = 0.1
             unemployment = 0.5
-			location = { controlled_by = owner }
         }
 		modifier = {
             factor = 0.1
             unemployment = 0.6
-			location = { controlled_by = owner }
         }
     }
-	modifier = {
+		modifier = {
 		factor = 0.3
 		location = { NOT = { controlled_by = owner } }
 	}
@@ -1013,7 +970,7 @@ emigration_chance = { # 0.5
 	
 	modifier = { 
 		factor = -10 
-		location = { NOT = { total_pops = 10000 } } 
+		location = { NOT = { total_pops = 30000 } } 
 	}
 	
 	#Less immigration from poor big countries so they don't swamp all immigration
@@ -1194,26 +1151,36 @@ assimilation_chance = { # 1
 			literacy = 0.8
 		}
 	}
+	
+	#No Korean, Japanese assimilation in a Chinese state because of historical animosity
+	modifier = {
+		factor = -20
+		OR = { 
+			culture = japanese 
+			culture = korean 
+		}
+		country = { is_culture_group = east_asian } #Chinese culture group
+	}
 
 	modifier = {
-    	factor = 15
+		factor = 15
 		OR = { culture = german culture = austrian_german }
 		country = { has_country_flag = austrianisation_germanisation }
 	}
 
 	modifier = {
-    	factor = 15
+		factor = 15
 		country = { has_country_flag = superstate_integration_boost }
 	}
 
 	modifier = {
-    	factor = 20
+		factor = 20
 		is_culture_group = regional_arabic_1
 		country = { has_country_flag = arab_national_identity }
 	}
 
 	modifier = {
-    	factor = 20
+		factor = 20
 		is_culture_group = regional_arabic_1
 		country = { has_country_flag = pan_arab_identity }
 	}
