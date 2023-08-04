@@ -174,27 +174,27 @@ country_migration_target = {
 	#Rebellions encourage immigration
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.1
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.2
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.3
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.4
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.5
 	}
 

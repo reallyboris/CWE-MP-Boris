@@ -73,7 +73,6 @@ country_event = {
 		government = democracy
 		
 		#African Americans are not accepted cultures
-		minorities_reform = minorities_oppression
 		NOT = { accepted_culture = afro_american }
 	}
 
@@ -93,6 +92,8 @@ country_event = {
 		
 		#Grant the right to vote to African Americans
 		political_reform = minorities_equal_rights
+
+		CAN = { political_reform = minorities_equal_rights }
 		
 		#Racists are furious
 		any_pop = {

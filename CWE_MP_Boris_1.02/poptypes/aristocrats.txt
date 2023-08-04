@@ -62,18 +62,13 @@ luxury_needs = {
 country_migration_target = {
 	factor = 1
 
-		#Immigrants go for low tax places only
+
+
+	#Do not migrate to City States unless THIS is also one
 	modifier = {
-		factor = 0.50
-		rich_tax = 0.50
-	}
-	modifier = {
-		factor = 0.50
-		rich_tax = 0.60
-	}
-	modifier = {
-		factor = 0.50
-		rich_tax = 0.70
+		factor = -10
+		NOT = { number_of_states = 2 }
+		THIS = { number_of_states = 2 }
 	}
 	
 	#Immigrants love some continents
@@ -109,148 +104,6 @@ country_migration_target = {
 		}
     }
 	
-	#Immigration to radical dictatorships is discouraged
-	modifier = { 
-		factor = 0.5
-		OR = { 
-			government = theocracy
-			government = proletarian_dictatorship
-			government = proletarian_dictatorship1
-			government = nationalist_dictatorship
-			government = populist_dictatorship
-		}
-	}
-	
-	#Immigrants avoid small nations
-	modifier = {
-		factor = 0.1
-		NOT = { total_pops = 2000000 }
-	}
-	
-	#Immigrants only go for more populated nations if they are developed
-	modifier = {
-		factor = 1.1
-		total_pops = 5000000
-		literacy = 0.15
-		number_of_states = 2
-	}
-	modifier = {
-		factor = 1.1
-		total_pops = 10000000
-		literacy = 0.15
-		number_of_states = 2
-	}
-	modifier = {
-		factor = 1.1
-		total_pops = 15000000
-		literacy = 0.15
-		number_of_states = 2
-	}
-	modifier = {
-		factor = 1.1
-		total_pops = 20000000
-		literacy = 0.15
-		number_of_states = 2
-	}
-	modifier = {
-		factor = 1.1
-		total_pops = 25000000
-		literacy = 0.15
-		number_of_states = 2
-	}
-
-	#Immigrants like GPs and SPs
-	modifier = {
-		factor = 1.50
-		is_greater_power = yes
-	}
-	modifier = {
-		factor = 1.25
-		is_secondary_power = yes
-	}
-	
-	#Wars deter immigrants
-	modifier = { 
-		factor = 0.50
-		national_provinces_occupied = 0.1
-	}
-	modifier = { 
-		factor = 0.50
-		national_provinces_occupied = 0.2
-	}
-	modifier = { 
-		factor = 0.50
-		national_provinces_occupied = 0.3
-	}
-	modifier = { 
-		factor = 0.50
-		national_provinces_occupied = 0.4
-	}
-	modifier = { 
-		factor = 0.50
-		national_provinces_occupied = 0.5
-	}
-	
-	#Rebellions encourage immigration
-	modifier = { 
-		factor = 0.50
-		revolt_percentage = 0.1
-	}
-
-	modifier = { 
-		factor = 0.50
-		revolt_percentage = 0.2
-	}
-
-	modifier = { 
-		factor = 0.50
-		revolt_percentage = 0.3
-	}
-
-	modifier = { 
-		factor = 0.50
-		revolt_percentage = 0.4
-	}
-
-	modifier = { 
-		factor = 0.50
-		revolt_percentage = 0.5
-	}
-
-	#Immigrants like low militancy places
-	modifier = {
-		factor = 0.8
-		average_militancy = 2
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 4
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 6
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 8
-	}
-	modifier = {
-		factor = 0.8
-		average_militancy = 10
-	}
-	
-	#Immigrants don't go to countries that oppress minorities
-	modifier = { 
-		factor = 0.10
-		minorities_reform = minorities_oppression
-	}
-	
-	#Immigrants love countries that oppress minorities
-	modifier = { 
-		factor = 1.25
-		minorities_reform = minorities_affirmative_action
-	}
-
 	#Rich and middle love colonial nations
 	modifier = {
 		factor = 0.25
@@ -334,27 +187,27 @@ country_migration_target = {
 	#Rebellions encourage immigration
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.1
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.2
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.3
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.4
 	}
 
 	modifier = { 
-		factor = -0.75
+		factor = 0.75
 		revolt_percentage = 0.5
 	}
 
@@ -516,7 +369,7 @@ country_migration_target = {
 }
 
 migration_target = {
-	factor = 0.1
+	factor = 1
 	
 	###Pops avoid provinces with high general unemployment###
     modifier = {
@@ -1411,7 +1264,7 @@ modifier = { factor = 0.25 country = { government = sar_government } }
 			country = { 
 				ruling_party_ideology = nationalist
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -1570,7 +1423,7 @@ modifier = { factor = 1.5 country = { has_country_flag = populist_surge } }
 			country = { 
 				ruling_party_ideology = populist
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -1671,7 +1524,7 @@ modifier = { factor = 1.5 country = { has_country_flag = traditionalist_surge } 
 			country = { 
 				ruling_party_ideology = traditionalist
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -1830,7 +1683,7 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 			country = { 
 				ruling_party_ideology = conservative
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -2032,7 +1885,7 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 			country = { 
 				ruling_party_ideology = big_tent
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 		
@@ -2179,7 +2032,7 @@ modifier = { factor = 1.5 country = { ruling_party_ideology = socialist } }
 			country = { 
 				ruling_party_ideology = liberal
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 		
@@ -2344,7 +2197,7 @@ modifier = { factor = 1.5 country = { has_country_flag = socialist_surge } }
 			country = { 
 				ruling_party_ideology = socialist
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -2475,7 +2328,7 @@ modifier = { factor = 0.1 country = { NOT = { has_global_flag = blocsenabled } }
 			country = { 
 				ruling_party_ideology = communist
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -2601,7 +2454,7 @@ country = { OR = { government = proletarian_dictatorship government = proletaria
 			country = { 
 				ruling_party_ideology = communist_social
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 				
@@ -2628,7 +2481,7 @@ modifier = { factor = 1.5 country = { has_country_flag = progressive_surge } }
 			country = { 
 				ruling_party_ideology = progressive
 				OR = { economic_policy = planned_economy economic_policy = planned_economy1 }
-				civil_service = politicised_service 
+				internet_infrastructure = quality_of_service 
 			} 
 		}
 
@@ -3696,14 +3549,14 @@ issues = {
 		modifier = { factor = 1.10 NOT = { agree_with_ruling_party = 0.55 } }
 	}
 
-# civil_service
-	# politicised_service
-	politicised_service = {
+# internet_infrastructure
+	# quality_of_service
+	quality_of_service = {
 		factor = 1
 		#Not next reform
 		modifier = {
 			factor = 0
-			NOT = { is_next_reform = politicised_service }
+			NOT = { is_next_reform = quality_of_service }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
@@ -3715,12 +3568,12 @@ issues = {
 		modifier = { factor = 1.15 literacy = 0.35 consciousness = 2 }
 		modifier = { factor = 1.15 literacy = 0.40 consciousness = 2 }
 	}
-	elitist_service = {
+	open_unregulated = {
 		factor = 1
 		#Not next reform
 		modifier = {
 			factor = 0
-			NOT = { is_next_reform = elitist_service }
+			NOT = { is_next_reform = open_unregulated }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
@@ -3732,12 +3585,12 @@ issues = {
 		modifier = { factor = 1.15 literacy = 0.35 consciousness = 2 }
 		modifier = { factor = 1.15 literacy = 0.40 consciousness = 2 }
 	}
-	professional_service = {
+	net_neutrality = {
 		factor = 1
 		#Not next reform
 		modifier = {
 			factor = 0
-			NOT = { is_next_reform = professional_service }
+			NOT = { is_next_reform = net_neutrality }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
@@ -3749,12 +3602,12 @@ issues = {
 		modifier = { factor = 1.15 literacy = 0.35 consciousness = 2 }
 		modifier = { factor = 1.15 literacy = 0.40 consciousness = 2 }
 	}
-	independent_service = {
+	sponsored_access = {
 		factor = 1
 		#Not next reform
 		modifier = {
 			factor = 0
-			NOT = { is_next_reform = independent_service }
+			NOT = { is_next_reform = sponsored_access }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
@@ -3851,14 +3704,14 @@ issues = {
 		modifier = { factor = 1.10 NOT = { agree_with_ruling_party = 0.55 } }
 	}
 
-# union_rights
-	# no_trade_unions
-	state_controlled_unions = {
+# gender_rights
+	# gender_role_based
+	gender_equal = {
 		factor = 1
 		#Not next reform
 		modifier = { 
 			factor = 0
-			NOT = { is_next_reform = state_controlled_unions }
+			NOT = { is_next_reform = gender_equal }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
@@ -3874,12 +3727,12 @@ issues = {
 		modifier = { factor = 1.05 literacy = 0.35 }
 		modifier = { factor = 1.05 literacy = 0.40 }
 	}
-	restricted_unions = {
+	gender_promotive = {
 		factor = 1
 		#Not next reform
 		modifier = { 
 			factor = 0
-			NOT = { is_next_reform = restricted_unions }
+			NOT = { is_next_reform = gender_promotive }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
@@ -3895,12 +3748,12 @@ issues = {
 		modifier = { factor = 1.05 literacy = 0.35 }
 		modifier = { factor = 1.05 literacy = 0.40 }
 	}
-	free_trade_unions = {
+	feminist = {
 		factor = 1
 		#Not next reform
 		modifier = { 
 			factor = 0
-			NOT = { is_next_reform = free_trade_unions }
+			NOT = { is_next_reform = feminist }
 		}
 		
 		modifier = { factor = 0.1 strata = rich }
