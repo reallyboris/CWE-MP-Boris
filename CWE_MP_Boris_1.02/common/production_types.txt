@@ -705,7 +705,7 @@ electric_gear_factory = {
 		aluminium = 4.5
 	}
 	output_goods = electric_gear 
-	value = 6
+	value = 8
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
