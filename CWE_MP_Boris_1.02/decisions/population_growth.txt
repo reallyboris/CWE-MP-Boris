@@ -4,6 +4,7 @@ political_decisions = {
 		picture = "population_growth"
 		potential = {
 		NOT = { has_country_modifier = baby_boom }
+		NOT = { has_country_flag = one_child_policy }
 		}
 
 		allow = {
@@ -15,19 +16,19 @@ has_recently_lost_war = no
 war = no
 election = no
 NOT = { average_militancy = 3 }
-money = 3000000
+money = 4000000
 OR = { pop_majority_ideology = traditionalist 
 ruling_party_ideology = traditionalist government = presidential_dictatorship government = nationalist_dictatorship government = populist_dictatorship government = proletarian_dictatorship government = proletarian_dictatorship1 government = absolute_monarchy }
 		}
 
 		effect = {
 money = -2000000
-money = -1000000
-add_country_modifier = { name = baby_boom duration = 3650 }
+money = -2000000
+add_country_modifier = { name = baby_boom duration = 730 }
 add_country_modifier = { name = contraception_decay duration = 3650 }
 			any_pop = {
 			   consciousness = 3
-			   militancy = 1
+			   militancy = 4
 			}
 		}
 

@@ -19,6 +19,12 @@ SKO = {
 	influence_value = 100
 	military_access = yes
 }
+FIN = {
+	level = 5
+	value = 180
+	influence_value = 100
+	military_access = yes
+}
 ROA = {
 	level = 5
 	value = 160

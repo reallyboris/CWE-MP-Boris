@@ -1,0 +1,46 @@
+#The One Child Policy
+political_decisions = {
+
+One-Child = {
+	id = 151221922
+	title = "The One-Child policy"
+	desc = EVTDESC1512219
+	picture = "one_child_policy_evt"
+
+	potential = {
+		tag = CHI		
+		NOT = { has_country_flag = one_child_policy }
+		NOT = { has_country_modifier = one_child_policy_mod  }
+	}
+
+allow = { 
+		war = no
+		government = proletarian_dictatorship
+		owns = 2221 #Owns Nanjing, won Chinese Civil War
+	}
+
+	effect = {
+		add_country_modifier = { name = one_child_policy_mod duration = 8400 }
+                set_country_flag = one_child_policy
+		#Increase literacy and militancy
+		any_owned = {
+			limit = { 
+				is_core = CHI 
+				is_state_capital = no 
+			}
+			any_pop = { literacy = 0.04 militancy = 1 }
+			}
+		any_owned = {
+			limit = { 
+				is_core = CHI 
+				is_state_capital = yes
+			}
+			any_pop = { literacy = 0.06 militancy = 1 }
+			} 
+		   }
+
+		ai_will_do = { factor = 1 }
+
+}
+
+			}

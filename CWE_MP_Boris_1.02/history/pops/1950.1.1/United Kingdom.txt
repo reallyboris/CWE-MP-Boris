@@ -2710,17 +2710,17 @@
 	capitalists = {
 		culture = british
 		religion =  protestant 
-		size = 2998
+		size = 12998
 	 } 
 	capitalists = {
 		culture = british
 		religion = secularism
-		size = 773
+		size = 1773
 	 } 
 	capitalists = {
 		culture = chinese_cantonese
 		religion = taoism 
-		size = 3000
+		size = 7000
 	 } 
 	officers = {
 		culture = british
@@ -2750,12 +2750,12 @@
 	aristocrats = {
 		culture = chinese_cantonese
 		religion =  taoism 
-		size = 17994
+		size = 6994
 	 } 
 	aristocrats = {
 		culture = chinese_cantonese
 		religion = secularism
-		size = 4639
+		size = 639
 	 } 
 	bureaucrats = {
 		culture = chinese_cantonese
@@ -2779,11 +2779,6 @@
 	 } 
 	artisans = {
 		culture = chinese_cantonese
-		religion =  taoism 
-		size = 2903
-	 } 
-	artisans = {
-		culture = chinese_cantonese
 		religion = secularism
 		size = 748
 	 } 
@@ -2795,7 +2790,7 @@
 	artisans = {
 		culture = chinese_cantonese
 		religion =  taoism 
-		size = 300943
+		size = 153846
 	 } 
 	clerks = {
 		culture = chinese_cantonese
@@ -2805,12 +2800,12 @@
 	farmers = {
 		culture = chinese_cantonese
 		religion =  taoism 
-		size = 106331
+		size = 236331
 	 } 
 	farmers = {
 		culture = chinese_cantonese
 		religion = secularism
-		size = 3093
+		size = 23093
 	 } 
 }
 #Tripoli - Tripoli (442000/110500 POPS)

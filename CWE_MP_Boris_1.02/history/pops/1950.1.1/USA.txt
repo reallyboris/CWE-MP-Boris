@@ -16123,7 +16123,7 @@
 	bureaucrats = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 25000
+		size = 20000
 	 } 
 	bureaucrats = {
 		culture = white_anglo
@@ -16133,7 +16133,7 @@
 	clergymen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 15000
+		size = 25000
 	 } 
 	clergymen = {
 		culture = white_anglo
@@ -16143,7 +16143,7 @@
 	artisans = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 200000
+		size = 175000
 	 } 
 	artisans = {
 		culture = white_anglo
@@ -16163,12 +16163,12 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 200000
+		size = 226550
 	 } 
 	labourers = {
 		culture = white_anglo
 		religion = secularism
-		size = 800000
+		size = 812130
 	 } 
 	labourers = {
 		culture = jewish
@@ -16184,16 +16184,6 @@
 		culture = afro_american
 		religion =  protestant 
 		size = 66229
-	 } 
-	labourers = {
-		culture = afro_american
-		religion = secularism
-		size = 6550
-	 } 
-	labourers = {
-		culture = haredim_jewish
-		religion =  jewish 
-		size = 12130
 	 } 
 }
 #Long Island - Long Island (2473000/618250 POPS)

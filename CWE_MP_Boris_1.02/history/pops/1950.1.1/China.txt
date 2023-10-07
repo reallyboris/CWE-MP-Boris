@@ -511,12 +511,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 104214
+		size = 4214
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1086
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -594,12 +599,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 102021
+		size = 2021
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 521
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -677,12 +687,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 102901
+		size = 2901
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 748
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1044,7 +1059,12 @@
 	soldiers = {
 		culture = chinese
 		religion = secularism
-		size = 101605
+		size = 1605
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1122,12 +1142,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 105716
+		size = 5716
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1473
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1205,12 +1230,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 101607
+		size = 1607
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 414
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	slaves = {
 		culture = chinese
@@ -1288,12 +1318,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 103920
+		size = 3920
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1011
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1371,12 +1406,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 104975
+		size = 4975
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1282
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1454,12 +1494,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 103342
+		size = 3342
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 862
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1537,12 +1582,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 74181
+		size = 4181
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1078
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 70000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1620,12 +1670,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 104359
+		size = 4359
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1124
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1703,12 +1758,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 104256
+		size = 4256
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1097
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1869,12 +1929,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 102775
+		size = 2775
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 715
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -1952,12 +2017,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 106162
+		size = 6162
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1589
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2035,12 +2105,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 104151
+		size = 4151
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1070
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2118,12 +2193,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 101787
+		size = 1787
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 461
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2201,12 +2281,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 102693
+		size = 2693
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 694
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2284,12 +2369,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 104534
+		size = 4534
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1169
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2367,12 +2457,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 102413
+		size = 2413
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 622
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2533,12 +2628,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 105095
+		size = 5095
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1313
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2616,12 +2716,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 105514
+		size = 5514
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1422
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2699,12 +2804,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 106736
+		size = 6736
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1736
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -2777,7 +2887,7 @@
 	soldiers = {
 		culture = chinese
 		religion = taoism
-		size = 200247
+		size = 100247
 	 } 
 	officers = {
 		culture = chinese
@@ -2793,6 +2903,11 @@
 		culture = chinese
 		religion = secularism
 		size = 1601
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 100000
 	 } 
 	farmers = {
 		culture = chinese
@@ -3036,12 +3151,17 @@
 	soldiers = {
 		culture = chinese
 		religion =  taoism 
-		size = 204799
+		size = 54799
 	 } 
 	soldiers = {
 		culture = chinese
 		religion = secularism
 		size = 1237
+	 } 
+	artisans = {
+		culture = chinese
+		religion =  taoism 
+		size = 150000
 	 } 
 	farmers = {
 		culture = chinese

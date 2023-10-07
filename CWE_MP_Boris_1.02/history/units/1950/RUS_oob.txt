@@ -1,6 +1,6 @@
 NOR = {
 	level = 2
-	value = 50
+	value = -50
 	influence_value = 10
 }
 DAI = {
@@ -40,10 +40,9 @@ ALB = {
 	military_access = yes
 }
 FIN = {
-	level = 5
-	value = 160
-	influence_value = 200
-	military_access = yes
+	level = 1
+	value = -60
+	influence_value = 10
 }
 YUG = {
 	level = 5
