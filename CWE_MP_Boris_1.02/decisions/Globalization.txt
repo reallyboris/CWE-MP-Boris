@@ -95,14 +95,12 @@ political_decisions = {
 			
 		}
 		allow = {
-			average_consciousness = 7
-			average_militancy = 7
+			average_militancy = 1
 			
 			#Only after the 1990s
 			globalization = 1
 			
 			war = no
-			has_recently_lost_war = no
 			NOT = { is_disarmed = yes }
 			
 			OR = {

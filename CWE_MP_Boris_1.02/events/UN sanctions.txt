@@ -1,0 +1,97 @@
+#from essential events 3 (base CWE)
+#UN Sanctions for high Infamy nations - Start
+country_event = {
+	id = 1400047
+	title = "UN sanctions imposed on our nation"
+	desc = "Due to our high international infamy, the international community has decided to impose sanctions on us via the UN."
+	picture = "nuclear_disarmament_un"
+	
+trigger = {
+NOT = { has_country_modifier = un_sanctions }
+badboy = 25
+has_country_flag = disabled_for_now
+}
+
+option = {
+name = "We shall press on!"
+add_country_modifier = { name = un_sanctions duration = -1 }
+prestige = -10
+		}
+}
+#UN Sanctions for high Infamy nations - Stop
+country_event = {
+	id = 1400048
+	title = "UN sanctions imposed on our nation retracted"
+	desc = "Due to our low international infamy, the international community has decided to retract sanctions on us via the UN."
+	picture = "nuclear_disarmament_un"
+	
+trigger = {
+has_country_modifier = un_sanctions
+NOT = { badboy = 25 }
+has_country_flag = disabled_for_now
+}
+
+option = {
+name = "We thank the UN for their actions!"
+remove_country_modifier = un_sanctions		
+	}
+}
+#UN Sanctions for high Infamy nations with nukes - Start
+country_event = {
+	id = 1400049
+	title = "UN sanctions imposed on our nation"
+	desc = "Due to our nuclear capability & high infamy, the international community has decided to impose sanctions on us via the UN."
+	picture = "nuclear_disarmament_un"
+	
+trigger = {
+OR = { has_country_modifier = atomic_nation has_country_modifier = hydrogen_nation }
+NOT = { has_country_modifier = unsc_permanent_member }
+NOT = { has_country_modifier = nuke_sanctions }
+badboy = 1
+}
+
+option = {
+name = "We shall press on!"
+add_country_modifier = { name = nuke_sanctions duration = -1 }
+prestige = -25
+		}
+}
+
+#UN Sanctions on Nuclear Blackmarket Nation
+country_event = {
+	id = 1410138
+title = "UN Sanctions on $COUNTRY$"
+	desc = "The United Nations has discovered our illegal Nuclear bomb acqusition and has condemned us and imposed punitative sanctions."
+	picture = "united_nations_sanctions"
+	
+trigger = {
+has_country_modifier = acquired_bomb
+NOT = { has_country_modifier = acquired_bomb_sanctions }
+}	
+
+option = {
+	name = "We will have to resist them!"
+prestige = -10
+add_country_modifier = { name = acquired_bomb_sanctions duration = -1 }
+			}
+
+}
+
+#UN Sanctions on Nuclear Blackmarket Nation
+country_event = {
+	id = 1410140
+title = "UN Sanctions on $COUNTRY$ lifted"
+	desc = "As we no longer possess illegal nuclear weapons, the United Nations Sanctions on us have been lifted."
+	picture = "united_nations_sanctions"
+	
+trigger = {
+NOT = { has_country_modifier = acquired_bomb }
+has_country_modifier = acquired_bomb_sanctions
+}	
+
+option = {
+	name = "That's good"
+remove_country_modifier = acquired_bomb_sanctions
+			}
+
+}

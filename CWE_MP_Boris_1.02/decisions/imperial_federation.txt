@@ -268,7 +268,6 @@ NOT = { has_country_flag = hide_superstate }
 				add_core = IMP
 			}
 			change_tag = IMP
-				add_accepted_culture = white_anglo
 				add_accepted_culture = australian
 				add_accepted_culture = new_zealander
 				add_accepted_culture = anglo_canadian
