@@ -687,7 +687,7 @@ country_event = {
 	trigger = {
 		tag = SAF
 		year = 1948
-		NOT = { has_global_flag = 1950_start_date_flag }
+		#NOT = { has_global_flag = 1950_start_date_flag }
 		NOT = { 
 			OR = { 
 				ruling_party_ideology = communist_social 

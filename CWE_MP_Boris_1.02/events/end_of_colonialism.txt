@@ -23,10 +23,10 @@ province_event = {
 		NOT = { has_province_modifier = denied_independence }
 
 		#Owner is not blocking decolonisation
-		owner = { NOT = { has_country_flag = decolonise_yes } }
+		#owner = { NOT = { has_country_flag = decolonise_yes } }
 		
 		#Has some militancy
-		average_militancy = 1
+		#average_militancy = 1
 
 		### Provinces that do not seek independence ###
 		
@@ -67,6 +67,15 @@ province_event = {
 	
 		#Guantanamo Bay
 		NOT = { province_id = 3339 }
+
+		#Guam
+		NOT = { province_id = 2517 }
+
+		#Palau
+		NOT = { province_id = 2518 }
+
+		#Midway Island
+		NOT = { province_id = 2623 }
 	
 		### Special exceptions ###
 		owner = { NOT = { AND = { tag = NET war_with = IDO } } }

@@ -688,8 +688,8 @@ icon = 5
 
 decolonise_request = {
 assimilation_rate = -0.5
-pop_consciousness_modifier = 0.05
-pop_militancy_modifier = 0.05
+pop_consciousness_modifier = 0.5
+pop_militancy_modifier = 0.5
 local_RGO_throughput = -0.25
 local_factory_throughput = -0.25
 icon = 8
@@ -1743,10 +1743,10 @@ icon = 15
 
 decolonise_yes = {
 local_ruling_party_support = -0.8
-pop_militancy_modifier = 0.4
+pop_militancy_modifier = 0.5
 local_factory_throughput = -0.25
 local_RGO_output = -0.25
-pop_consciousness_modifier = 0.2
+pop_consciousness_modifier = 0.4
 icon = 20
 }
 
@@ -6639,8 +6639,8 @@ icon = 5
 }
 
 nationalist_agitation = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.25
+	pop_consciousness_modifier = 0.75
+	pop_militancy_modifier = 0.75
 	icon = 18
 }
 
@@ -6680,11 +6680,12 @@ boycott_fascism = {
 colonial_unrest = {
 	local_RGO_throughput = -0.6
 	pop_consciousness_modifier = 0.05
+	non_accepted_pop_militancy_modifier = 1
 	icon = 20
 }
 colonial_promise = {
 	local_RGO_throughput = -0.1
-	pop_consciousness_modifier = 0.05
+	pop_consciousness_modifier = 0.25
 	icon = 7
 }
 
@@ -6906,7 +6907,7 @@ naval_school = {
 }
 
 colonial_dry_spell = {
-	pop_militancy_modifier = 0.05
+	pop_militancy_modifier = 0.75
 	farm_RGO_eff = -0.20
 	icon = 14
 }
@@ -6914,7 +6915,7 @@ colonial_dry_spell = {
 colonial_exploitation = {
 	farm_RGO_eff = 0.10
 	mine_RGO_eff = 0.10
-	pop_militancy_modifier = 0.1
+	non_accepted_pop_militancy_modifier = 0.75
 	icon = 18
 }
 
@@ -6929,7 +6930,7 @@ german_scientists = {
 }
 
 colonial_mismanagement = {
-	pop_militancy_modifier = -0.02
+	pop_militancy_modifier = 0.2
 	farm_rgo_eff = -0.5
 	mine_rgo_eff = -0.5
 	icon = 2
@@ -7119,7 +7120,7 @@ destitution_and_poverty = {
 
 ##### NATIONALIST UPRISINGS #####
 minority_building_restrictions = {
-	non_accepted_pop_militancy_modifier = 0.02
+	non_accepted_pop_militancy_modifier = 0.75
 	assimilation_rate = 0.05
 	icon = 16
 }
@@ -7750,14 +7751,15 @@ transition_to_dictatorship = {
 }
 
 promised_autonomy = {
-    pop_consciousness_modifier = 0.05
-    pop_militancy_modifier = 0.01
+    pop_consciousness_modifier = 0.5
+    pop_militancy_modifier = 0.05
 	icon = 15
 }
 
 denied_independence = {
-    pop_consciousness_modifier = 0.05
-    pop_militancy_modifier = 0.15
+    pop_consciousness_modifier = 0.5
+    pop_militancy_modifier = 0.5
+	non_accepted_pop_militancy_modifier = 1
 	local_RGO_throughput = -0.75
 	icon = 16
 }
