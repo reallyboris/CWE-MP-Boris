@@ -1,0 +1,21 @@
+political_decisions = {
+
+	civilize = {
+		picture = "build_brasilia"
+		potential = {
+			civilized = no
+		}
+		
+		allow = {
+			is_vassal = no
+		}
+
+		effect = {
+			civilized = yes
+		}
+		
+		ai_will_do = { factor = 1 }
+		
+	}
+	
+}
