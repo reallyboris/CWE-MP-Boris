@@ -1,6 +1,6 @@
 political_decisions = {
 	z1manage_grants = {
-		picture = grant
+		picture = hydrogen_bomb
 		alert = no
 		potential = {
 			ai = no
