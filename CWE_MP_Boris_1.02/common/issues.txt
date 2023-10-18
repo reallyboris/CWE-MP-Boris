@@ -15,8 +15,8 @@ party_issues = {
 	economic_policy = {
 		laissez_faire = {
 			max_tax = 0.75
-			factory_owner_cost = 0.05
-			factory_output = 0.2
+			factory_owner_cost = -0.05
+			factory_output = 0.1
 
 			rules = {
 				build_factory = no
@@ -43,7 +43,7 @@ party_issues = {
 			min_tax = 0.1
 
 			factory_owner_cost = 0.1
-			factory_output = 0.1
+			factory_output = 0.05
 
 			rules = {
 				build_factory = yes
@@ -99,11 +99,11 @@ party_issues = {
 			min_tariff = 0.10
 			tax_efficiency = 0.05
 			
-			
+			factory_input = 0.05
 			factory_maintenance = 0.1
 			factory_owner_cost = 0.8
 			
-			factory_throughput = 0.10
+			factory_throughput = -0.05
 
 			rules = {
 				build_factory = yes
@@ -114,8 +114,8 @@ party_issues = {
 				allow_foreign_investment = yes
 				factory_priority = yes
 				can_subsidise = yes
-				pop_build_factory = no
-				pop_expand_factory = yes
+				pop_build_factory = yes
+				pop_expand_factory = no
 				pop_open_factory = no
 				delete_factory_if_no_input = no
 				build_factory_invest = yes
@@ -132,9 +132,10 @@ party_issues = {
 			min_tariff = 0.10
 			tax_efficiency = 0.10
 			
+			factory_input = 0.1
 			factory_maintenance = 0.2
-			factory_owner_cost = -1
-			factory_throughput = 0.2
+			factory_owner_cost = 1
+			factory_throughput = -0.1
 
 			rules = {
 				build_factory = yes
@@ -144,7 +145,7 @@ party_issues = {
 				build_railway = yes
 				factory_priority = yes
 				can_subsidise = yes
-				pop_build_factory = no
+				pop_build_factory = yes
 				pop_expand_factory = no
 				pop_open_factory = no
 				allow_foreign_investment = yes
