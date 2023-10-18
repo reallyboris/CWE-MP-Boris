@@ -1,5 +1,5 @@
-owner = ZAN
-controller = ZAN
+owner = ENG
+controller = ENG
 add_core = ZAN
 trade_goods = oil_seeds
 life_rating = 35

@@ -7,8 +7,8 @@ terrain = hills
 colonial = 0
 
 1950.1.1 = {
-owner = FAR
-controller = FAR
+owner = DEN
+controller = DEN
 colonial = 0
 }
 

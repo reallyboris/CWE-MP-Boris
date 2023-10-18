@@ -1,5 +1,5 @@
-owner = ALA
-controller = ALA
+owner = FIN
+controller = FIN
 add_core = FIN
 add_core =  ALA
 trade_goods = fish
