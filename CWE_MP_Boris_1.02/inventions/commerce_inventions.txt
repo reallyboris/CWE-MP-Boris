@@ -183,7 +183,7 @@ industrial_production_investments = {
 		}
 	}
 	effect = {
-		factory_input = -0.001
+		factory_input = -0.01
 	}
 }
 industrial_distribution_investments = {
@@ -1624,7 +1624,7 @@ institutional_economics = {
 	}
 	effect = {
 		shared_prestige = 5
-        factory_input = -0.001
+        factory_input = -0.01
         administrative_efficiency = 0.05		
 	}
 }
@@ -1639,7 +1639,7 @@ modern_monetary_theory =  {
 	}
 	effect = {
 		shared_prestige = 5
-        factory_input = -0.001
+        factory_input = -0.01
         factory_output = 0.01
 	}
   }
@@ -1892,7 +1892,7 @@ export_oriented_industrializationi  = {
 		}
 	}
 	effect = {
-		factory_input = -0.001
+		factory_input = -0.025
 	}
 }
 money_supply_control = {
@@ -2003,7 +2003,7 @@ global_supply_chains = {
 		}
 	}
 	effect = {
-		factory_input = -0.001 
+		factory_input = -0.01 
 	}
 }
 multinacional_corporations = {

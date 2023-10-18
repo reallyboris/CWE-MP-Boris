@@ -7,6 +7,49 @@ political_decisions = {
 	#westernize_nation = {}
 	#the_meiji_restoration = {}
 	#the_meiji_restoration2 = {}
+
+	five_year_plan = {
+		picture = "five_year_plan"
+		potential = {
+			OR = {
+				economic_policy = planned_economy
+				economic_policy = planned_economy1
+			}
+			NOT = { has_country_modifier = five_year_plan }
+		}
+
+		allow = {
+			#Must have some industry to begin with
+			industrial_score = 100
+		}
+
+		effect = {
+		
+			#Remove specialisation modifiers
+			remove_country_modifier = spchigh
+			remove_country_modifier = spcmedium
+			remove_country_modifier = spclow
+			remove_country_modifier = spcno
+			clr_country_flag = spchigh
+			clr_country_flag = spcmedium
+			clr_country_flag = spclow
+			clr_country_flag = spcno
+		
+			#Choose where to specialise
+			country_event = 1610134
+		
+			add_country_modifier = { name = five_year_plan duration = 1825 }
+			
+			#Add money to Executives if THIS is rich
+			random_owned = { limit = { owner = { money = 10000 } } owner = { aristocrats = { money = 100 } } }
+			random_owned = { limit = { owner = { money = 100000 } } owner = { aristocrats = { money = 200 } } }
+			random_owned = { limit = { owner = { money = 1000000 } } owner = { aristocrats = { money = 400 } } }
+			random_owned = { limit = { owner = { money = 10000000 } } owner = { aristocrats = { money = 800 } } }
+			random_owned = { limit = { owner = { money = 100000000 } } owner = { aristocrats = { money = 1000 } } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
 	leave_soi = {
 		alert = no
 		potential = {
