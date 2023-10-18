@@ -7,22 +7,24 @@ recently_requested_trade = {
 }
 
 kinda_bad_badboy = {
-	loan_interest = 4
+	loan_interest = 10
 	tariff_efficiency_modifier = -0.40
 	mobilisation_economy_impact = 2
 	diplomatic_points_modifier = -0.6
 	factory_owner_cost = 1
-	global_immigrant_attract = -4.0
-	org_regain = -0.3
-	land_organisation = -0.2
-	naval_organisation = -0.2
+	global_immigrant_attract = -2
+	org_regain = -0.05
+	land_organisation = -0.02
+	naval_organisation = -0.02
 	factory_throughput = -0.25
 	import_cost = 1
-	RGO_throughput = -0.25
+	RGO_throughput = -0.4
 	prestige = -0.2
 	war_exhaustion = 2
 	research_points_modifier = -0.6
 	cb_generation_speed_modifier = -0.3
+	global_pop_militancy_modifier = 0.2
+	global_pop_consciousness_modifier = 0.2
 	icon = 8
 }
 

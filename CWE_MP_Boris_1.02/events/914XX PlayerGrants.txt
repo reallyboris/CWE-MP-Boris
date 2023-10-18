@@ -1,0 +1,134 @@
+# Audax Validator "!" Ignore_1004
+# Audax Validator "!" Ignore_1009
+
+country_event = {
+	title = "EVTNAMEgrantoptions"
+	desc = "EVTDESCgrantoptions"
+	id = 91400
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Enable Giving Grants and Military Supplies"
+		clr_country_flag = deny_grant
+	}
+	option = {
+		name = "Deny Giving Grants and Military Supplies"
+		set_country_flag = deny_grant
+	}
+	option = {
+		name = "Request Fuel"
+		any_country = {
+			limit = {
+				ai = no
+				fuel = 2000
+				NOT = { has_country_flag = deny_grant }
+				NOT = { war_with = THIS }
+			}
+			country_event = { id = 91403 days = 0 }
+		}
+		add_country_modifier = { name = requested_grant duration = 7 }
+	}
+}
+
+country_event = {
+	title = EVTNAMEinsufficientmoney
+	desc = EVTDESCinsufficientmoney
+	id = 91401
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTAinsufficientmoney"
+	}
+}
+
+country_event = {
+	title = EVTNAMEgivefuel
+	desc = EVTDESCgivefuel
+	id = 91403
+	picture = player_grants
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Give_Nothing"
+	}
+	
+	option = {
+		name = "Give_200_Fuel"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { fuel = 200 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { fuel = 200 }
+			}
+			owner = {
+				fuel = -200
+				FROM = {
+					fuel = 200
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_600_Fuel"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { fuel = 600 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { fuel = 600 }
+			}
+			owner = {
+				fuel = -600
+				FROM = {
+					fuel = 600
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Give_1800_Fuel"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { fuel = 1800 }
+				}
+			}
+			owner = {
+				country_event = { id = 91401 days = 0 }
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = { fuel = 1800 }
+			}
+			owner = {
+				fuel = -1800
+				FROM = {
+					fuel = 1800
+				}
+			}
+		}
+	}
+}

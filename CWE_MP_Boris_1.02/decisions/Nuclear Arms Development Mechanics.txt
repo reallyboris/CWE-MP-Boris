@@ -23,10 +23,19 @@ political_decisions = {
 			
 			is_disarmed = no
 			part_of_sphere = no
-			other_minerals = 6000
-			weaponry = 500
 			NOT = { has_country_modifier = wmd_removed }
-			
+			OR = {
+					ai = yes
+					AND = {		
+							optics = 5000
+							education_rnd = 5000
+							heating_electricity = 5000
+							electric_gear = 5000
+							cement = 5000
+							telecommunications = 5000
+							fuel = 5000 
+							}
+				}
 			OR = { 
 				is_greater_power = yes 
 				is_secondary_power = yes 
@@ -34,13 +43,18 @@ political_decisions = {
 			}
 
 			OR = { war_policy = jingoism war_policy = pro_military }
-			money = 3500000 
+			money = 7500000 
 				
 		}
 
 		effect = {
-			other_minerals = -6000
-			weaponry = -500
+			optics = -5000
+			education_rnd = -5000
+			heating_electricity = -5000
+			electric_gear = -5000
+			cement = -5000
+			telecommunications = -5000
+			fuel = -5000
 			#### Badboy if treaties are unsigned ####
 
 			#Base infamy
@@ -65,6 +79,8 @@ political_decisions = {
 			set_country_flag = atomic_bomb_developed
 			set_country_flag = atomic_bomb_goods_needed
 			prestige = 50
+			money = -2000000
+			money = -2000000
 			money = -2000000
 			money = -1500000
 		}
@@ -107,14 +123,23 @@ political_decisions = {
 
 		allow = {
 		
-			money = 3500000
-			other_minerals = 6000
-			weaponry = 500
+			money = 8000000
 			is_disarmed = no
 			part_of_sphere = no
 
 			NOT = { has_country_modifier = wmd_removed }
-			
+			OR = {
+					ai = yes
+					AND = {		
+							optics = 5000
+							education_rnd = 5000
+							heating_electricity = 5000
+							electric_gear = 5000
+							cement = 5000
+							telecommunications = 5000
+							fuel = 5000 
+							}
+				}
 			OR = { 
 				is_greater_power = yes 
 				is_secondary_power = yes 
@@ -157,7 +182,9 @@ political_decisions = {
 			set_country_flag = hydrogen_bomb_goods_needed
 			prestige = 50
 			money = -2000000
-			money = -1500000
+			money = -2000000
+			money = -2000000
+			money = -2000000
 		}
 
 	}

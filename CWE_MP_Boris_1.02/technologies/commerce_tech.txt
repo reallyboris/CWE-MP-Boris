@@ -538,7 +538,7 @@ keynesian_economics = {
 	area = economic_thought_and_critique
 	year = 1946
 	cost = 3600
-	factory_input = -0.01
+	factory_input = -0.001
 	factory_cost = -0.02
 	increase_research = 0.05
 	ai_chance = {
@@ -571,7 +571,7 @@ new_growth_theory = {
 	year = 1962
 	cost = 7200
 	
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -607,7 +607,7 @@ new_synthesis = {
 	year = 1970
 	cost = 9000
 
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -641,7 +641,7 @@ austrian_school = {
 	year = 1971
 	cost = 9000
 
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -671,7 +671,7 @@ new_keynesian = {
 	year = 1991
 	cost = 12600
 	
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -693,7 +693,7 @@ digitaleconomics_theory = {
 	year = 2000
 	cost = 14400
 
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -723,7 +723,7 @@ neoeconomics_theory = {
 	year = 2015
 	cost = 14400
 
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -753,7 +753,7 @@ economic_machine_theory = {
 	year = 2015
 	cost = 14400
 
-	factory_input = -0.02
+	factory_input = -0.005
 	ai_chance = {
 		factor = 1.01
 		modifier = {

@@ -20,7 +20,7 @@ NOT = { has_country_flag = hide_superstate }
 			NOT = { has_country_flag = xna_ambition }
 		}
 		allow = {
-OR = { new_synthesis = 1 has_country_flag = british_empire_choice ENG = { has_country_flag = british_empire_choice } }
+OR = { new_synthesis = 1 year = 1979 has_country_flag = british_empire_choice ENG = { has_country_flag = british_empire_choice } }
 			OR = {
 				is_greater_power = yes
 				AND = {
@@ -273,7 +273,6 @@ NOT = { has_country_flag = hide_superstate }
 				add_accepted_culture = anglo_canadian
 				add_accepted_culture = english
 				add_accepted_culture = british
-				add_accepted_culture = black_anglo
 		}
 		ai_will_do = {
 			factor = 1
@@ -300,7 +299,6 @@ any_neighbor_country = { OR = { has_country_flag = IMP_ambition in_sphere = THIS
 				primary_culture = anglo_canadian
 				primary_culture = english
 				primary_culture = british
-				primary_culture = black_anglo
 } }
 
 }
@@ -330,7 +328,6 @@ primary_culture = new_zealander
 primary_culture = anglo_canadian
 primary_culture = english
 primary_culture = british
-primary_culture = black_anglo
 } 
 
 OR = { neighbour = THIS tag = CAN tag = NZL tag = AST }

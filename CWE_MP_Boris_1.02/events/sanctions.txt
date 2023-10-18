@@ -20,7 +20,7 @@ country_event = {
 	immediate = {
 		add_country_modifier = {
 			name = kinda_bad_badboy
-			duration = 360
+			duration = -1
 			}
 		any_greater_power = {
 		casus_belli = {
@@ -43,4 +43,28 @@ country_event = {
 	option = {
 		name = "EVTOPT500059A"
 	}
+}
+
+country_event = {
+	id = 500060
+	title = "EVTNAME500060"
+	desc = "EVTDESC500060"
+	picture = "bad_badboy"
+	
+	
+	trigger = {
+		has_country_modifier = kinda_bad_badboy
+		NOT = { badboy = 1.3 }
+				} 
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Excellent"
+		remove_country_modifier = kinda_bad_badboy
+	}
+	
 }

@@ -17,7 +17,7 @@ political_decisions = {
 			has_country_flag = trade_block_ambition 
 			NOT = { has_country_modifier = in_bankrupcy } 
 			OR = { part_of_sphere = no sphere_owner = { OR = { has_country_flag = xna_ambition NOT = { has_country_flag = deny_superstate } } } }
-			cultural_imperialism = 1
+			OR  { cultural_imperialism = 1 year = 1960 }
 			war = no
 		}
 		effect = {
@@ -93,7 +93,7 @@ NOT = { has_country_flag = hide_superstate }
 				government = democracy
 				government = hms_government1
 			}
-			capitalism = 1
+			OR = { capitalism = 1 year = 1970 }
 			war = no
 		}
 		effect = {
@@ -116,7 +116,7 @@ NOT = { has_country_flag = hide_superstate }
 				government = democracy
 				government = hms_government1
 			}
-			economic_globalization = 1
+			OR = { economic_globalization = 1 year = 1980 }
 			election = no
 			war = no
 		}
@@ -129,7 +129,7 @@ NOT = { has_country_flag = hide_superstate }
 	xna_political_union = {
 		picture = "xna_ambition"
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			NOT = { capital_scope = { is_core = XNA } }
 			OR = { tag = CAN tag = USA tag = MEX AND = { exists = XNA capital_scope = { continent = north_america } } }
 		}
@@ -140,7 +140,7 @@ NOT = { has_country_flag = hide_superstate }
 			election = no
 			#has_unclaimed_cores = no
 			war = no
-			economic_globalization = 1
+			OR = { economic_globalization = 1 year = 1980 }
 		}
 		effect = {
 			all_core = { add_core = XNA }

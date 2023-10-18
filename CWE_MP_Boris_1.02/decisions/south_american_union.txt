@@ -32,7 +32,7 @@ political_decisions = {
 				NOT = { sphere_owner = { has_country_flag = deny_superstate NOT = { has_country_flag = xsu_ambition } } }
 			}
 
-			bank_for_international_settlements = 1
+			OR = { bank_for_international_settlements = 1 year = 1986 }
 			election = no
 			war = no
 		}

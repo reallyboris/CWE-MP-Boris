@@ -14,7 +14,7 @@ NOT = { has_country_flag = hide_superstate }
 			has_country_flag = trade_block_ambition 
 			NOT = { has_country_modifier = in_bankrupcy } 
 			OR = { part_of_sphere = no sphere_owner = { OR = { has_country_flag = xau_ambition NOT = { has_country_flag = deny_superstate } } } }
-			bank_for_international_settlements = 1
+			year = 1960
 			war = no
 		}
 		effect = {
@@ -39,16 +39,13 @@ NOT = { has_country_flag = hide_superstate }
 		picture = "xau_parlament"
 		alert = no
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			has_country_flag = xau_ambition
 			NOT = {tag = XAU}
 		}
 		allow = {
 			OR = { 
-
-AND = { part_of_sphere = yes sphere_owner = { 
-NOT = { has_country_flag = xau_ambition } has_country_flag = deny_superstate } }
-
+				AND = { part_of_sphere = yes sphere_owner = { 	NOT = { has_country_flag = xau_ambition } has_country_flag = deny_superstate } }
 				NOT = { OR = { government = democracy government = hms_government } }
 				has_country_modifier = in_bankrupcy
 			}
@@ -81,7 +78,7 @@ NOT = { has_country_flag = xau_ambition } has_country_flag = deny_superstate } }
 	xau_single_market= {
 		picture = "single_market"
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			NOT = { capital_scope = { has_province_modifier = single_market } }
 			OR = { exists = XEC exists = XEW exists = XSA exists = XEF } capital_scope = { continent = africa }
 		}
@@ -91,7 +88,7 @@ NOT = { has_country_flag = hide_superstate }
 				government = democracy
 				government = hms_government
 			}
-			capitalism = 1
+			OR = { capitalism = 1 year = 1980 }
 			war = no
 		}
 		effect = {
@@ -103,7 +100,7 @@ NOT = { has_country_flag = hide_superstate }
 	xau_currency_union = {
 		picture = "currency_union"
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			NOT = { capital_scope = { has_province_modifier = currency_union_province } }
 			OR = { exists = XEC exists = XEW exists = XSA exists = XEF } capital_scope = { continent = africa }
 		}
@@ -114,7 +111,7 @@ NOT = { has_country_flag = hide_superstate }
 				government = democracy
 				government = hms_government
 			}
-			economic_globalization = 1
+			OR = { year = 1980 economic_globalization = 1 }
 			election = no
 			war = no
 		}
@@ -127,7 +124,7 @@ NOT = { has_country_flag = hide_superstate }
 	xau_political_union = {
 		picture = "xau_ambition"
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			NOT = { capital_scope = { is_core = XAU } }
 			OR = { exists = XEC exists = XEW exists = XSA exists = XEF } capital_scope = { continent = africa }
 		}
@@ -136,9 +133,8 @@ NOT = { has_country_flag = hide_superstate }
 			capital_scope = { has_province_modifier = currency_union_province }
 			OR = { government = democracy government = hms_government }
 			election = no
-			
 			war = no
-			economic_globalization = 1
+			OR = { year = 1985 economic_globalization = 1 }
 		}
 		effect = {
 			any_owned = { limit = { continent = africa } add_core = XAU }
@@ -150,7 +146,7 @@ NOT = { has_country_flag = hide_superstate }
 	xau_defence_union = {
 		picture = "defence_union"
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			NOT = { capital_scope = { has_province_modifier = defence_union } }
 			OR = { exists = XEC exists = XEW exists = XSA exists = XEF } capital_scope = { continent = africa }
 		}
@@ -160,7 +156,7 @@ NOT = { has_country_flag = hide_superstate }
 			OR = { government = democracy government = hms_government }
 			election = no
 			war = no
-			economic_globalization = 1
+			OR = { year = 1980 economic_globalization = 1 }
 			#has_unclaimed_cores = no
 		}
 		effect = {
@@ -175,7 +171,7 @@ NOT = { has_country_flag = hide_superstate }
 	xau_form_union = {
 		picture = "xau_parlament"
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			XAU = { exists = no }
 			OR = { exists = XEC exists = XEW exists = XSA exists = XEF } capital_scope = { continent = africa }
 		}

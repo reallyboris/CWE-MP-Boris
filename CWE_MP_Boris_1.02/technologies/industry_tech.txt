@@ -1549,7 +1549,7 @@ modern_roads = {
 	supply_limit = 0.25
 	
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1586,7 +1586,7 @@ early_highway = {
 	activate_building = transport_factory
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1621,7 +1621,7 @@ interstate_highway_system = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1656,7 +1656,7 @@ high_speed_rail = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1691,7 +1691,7 @@ early_backbone = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1726,7 +1726,7 @@ modern_backbone = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1759,7 +1759,7 @@ mobile_network = {
 	supply_limit = 0.25
 	
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1795,7 +1795,7 @@ dynamic_infrastructure = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1831,7 +1831,7 @@ universal_wireless_access = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 
@@ -1867,7 +1867,7 @@ future_data_centers = {
 	supply_limit = 0.25
 
 	#Economic buff
-	factory_input = -0.02
+	factory_input = -0.005
 	
 	#Goods
 	factory_goods_output = { 

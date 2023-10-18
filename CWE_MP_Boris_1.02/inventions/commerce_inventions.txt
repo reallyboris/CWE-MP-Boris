@@ -183,7 +183,7 @@ industrial_production_investments = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
+		factory_input = -0.001
 	}
 }
 industrial_distribution_investments = {
@@ -961,7 +961,7 @@ new_inflation_theory = {
 	}
 	effect = {
 		factory_cost = -0.1
-		factory_input = -0.1
+		factory_input = -0.01
 	}
 }
 #keynesian_economics
@@ -1072,7 +1072,7 @@ harrod_domar_model = {
 		 invention = nicholas_kaldor}
 		}
 	effect = {
-	 factory_input = -0.01}
+	 factory_input = -0.001}
 	 }
 solow_swan_model = {
     limit = { new_growth_theory = 1 }
@@ -1083,7 +1083,7 @@ solow_swan_model = {
 		  invention = robert_solow}
 		  }
 	effect = {
-	   factory_input = -0.01}
+	   factory_input = -0.001}
 	   }
 cambrigde_controversy = {
    limit = { new_growth_theory = 1 }
@@ -1344,7 +1344,7 @@ public_economics = {
 		 }
 	effect = {
 	   tax_eff = 1
-	   factory_input = -0.01
+	   factory_input = -0.001
 		shared_prestige = 10 }
 		}
 #digitaleconomics_theory
@@ -1434,7 +1434,7 @@ nugde_theory = {
 	 }
 	effect = {
 	 shared_prestige = 50
-	 factory_input = -0.01}
+	 factory_input = -0.001}
 	 }
 #neoeconomics_theory
 steve_keen = {
@@ -1523,7 +1523,7 @@ financial_instability_hypothesis = {
 	}
 	effect = {
 		shared_prestige = 5
-		factory_input = -0.01
+		factory_input = -0.001
 		factory_throughput = 0.01
 	}
    }
@@ -1624,7 +1624,7 @@ institutional_economics = {
 	}
 	effect = {
 		shared_prestige = 5
-        factory_input = -0.01
+        factory_input = -0.001
         administrative_efficiency = 0.05		
 	}
 }
@@ -1639,7 +1639,7 @@ modern_monetary_theory =  {
 	}
 	effect = {
 		shared_prestige = 5
-        factory_input = -0.01
+        factory_input = -0.001
         factory_output = 0.01
 	}
   }
@@ -1654,7 +1654,7 @@ ecological_economics  = {
 	}
 	effect = {
 		shared_prestige = 5
-        factory_input = -0.02		
+        factory_input = -0.005		
 	}
 }
 feminist_economics  = {
@@ -1892,7 +1892,7 @@ export_oriented_industrializationi  = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
+		factory_input = -0.001
 	}
 }
 money_supply_control = {
@@ -2003,7 +2003,7 @@ global_supply_chains = {
 		}
 	}
 	effect = {
-		factory_input = -0.01 
+		factory_input = -0.001 
 	}
 }
 multinacional_corporations = {
@@ -2327,7 +2327,7 @@ infant_industry = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
+		factory_input = -0.001
 	}
 }
 zero_sum_logic = {
@@ -2543,7 +2543,7 @@ bullwhip_effect = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
+		factory_input = -0.001
 	}
 }
 MRP = {
@@ -2628,7 +2628,7 @@ limit = { lean_manufacturing = 1 }
 		trade_policy = protectionism}
 		}
 	effect = { 
-	factory_input = -0.01}	
+	factory_input = -0.001}	
 	}
 #post_fordism
 the_vanguard_method = {
@@ -2647,7 +2647,7 @@ the_vanguard_method = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
+		factory_input = -0.001
 	}
 }
 flexible_specialization = {
@@ -2664,7 +2664,7 @@ flexible_specialization = {
 		}
 	}
 	effect = {
-		factory_input = -0.01
+		factory_input = -0.001
 	}
 }
 TQM = {
@@ -2702,7 +2702,7 @@ six_sigma = {
 	}
 	
 	effect = {
-		factory_input = -0.02
+		factory_input = -0.005
 	}
 }
 #neodigital
@@ -2742,7 +2742,7 @@ limit = { neodigital = 1 }
 		}
 	} 
 	effect = {
-	factory_input = -0.01 }
+	factory_input = -0.001 }
 	}
 the_digital_economy = {
 limit = { neodigital = 1 }
@@ -2775,7 +2775,7 @@ limit = { neodigital = 1 }
 		}
 	}
 	effect = { 
-	factory_input = -0.01}
+	factory_input = -0.001}
 	}	
 #modern_workforce_management
 human_capital_development = {
@@ -2897,7 +2897,7 @@ limit = { offshore_software_development = 1 }
 		economic_policy = laissez_faire }
 		}
 	effect = { 
-	factory_input = -0.01 }
+	factory_input = -0.001 }
 	}
 extreme_programming  = {	
 limit = { offshore_software_development = 1 }
