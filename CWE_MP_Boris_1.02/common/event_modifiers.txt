@@ -3545,9 +3545,9 @@ polar_expedition_underway = {
 ### Nuclear Blackmail ###
 
 nuke_blackmail = {
-import_cost = -0.25
-factory_owner_cost = -0.020
-prestige = 0.01
+import_cost = 0.25
+factory_owner_cost = 0.020
+prestige = -0.01
 tax_efficiency = 0.025
 icon = 23
 }
@@ -4890,7 +4890,7 @@ icon = 16
 
 nuke_sanctions = {
 import_cost = 0.50
-loan_interest = 0.5
+loan_interest = 2.5
 tax_efficiency = -0.05
 badboy = 0.02
 icon = 24
@@ -4942,13 +4942,13 @@ icon = 24
 }
 
 develop_atomic_bomb = {
-tax_efficiency = -0.04
+tax_efficiency = -0.12
 badboy = 0.01
 icon = 24
 }
 
 develop_hydrogen_bomb = {
-tax_efficiency = -0.08
+tax_efficiency = -0.24
 badboy = 0.01
 icon = 24
 }
@@ -4965,58 +4965,57 @@ icon = 23
 
 nuke_high = {
 immigrant_push = 10
-population_growth = -0.06
+population_growth = -0.01
 immigrant_attract = -3
 pop_militancy_modifier = 0.20
-local_RGO_throughput = -0.75
+local_RGO_throughput = -1
 local_factory_output = -1.70
 icon = 26
 }
 
 nuke_medium = {
 immigrant_push = 5
-population_growth = -0.03
+population_growth = -0.005
 immigrant_attract = -2
 pop_militancy_modifier = 0.10
-local_RGO_throughput = -0.50
+local_RGO_throughput = -0.85
 local_factory_output = -0.90
 icon = 26
 }
 
 nuke_low = {
 immigrant_push = 2.5
-population_growth = -0.015
+population_growth = -0.001
 immigrant_attract = -1
 pop_militancy_modifier = 0.05
-local_RGO_throughput = -0.25
+local_RGO_throughput = -0.5
 local_factory_output = -0.30
 icon = 26
 }
 
 tactical_nuked = {
 immigrant_push = 0.5
-population_growth = -0.01
 immigrant_attract = -1
 pop_militancy_modifier = 0.05
 local_RGO_throughput = -0.25
-local_factory_output = -0.30
+local_factory_output = -0.25
 icon = 26
 }
 
 nuke_fallout = {
 immigrant_push = 0.20
-global_population_growth = -0.003
+global_population_growth = -0.002
 immigrant_attract = -0.50
 core_pop_militancy_modifier = 0.03
-RGO_throughput = -0.30
-factory_output = -0.30
+RGO_throughput = -0.20
+factory_output = -0.20
 icon = 24
 }
 
 nuke_neighbour_fallout = {
 immigrant_push = 0.10
-global_population_growth = -0.002
-immigrant_attract = -0.25
+global_population_growth = -0.001
+immigrant_attract = -0.20
 core_pop_militancy_modifier = 0.02
 RGO_throughput = -0.20
 factory_output = -0.20
@@ -5027,7 +5026,7 @@ nuke_distant_fallout = {
 immigrant_push = 0.05
 global_population_growth = -0.001
 immigrant_attract = -0.125
-core_pop_militancy_modifier = 0.01
+core_pop_militancy_modifier = 0.02
 RGO_throughput = -0.20
 factory_output = -0.20
 icon = 24

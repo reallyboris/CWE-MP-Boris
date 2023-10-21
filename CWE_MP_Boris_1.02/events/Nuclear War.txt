@@ -66,42 +66,43 @@ allow_multiple_instances = yes
 
 is_triggered_only = yes
 	
-	option = {
-name = "We must retaliate!"
+	immediate = {
 
-prestige_factor = -0.06
+		prestige_factor = -0.05
 
-war_exhaustion = 10
+		war_exhaustion = 10
 
-add_country_modifier = { name = recently_attacked_nuke duration = 31 }
+		add_country_modifier = { name = recently_attacked_nuke duration = 31 }
 
-add_country_modifer = { name = nuke_fallout duration = 1825 }
+		add_country_modifer = { name = nuke_fallout duration = 1825 }
 
-#any_pop = { reduce_pop = 0.90 }
+		#any_pop = { reduce_pop = 0.90 }
 
-set_country_flag = has_nuke_clouds
+		set_country_flag = has_nuke_clouds
 
-any_owned = { limit = { is_capital = yes }
-add_province_modifier = { name = nuke_low duration = 1825 }
-any_pop = { reduce_pop = 0.90 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -2
-naval_base = -2
-fort = -2
-}
+		any_owned = { limit = { is_capital = yes }
+		add_province_modifier = { name = nuke_low duration = 1825 }
+		any_pop = { reduce_pop = 0.90 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -2
+		naval_base = -2
+		fort = -2
+		}
 
-any_owned = { limit = { total_pops = 1000000 }
-add_province_modifier = { name = nuke_low duration = 1825 }
-any_pop = { reduce_pop = 0.90 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -2
-naval_base = -2
-fort = -2
-}
+		any_owned = { limit = { total_pops = 1000000 }
+		add_province_modifier = { name = nuke_low duration = 1825 }
+		any_pop = { reduce_pop = 0.90 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -2
+		naval_base = -2
+		fort = -2
+		}
 
 		}
+
+option = { name = "We must retaliate!" }
 
 }
 
@@ -116,53 +117,67 @@ allow_multiple_instances = yes
 	
 is_triggered_only = yes
 	
-	option = {
-name = "We must retaliate!"
+	immediate = {
 
-prestige_factor = -0.125
-
-war_exhaustion = 20
-
-add_country_modifier = { name = recently_attacked_nuke duration = 31 }
-
-add_country_modifier = { name = nuke_fallout duration = 1825 }
-
-#any_pop = { reduce_pop = 0.80 }
-
-set_country_flag = has_nuke_clouds
-
-any_owned = { limit = { is_capital = yes }
-add_province_modifier = { name = nuke_medium duration = 1825 }
-any_pop = { reduce_pop = 0.80 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -4
-naval_base = -4
-fort = -4
-}
-
-any_owned = { limit = { AND = { total_pops = 500000 NOT = { total_pops = 1000000 } } }
-add_province_modifier = { name = nuke_low duration = 1825 }
-any_pop = { reduce_pop = 0.90 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -2
-naval_base = -2
-fort = -2
-}
-
-any_owned = { limit = { total_pops = 1000000 }
-add_province_modifier = { name = nuke_medium duration = 1825 }
-any_pop = { reduce_pop = 0.80 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -4
-naval_base = -4
-fort = -4
-}
-
-
+		any_country = {
+			limit = { NOT = { tag = REB } neighbour = THIS }
+			remove_country_modifier = { name = nuke_neighbour_fallout }
+			remove_country_modifier = { name = nuke_distant_fallout }
+			add_country_modifier = { name = nuke_neighbour_fallout duration = 1825 }
 		}
+
+		any_country = {
+			limit = { NOT = { neighbour = THIS } }
+			remove_country_modifier = { name = nuke_neighbour_fallout }
+			remove_country_modifier = { name = nuke_distant_fallout }
+			add_country_modifier = { name = nuke_distant_fallout duration = 1825 }
+		}
+
+		prestige_factor = -0.1
+
+		war_exhaustion = 20
+
+		add_country_modifier = { name = recently_attacked_nuke duration = 31 }
+
+		add_country_modifier = { name = nuke_fallout duration = 1825 }
+
+		#any_pop = { reduce_pop = 0.80 }
+
+		set_country_flag = has_nuke_clouds
+
+		any_owned = { limit = { is_capital = yes }
+		add_province_modifier = { name = nuke_medium duration = 1825 }
+		any_pop = { reduce_pop = 0.80 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -4
+		naval_base = -4
+		fort = -4
+		}
+
+		any_owned = { limit = { AND = { total_pops = 500000 NOT = { total_pops = 1000000 } } }
+		add_province_modifier = { name = nuke_low duration = 1825 }
+		any_pop = { reduce_pop = 0.90 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -2
+		naval_base = -2
+		fort = -2
+		}
+
+		any_owned = { limit = { total_pops = 1000000 }
+		add_province_modifier = { name = nuke_medium duration = 1825 }
+		any_pop = { reduce_pop = 0.80 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -4
+		naval_base = -4
+		fort = -4
+		}
+
+			}
+
+option = { name = "We must retaliate!" }
 
 }
 
@@ -178,64 +193,78 @@ allow_multiple_instances = yes
 	
 is_triggered_only = yes
 	
-	option = {
-name = "We must retaliate!"
+	immediate = {
 
-prestige_factor = -0.25
-
-war_exhaustion = 30
-
-add_country_modifier = { name = recently_attacked_nuke duration = 31 }
-
-add_country_modifier = { name = nuke_fallout duration = 1825 }
-
-#any_pop = { reduce_pop = 0.70 }
-
-set_country_flag = has_nuke_clouds
-
-any_owned = { limit = { is_capital = yes }
-add_province_modifier = { name = nuke_high duration = 1825 }
-any_pop = { reduce_pop = 0.70 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -6
-naval_base = -6
-fort = -6
-}
-
-any_owned = { limit = { AND = { total_pops = 250000 NOT = { total_pops = 500000 } } }
-add_province_modifier = { name = nuke_low duration = 1825 }
-any_pop = { reduce_pop = 0.90 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -2
-naval_base = -2
-fort = -2
-}
-
-any_owned = { limit = { AND = { total_pops = 500000 NOT = { total_pops = 1000000 } } }
-add_province_modifier = { name = nuke_medium duration = 1825 }
-any_pop = { reduce_pop = 0.80 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -4
-naval_base = -4
-fort = -4
-}
-
-any_owned = { limit = { total_pops = 1000000 }
-add_province_modifier = { name = nuke_high duration = 1825 }
-any_pop = { reduce_pop = 0.70 }
-set_province_flag = disease
-set_province_flag = nuked_before
-infrastructure = -6
-naval_base = -6
-fort = -6
-}
-
-any_pop = { reduce_pop = 0.70 }
-
+		any_country = {
+			limit = { NOT = { tag = REB } neighbour = THIS }
+			remove_country_modifier = { name = nuke_neighbour_fallout }
+			remove_country_modifier = { name = nuke_distant_fallout }
+			add_country_modifier = { name = nuke_neighbour_fallout duration = 1825 }
 		}
+
+		any_country = {
+			limit = { NOT = { neighbour = THIS } }
+			remove_country_modifier = { name = nuke_neighbour_fallout }
+			remove_country_modifier = { name = nuke_distant_fallout }
+			add_country_modifier = { name = nuke_distant_fallout duration = 1825 }
+		}
+
+		prestige_factor = -0.15
+
+		war_exhaustion = 30
+
+		add_country_modifier = { name = recently_attacked_nuke duration = 31 }
+
+		add_country_modifier = { name = nuke_fallout duration = 1825 }
+
+		#any_pop = { reduce_pop = 0.70 }
+
+		set_country_flag = has_nuke_clouds
+
+		any_owned = { limit = { is_capital = yes }
+		add_province_modifier = { name = nuke_high duration = 1825 }
+		any_pop = { reduce_pop = 0.70 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -6
+		naval_base = -6
+		fort = -6
+		}
+
+		any_owned = { limit = { AND = { total_pops = 250000 NOT = { total_pops = 500000 } } }
+		add_province_modifier = { name = nuke_low duration = 1825 }
+		any_pop = { reduce_pop = 0.90 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -2
+		naval_base = -2
+		fort = -2
+		}
+
+		any_owned = { limit = { AND = { total_pops = 500000 NOT = { total_pops = 1000000 } } }
+		add_province_modifier = { name = nuke_medium duration = 1825 }
+		any_pop = { reduce_pop = 0.80 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -4
+		naval_base = -4
+		fort = -4
+		}
+
+		any_owned = { limit = { total_pops = 1000000 }
+		add_province_modifier = { name = nuke_high duration = 1825 }
+		any_pop = { reduce_pop = 0.70 }
+		set_province_flag = disease
+		set_province_flag = nuked_before
+		infrastructure = -6
+		naval_base = -6
+		fort = -6
+		}
+
+		any_pop = { reduce_pop = 0.70 }
+		}
+
+option = { name = "We must retaliate!" }
 
 }
 
