@@ -19,7 +19,7 @@ political_decisions = {
 				part_of_sphere = no 
 				sphere_owner = { OR = { has_country_flag = xcc_ambition NOT = { has_country_flag = deny_superstate } } }
 			}
-			bank_for_international_settlements = 1
+			OR = { year = 1973 bank_for_international_settlements = 1 }
 			war = no
 		}
 
