@@ -17,10 +17,7 @@ NOT = { has_country_flag = hide_superstate }
 OR = { part_of_sphere = no sphere_owner = { OR = { has_country_flag = xms_ambition NOT = { has_country_flag = deny_superstate } } } }
 
 
-		
-
-
-			bank_for_international_settlements = 1
+			OR = { date = 1965 bank_for_international_settlements = 1 }
 			war = no
 			NOT = { exists = XSU }
 			NOT = { exists = XAC }
