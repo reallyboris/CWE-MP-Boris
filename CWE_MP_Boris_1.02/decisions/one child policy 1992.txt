@@ -20,7 +20,9 @@ allow = {
 	}
 
 	effect = {
-		add_country_modifier = { name = one_child_policy_mod duration = 8400 }
+		prestige = 100
+		money = 500000
+		add_country_modifier = { name = one_child_policy_mod duration = 9125 }
                 set_country_flag = one_child_policy
 		#Increase literacy and militancy
 		any_owned = {
