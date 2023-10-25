@@ -183,13 +183,13 @@ country_migration_target = {
 	#Minorities - immigrants don't go to countries that oppress minorities
 	
 	modifier = { 
-		factor = -0.25
+		factor = 0.10
 		minorities_reform = minorities_oppression
 		THIS = { NOT = { is_culture_group = THIS  } }
 	}
 	
 	modifier = { 
-		factor = 0.25
+		factor = 1.25
 		minorities_reform = minorities_affirmative_action
 		THIS = { NOT = { is_culture_group = THIS  } }
 	}
@@ -220,35 +220,35 @@ country_migration_target = {
 	#Unemployment increases immigration - Craftsmen
 
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.05
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.1
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.15
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.2
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.25
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.3
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.35
     }
     modifier = {
-        factor = -0.1
+        factor = 0.1
         unemployment = 0.5
     }
 
