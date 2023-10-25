@@ -47,6 +47,10 @@ political_decisions = {
 
 			change_tag = PCC
 
+add_accepted_culture = polish
+add_accepted_culture = czech
+add_accepted_culture = slovak
+
 			any_country = { limit = { exists = yes OR = { tag = POL tag = CZH tag = BOH tag = SLV } } country_event = 11101 }
 
 		}
