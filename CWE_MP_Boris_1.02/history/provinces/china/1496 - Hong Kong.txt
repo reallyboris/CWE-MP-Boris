@@ -10,6 +10,31 @@ naval_base = 3
 life_rating = 35
 terrain = urban_hong_kong
 colonial = 0
+state_building = {
+	level = 2
+	building = fish_canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = paper_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = coal_fuel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = electric_telecommunications_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = petroleum_fuel_factory
+	upgrade = yes
+}
 1992.1.1 = {
 owner = ENG
 controller = ENG

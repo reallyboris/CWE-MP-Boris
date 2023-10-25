@@ -73,7 +73,7 @@ country_migration_target = {
 	
 	#Immigrants love some continents
 	modifier = {
-        factor = 0.25
+        factor = 0.10
 		
 		THIS = { 
 			NOT = { 

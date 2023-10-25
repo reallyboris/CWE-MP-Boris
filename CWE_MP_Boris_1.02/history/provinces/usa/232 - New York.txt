@@ -8,22 +8,22 @@ terrain = urban_new_york
 railroad = 1
 colonial = 0
 state_building = {
-	level = 2
+	level = 5
 	building = education_rnd_factory
 	upgrade = yes
 }
 state_building = {
-	level = 5
+	level = 6
 	building = transport_factory
 	upgrade = yes
 }
 state_building = {
-	level = 13
+	level = 10
 	building = ships_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
+	level = 1
 	building = small_arms_factory
 	upgrade = yes
 }
@@ -33,12 +33,12 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 1
+	level = 3
 	building = electric_telecommunications_factory
 	upgrade = yes
 }
 state_building = {
-	level = 1
+	level = 3
 	building = telecommunications_factory
 	upgrade = yes
 }

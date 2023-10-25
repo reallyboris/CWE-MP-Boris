@@ -465,6 +465,7 @@ political_reforms = {
 		next_step_only = yes
 		administrative = yes
 		nobody_gets_out = {
+			research_points_modifier = -0.1
 			global_immigrant_attract = -1.0
 			global_pop_consciousness_modifier = -0.01
 		}
