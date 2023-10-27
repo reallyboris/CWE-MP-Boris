@@ -34,7 +34,7 @@ CZH = { country_event = 132400 }
 restore_austrian_monarchy = {
 	picture = "austrian_monarchy"
 	potential = {
-		tag = AUS
+		OR = { tag = AUS tag = KUK }
 OR = { government = democracy government = democracy1 }
 has_global_flag = blocsenabled
 			}

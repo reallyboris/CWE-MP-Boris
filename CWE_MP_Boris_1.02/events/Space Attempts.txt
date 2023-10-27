@@ -23,6 +23,7 @@ country_event = {
 	desc = "Good launch planning, no human errors during the launch and technical genius in the rocket design are reasons cited for the success."
 	picture = "rocket_success"
 	
+	major = yes
 	trigger = {
 		NOT = { has_country_flag = space_rocket }
 		has_country_modifier = space_agency
@@ -57,6 +58,7 @@ country_event = {
 	desc = "Good launch planning, no human errors during the launch and technical genius in the satellite design are reasons cited for the success."
 	picture = "satellite_success"
 	
+	major = yes
 	trigger = {
 		NOT = { has_country_flag = space_satellite }
 		has_country_modifier = space_agency
@@ -109,6 +111,7 @@ country_event = {
 	desc = "Good launch planning, no human errors during the launch and excellent astronaut training are reasons cited for the success."
 	picture = "space_man_success"
 	
+	major = yes
 	trigger = {
 		NOT = { has_country_flag = space_man }
 		has_country_modifier = space_agency
@@ -160,6 +163,7 @@ country_event = {
 	desc = "Good launch planning, no human errors during the launch and excellent probe designs are reasons cited for the success."
 	picture = "space_probe_success"
 	
+	major = yes
 	trigger = {
 		NOT = { has_country_flag = space_probe }
 		has_country_modifier = space_agency
@@ -212,6 +216,7 @@ country_event = {
 	desc = "Good launch planning, no human errors during the launch and excellent space station designs are reasons cited for the success."
 	picture = "space_station_success"
 	
+	major = yes
 	trigger = {
 		NOT = { has_country_flag = space_station }
 		has_country_modifier = space_agency

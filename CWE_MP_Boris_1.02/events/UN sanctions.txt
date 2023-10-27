@@ -6,6 +6,7 @@ country_event = {
 	desc = "Due to our high international infamy, the international community has decided to impose sanctions on us via the UN."
 	picture = "nuclear_disarmament_un"
 	
+major = yes
 trigger = {
 NOT = { has_country_modifier = un_sanctions }
 badboy = 25
@@ -25,6 +26,7 @@ country_event = {
 	desc = "Due to our low international infamy, the international community has decided to retract sanctions on us via the UN."
 	picture = "nuclear_disarmament_un"
 	
+major = yes
 trigger = {
 has_country_modifier = un_sanctions
 NOT = { badboy = 25 }

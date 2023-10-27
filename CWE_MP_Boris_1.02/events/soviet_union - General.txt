@@ -7,6 +7,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
+	major = yes
 	trigger = {
 		tag = RUS
 		government = democracy
@@ -240,6 +241,7 @@ country_event = {
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = {
 		tag = RUS
 		year = 1953 
@@ -269,6 +271,7 @@ country_event = {
   
   	fire_only_once = yes
 
+	major = yes
 	trigger = {
 		tag = RUS
 		year = 1953 
@@ -378,7 +381,8 @@ country_event = {
   picture = "nwo2_cpsu_congress_1956"
   
 	fire_only_once = yes
-
+	
+	major = yes
 	trigger = {
 		tag = RUS
 		year = 1956 
@@ -1454,6 +1458,7 @@ country_event = {
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = {
     	tag = RUS
     	year = 1982 
@@ -1537,6 +1542,7 @@ country_event = {
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = {
     	tag = RUS
 		year = 1984 
@@ -1573,6 +1579,7 @@ country_event = {
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = { 
 		tag = RUS
 		year = 1985

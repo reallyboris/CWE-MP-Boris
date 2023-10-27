@@ -133,6 +133,7 @@ country_event = {
 	desc = "Our request to end the current conflict that we are involved in has been accepted by the United Nations Security Council. The UN will now demand all warring parties to reach an armistice or face international intervention."
 	picture = "unsc_vote"
 
+	major = yes
 	trigger = {
 		war = yes
 		
@@ -523,6 +524,7 @@ title = "UN sends a Peacekeeping Mission to $COUNTRY$"
 	desc = EVTDESC1512030
 	picture = "un_peace_making_troops"
 
+major = yes
 trigger = {
 has_country_flag = un_peace_making_marker
 NOT = { has_country_modifier = peace_making_veoted }
@@ -568,6 +570,7 @@ title = "UN Security Council vetoes Peace Mission to $COUNTRY$"
 	desc = EVTDESC1512031
 	picture = "un_peace_making_unsc_fail"
 
+major = yes
 trigger = {
 has_country_flag = un_peace_making_marker
 has_country_modifier = peace_making_veoted

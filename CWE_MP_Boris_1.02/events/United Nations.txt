@@ -189,7 +189,8 @@ country_event = {
   desc = EVTDESC1512301
   picture = "nwo2_communist_china_in_unsc"
 
-  trigger = {
+	major = yes
+	trigger = {
 	tag = KMT
 	CHI = { exists = yes }
 	has_country_flag = not_participating_UNSC

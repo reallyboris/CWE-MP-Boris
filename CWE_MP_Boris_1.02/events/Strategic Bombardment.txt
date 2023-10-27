@@ -97,6 +97,7 @@ country_event = {
 	desc = EVTDESC124101
 	picture = "strategic_bombardment"
 
+	major = yes
 	trigger = {
 		capital_scope = { NOT = { has_province_modifier = aerial_bombed } controlled_by = THIS }
 		war_countries = { has_country_flag = strategic_bombardment } 

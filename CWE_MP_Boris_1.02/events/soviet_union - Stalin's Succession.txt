@@ -8,6 +8,7 @@ country_event = { # Liberalization under Beria
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = {
 		tag = RUS
 		year = 1953

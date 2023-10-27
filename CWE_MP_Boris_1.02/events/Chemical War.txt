@@ -6,6 +6,7 @@ country_event = {
 	picture = "chemical_strike"
 	
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = "We have to prepare for a counter strike"
@@ -42,6 +43,7 @@ country_event = {
 	picture = "chemical_strike"
 	
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = "We have to prepare for a counter strike"
@@ -86,6 +88,7 @@ country_event = {
 	picture = "chemical_strike"
 	
 	is_triggered_only = yes
+	major = yes
 	
 	option = {
 		name = "We have to prepare for a counter strike"
@@ -137,9 +140,9 @@ country_event = {
 	desc = "If we do not agree to end the war $FROMCOUNTRY$ will launch a chemical attack!"
 	picture = "chemical_ultimatum"
 	
-	
 	is_triggered_only = yes
-	
+	major = yes
+
 	option = {
 		name = "Capitulate to $FROMCOUNTRY$"
 

@@ -7,6 +7,7 @@ country_event = {
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = {
     	tag = HUN
 		year = 1956 
@@ -223,6 +224,7 @@ country_event = {
   
 	fire_only_once = yes
 
+	major = yes
 	trigger = {
     	tag = HUN
 		has_global_flag = 1956_HUN_war_for_indy

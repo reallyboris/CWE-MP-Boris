@@ -6,6 +6,7 @@ country_event = {
   picture = "nwo2_tito_tomb"
   fire_only_once = yes
 
+	major = yes
 	trigger = {
 		tag = YUG
 		year = 1980
@@ -76,6 +77,7 @@ country_event = {
   picture = "nwo2_tito_stalin"
   fire_only_once = yes
 
+	major = yes
 	trigger = {
 		tag = YUG
 		year = 1948 
