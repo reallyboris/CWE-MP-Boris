@@ -46,7 +46,7 @@ party_issues = {
 			factory_output = 0.05
 
 			rules = {
-				build_factory = yes
+				build_factory = no
 				expand_factory = yes
 				open_factory = yes
 				destroy_factory = yes
