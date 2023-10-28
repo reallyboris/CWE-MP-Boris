@@ -130,6 +130,7 @@ country_event = {
 	desc = EVT_1971284_DESC
 	picture = "united_nations"
 
+	major = yes
 	is_triggered_only = yes
 
 	option = {
