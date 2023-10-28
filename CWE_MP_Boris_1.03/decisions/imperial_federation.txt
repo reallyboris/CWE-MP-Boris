@@ -58,7 +58,7 @@ OR = { has_country_modifier = commonwealthmember has_country_modifier = commonwe
 		picture = "IMP_parliament"
 		alert = no
 		potential = {
-NOT = { has_country_flag = hide_superstate }
+			NOT = { has_country_flag = hide_superstate }
 			has_country_flag = IMP_ambition
 			NOT = { tag = IMP }
 		}
