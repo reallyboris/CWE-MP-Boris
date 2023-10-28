@@ -46,7 +46,7 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		year = 1952
+		year = 1951
 		NOT = { year = 1990 }
 		
 		JAP = {
@@ -66,10 +66,10 @@ country_event = {
 		government = democracy
 	}
 
-	mean_time_to_happen = { months = 4 }
+	mean_time_to_happen = { months = 1 }
 
 	option = {
-		name = "Japan shall be a sovereign but under the American sphere"
+		name = "Japan shall be a sovereign state under the American sphere"
 		prestige = 100
 		release_vassal = JAP
 		
