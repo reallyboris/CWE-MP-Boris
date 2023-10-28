@@ -4948,7 +4948,7 @@ icon = 24
 }
 
 develop_hydrogen_bomb = {
-tax_efficiency = -0.24
+tax_efficiency = -0.20
 badboy = 0.01
 icon = 24
 }
