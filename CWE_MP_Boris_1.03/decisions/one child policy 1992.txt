@@ -2,13 +2,11 @@
 political_decisions = {
 
 One-Child = {
-	id = 151221922
-	title = "The One-Child policy"
-	desc = EVTDESC1512219
 	picture = "one_child_policy_evt"
 
 	potential = {
-		tag = CHI		
+		tag = CHI
+		OR = { ai = no year = 1980 }
 		NOT = { has_country_flag = one_child_policy }
 		NOT = { has_country_modifier = one_child_policy_mod  }
 	}
