@@ -2777,7 +2777,7 @@
 		religion = secularism
 		size = 1546
 	 } 
-	artisans = {
+	farmers = {
 		culture = chinese_cantonese
 		religion = secularism
 		size = 748
@@ -2787,7 +2787,7 @@
 		religion =  taoism 
 		size = 230000
 	 }
-	artisans = {
+	farmers = {
 		culture = chinese_cantonese
 		religion =  taoism 
 		size = 153846

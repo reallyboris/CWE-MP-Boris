@@ -118,7 +118,7 @@ country_event = {
 		any_pop = { limit = { culture = french_canadian } money = 1000 }
 		any_pop = { limit = { culture = afrikaaner } money = 1100 }
 		any_owned = { limit = { controlled_by = CHI } any_pop = { limit = { type = artisans } move_pop = 1485 } }
-		any_owned = { limit = { controlled_by = CHI } any_pop = { limit = { type = capitalists } move_pop = 1496 } }
+		any_owned = { limit = { controlled_by = CHI } any_pop = { limit = { type = capitalists } pop_type = artisans move_pop = 1496 } }
 		set_country_flag = playermoneyboost
 	}
 }

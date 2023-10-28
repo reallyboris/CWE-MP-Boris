@@ -1,5 +1,5 @@
-owner = NAU
-controller = NAU
+owner = AST
+controller = AST
 add_core = NAU
 trade_goods = other_minerals
 life_rating = 15

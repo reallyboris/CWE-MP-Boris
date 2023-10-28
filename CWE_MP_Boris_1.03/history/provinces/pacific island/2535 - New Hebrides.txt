@@ -1,5 +1,5 @@
-owner = VAN
-controller = VAN
+owner = ENG
+controller = ENG
 add_core = VAN
 trade_goods = fish
 life_rating = 15
