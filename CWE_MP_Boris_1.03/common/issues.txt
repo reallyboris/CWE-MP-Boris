@@ -308,16 +308,21 @@ political_reforms = {
 		next_step_only = yes
 		no_meetings = { 
 			ruling_party_support = 0.25
-			issue_change_speed = -0.8
+			issue_change_speed = -0.5
 			global_immigrant_attract = -0.2
-			global_pop_consciousness_modifier = -0.01
+			global_pop_consciousness_modifier = -0.02
+			global_pop_militancy_modifier = -0.02
 		}
 		limited_meetings = {
-			ruling_party_support = 0.125
-			global_immigrant_attract = 0.1
+			ruling_party_support = 0.15
+			issue_change_speed = -0.15
+			global_immigrant_attract = -0.05
+			global_pop_consciousness_modifier = -0.01
+			global_pop_militancy_modifier = -0.01
+			administrative_multiplier = 2
 		}
 		free_meetings = {
-			issue_change_speed = 0.2
+			suppression_points_modifier = -0.25
 			global_immigrant_attract = 0.2
 			global_pop_consciousness_modifier = 0.03	 
 		}
@@ -766,19 +771,23 @@ social_reforms = {
 		}
 		trinket_pensions = {
 			pension_level = 1
+			global_population_growth = 0.001
 			global_immigrant_attract = 0.1
 		}
 		low_pensions = {
 			pension_level = 2
+			global_population_growth = 0.001
 			global_immigrant_attract = 0.2
 		}
 		acceptable_pensions = {
 			pension_level = 3
+			global_population_growth = 0.002
 			global_pop_consciousness_modifier = -0.01
 			global_immigrant_attract = 0.3
 		}
 		good_pensions = {
 			pension_level = 4
+			global_population_growth = 0.002
 			global_pop_consciousness_modifier = -0.02
 			global_immigrant_attract = 0.4
 		}
@@ -791,31 +800,27 @@ social_reforms = {
 		trinket_health_care = {
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.1
-
-tax_efficiency = -0.04
+			tax_efficiency = -0.04
 			administrative_multiplier = 1
 		}
 		low_health_care = {
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.2
-
-tax_efficiency = -0.08
+			tax_efficiency = -0.08
 			administrative_multiplier = 2
 			global_pop_consciousness_modifier = -0.01
 		}
 		acceptable_health_care = {
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.3
-
-tax_efficiency = -0.10
+			tax_efficiency = -0.10
 			administrative_multiplier = 3
 			global_pop_consciousness_modifier = -0.02
 		}
 		good_health_care = {
 			global_population_growth = 0.002
 			global_immigrant_attract = 0.4
-
-tax_efficiency = -0.15
+			tax_efficiency = -0.15
 			administrative_multiplier = 4
 			global_pop_consciousness_modifier = -0.03
 		}
@@ -893,29 +898,29 @@ tax_efficiency = -0.15
 			administrative_multiplier = 1
 			pension_level = 1
 			unemployment_benefit = 1
-                        global_population_growth = 0.001
-			global_pop_consciousness_modifier = -0.02
+			global_pop_consciousness_modifier = -0.01
+			global_pop_militancy_modifier = -0.02
 		}
 		social_abuse_protection = { # medium_endowment
 			administrative_multiplier = 2
 			pension_level = 2
 			unemployment_benefit = 2
-                        global_population_growth = 0.001
-			global_pop_consciousness_modifier = -0.03
+			global_pop_consciousness_modifier = -0.02
+			global_pop_militancy_modifier = -0.04
 		}
 		anti_terror_surveillance  = { # large_endowment
 			administrative_multiplier = 4
 			pension_level = 3
 			unemployment_benefit = 3
-                        global_population_growth = 0.001
-			global_pop_consciousness_modifier = -0.04
+			global_pop_consciousness_modifier = -0.03
+			global_pop_militancy_modifier = -0.06
 		}
 		the_safety_grid = { # massive_endowment
 			administrative_multiplier = 8
 			pension_level = 4
 			unemployment_benefit = 4
-                        global_population_growth = 0.002
-			global_pop_consciousness_modifier = -0.05
+			global_pop_consciousness_modifier = -0.04
+			global_pop_militancy_modifier = -0.08
 		}
 	}
 
@@ -936,7 +941,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0
 			on_execute = {
 				effect = {
-				activate_technology = trust_busting 
+				activate_technology = marshall_plan 
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -966,7 +971,7 @@ economic_reforms = {
 
 			on_execute = {
 				effect = {
-				activate_technology = seventies_subcultures 
+				activate_technology = decolonization 
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -996,7 +1001,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0
 			on_execute = {
 				effect = {
-					activate_technology = early_networks
+					activate_technology = radio_network
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1026,7 +1031,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0
 			on_execute = {
 				effect = {
-					activate_technology = new_keynesian
+					activate_technology = keynesian_economics
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1112,7 +1117,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = dollar_standard
+					activate_technology = gold_standard
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1167,7 +1172,7 @@ economic_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = preschool_education
+					activate_technology = compulsory_primary_education
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1199,7 +1204,7 @@ economic_reforms = {
 			global_population_growth = -0.001
 			on_execute = {
 				effect = {
-					activate_technology = molecular_biology 
+					activate_technology = electricity 
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1253,7 +1258,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0
 			on_execute = {
 				effect = {
-					activate_technology = early_networks 
+					activate_technology = radio_network 
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1305,7 +1310,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0
 			on_execute = {
 				effect = {
-					activate_technology = mobile_network 
+#					activate_technology = mobile_network 
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1367,7 +1372,7 @@ economic_reforms = {
 			civilization_progress_modifier = 0
 			on_execute = {
 				effect = {
-					activate_technology = microcomputer
+					activate_technology = radio
 					build_factory_in_capital_state = cement_factory
 					
 					any_pop = {
@@ -1404,7 +1409,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = close_air_support
+					activate_technology = first_generation_subsonic_jet_fighters
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1435,7 +1440,7 @@ military_reforms = {
 						
 			on_execute = {
 				effect = {
-					activate_technology = modern_rifles
+					activate_technology = infantry
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1494,7 +1499,7 @@ military_reforms = {
 					}
 				}
 				effect = {
-					activate_technology = military_gps_system
+					activate_technology = post_war_radar
 					build_fort_in_capital = {
 						in_whole_capital_state = no # no = just in main capital province.
 						limit_to_world_greatest_level = yes
@@ -1529,7 +1534,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = arms_race_doctrine
+					activate_technology = cold_war_doctrine
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1560,7 +1565,7 @@ military_reforms = {
 			research_points_on_conquer = 0.25			
 			on_execute = {
 				effect = {
-					activate_technology = second_generation_tanks
+					activate_technology = heavy_tanks
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1591,7 +1596,7 @@ military_reforms = {
 			
 			on_execute = {			
 				effect = {
-					activate_technology = green_blue_water_navies
+					activate_technology = command_of_the_sea
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1621,7 +1626,7 @@ military_reforms = {
 			research_points_on_conquer = 0.25
 			on_execute = {
 				effect = {
-					activate_technology = cruise_missile
+					activate_technology = ww2_command_system
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1651,7 +1656,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = submarine_base
+					activate_technology = modern_shipyard
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1681,7 +1686,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = aircraft_carrier
+					activate_technology = ww2_aircraft_carrier
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
@@ -1712,7 +1717,7 @@ military_reforms = {
 			
 			on_execute = {
 				effect = {
-					activate_technology = destroyers
+					activate_technology = modern_shipbuilding
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal

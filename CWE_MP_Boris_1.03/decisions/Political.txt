@@ -20,7 +20,7 @@ political_decisions = {
 
 		allow = {
 			#Must have some industry to begin with
-			industrial_score = 100
+			industrial_score = 10
 		}
 
 		effect = {
@@ -35,7 +35,7 @@ political_decisions = {
 			clr_country_flag = spclow
 			clr_country_flag = spcno
 		
-			#Choose where to specialise
+			#Choose where to specialise essential events 9
 			country_event = 1610134
 		
 			add_country_modifier = { name = five_year_plan duration = 1825 }
