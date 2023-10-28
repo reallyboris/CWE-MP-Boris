@@ -17311,12 +17311,12 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 20117
+		size = 75117
 	 } 
 	clerks = {
 		culture = white_anglo
 		religion = secularism
-		size = 1989
+		size = 6989
 	 } 
 	artisans = {
 		culture = white_anglo
@@ -17331,22 +17331,22 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 61357
+		size = 206357
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 6068
+		size = 21068
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 397223
+		size = 197223
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 39285
+		size = 19285
 	 } 
 	farmers = {
 		culture = jewish
@@ -22181,7 +22181,7 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 17726
+		size = 23726
 	 } 
 	clerks = {
 		culture = white_anglo
@@ -22201,22 +22201,22 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 54067
+		size = 99067
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 5347
+		size = 9347
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 373344
+		size = 323344
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 36924
+		size = 31924
 	 } 
 	farmers = {
 		culture = afro_american
