@@ -7,6 +7,8 @@ political_decisions = {
 
 			NOT = { OR = { tag = R01 tag = R02 tag = R03 tag = R04 tag = R05 tag = R06 tag = R07 tag = R08 tag = R09 tag = R10 } }
 	
+			NOT = { has_country_modifier = develop_atomic_bomb_start }
+			NOT = { has_country_modifier = develop_hydrogen_bomb_start }
 			NOT = { has_country_modifier = develop_atomic_bomb }
 			NOT = { has_country_modifier = develop_hydrogen_bomb }
 			NOT = { has_country_modifier = atomic_nation }	
@@ -76,7 +78,7 @@ political_decisions = {
 
 			#### Nuclear Development Time ####
 
-			add_country_modifier = { name = develop_atomic_bomb duration = -1 }
+			add_country_modifier = { name = develop_atomic_bomb_start duration = -1 }
 
 			set_country_flag = atomic_bomb_developed
 			set_country_flag = atomic_bomb_goods_needed
@@ -115,6 +117,7 @@ political_decisions = {
 
 			has_country_modifier = atomic_nation
 			NOT = { has_country_modifier = hydrogen_nation }
+			NOT = { has_country_modifier = develop_hydrogen_bomb_start }
 			NOT = { has_country_modifier = develop_atomic_bomb }
 			NOT = { has_country_modifier = develop_hydrogen_bomb }
 			NOT = { has_country_flag = hydrogen_bomb_developed }

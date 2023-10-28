@@ -26,7 +26,6 @@ life_needs = {
 }
 
 everyday_needs = {
-	grain = 2
 	fish = 2.5
 	cattle = 2.5
 	fruit = 2
@@ -35,9 +34,9 @@ everyday_needs = {
 	coffee = 1
 	tea = 1
 	sugar = 0.5
-    canned_food = 5
+    canned_food = 6
 	furniture = 1
-	beverages = 5
+	beverages = 2
 	cigarettes = 0.5	
 	pharmaceuticals = 0.5
 	heating_electricity = 2
@@ -50,6 +49,7 @@ everyday_needs = {
 }
 
 luxury_needs = {
+	beverages = 3
 	furniture_houseware = 0.75
 	beverage_tobacco = 0.8	
 	automobiles = 3
