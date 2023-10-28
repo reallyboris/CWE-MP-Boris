@@ -209,7 +209,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			any_owned = { add_province_modifier = { name = single_market duration = -1 } }
+			capital_scope = {  add_province_modifier = { name = single_market duration = -1 } }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -242,7 +242,7 @@ political_decisions = {
 		effect = {
 			add_country_modifier = { name = xeu_member duration = -1 }
 			add_country_modifier = { name = eec duration = -1 }
-			any_owned = { add_province_modifier = { name = currency_union_province duration = -1 } }
+			capital_scope = { add_province_modifier = { name = currency_union_province duration = -1 } }
 		}
 		
 		ai_will_do = { factor = 1 } 
