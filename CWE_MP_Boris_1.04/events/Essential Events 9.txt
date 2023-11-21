@@ -200,7 +200,37 @@ prestige = -50
 
 }
 
+#Install friendly Absolute Monarchy
+country_event = {
+	id = 1610020
+title = "The New Monarchist Regime"
+	desc = EVT_96088_DESC
+	picture = "monarchy_cleanup"
 
+is_triggered_only = yes
+
+option = {
+name = "We have no choice but to welcome our new King"
+
+government = absolute_monarchy 
+country_event = 800050
+
+random_country = { 
+limit = { is_sphere_leader_of = THIS NOT = { has_country_flag = friendly_authoritarian_regime } }
+diplomatic_influence = { who = THIS value = -200 }
+}
+
+random_country = {
+limit = { has_country_flag = friendly_authoritarian_regime truce_with = THIS }
+relation = { who = THIS value = 200 }
+diplomatic_influence = { who = THIS value = 200 }
+create_alliance = THIS
+clr_country_flag = friendly_authoritarian_regime
+}
+
+		}
+
+}
 
 #Install friendly Socialist Democracy
 country_event = {
