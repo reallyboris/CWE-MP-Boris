@@ -2945,6 +2945,7 @@ icon = 4
 ### Central Bank Interest Rates ###
 
 cbihigh = {
+loan_interest = 0.10
 factory_owner_cost = 0.025
 rich_income_modifier = 0.10
 poor_income_modifier = -0.10
@@ -2957,6 +2958,7 @@ icon = 13
 }
 
 cbilow = {
+loan_interest = -0.10
 factory_owner_cost = -0.025
 rich_income_modifier = -0.20
 poor_income_modifier = 0.10
