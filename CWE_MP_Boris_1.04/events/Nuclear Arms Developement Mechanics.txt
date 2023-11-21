@@ -418,6 +418,7 @@ country_event = {
 			}
 			owner = {
 				remove_country_modifier = develop_atomic_bomb_start
+				remove_country_modifier = develop_atomic_bomb
 				add_country_modifier = { name = develop_atomic_bomb duration = 1460 }
 				clr_country_flag = atomic_bomb_goods_needed
 				set_variable = {
@@ -474,6 +475,7 @@ country_event = {
 			}
 			owner = {
 				remove_country_modifier = develop_hydrogen_bomb_start
+				remove_country_modifier = develop_hydrogen_bomb
 				add_country_modifier = { name = develop_hydrogen_bomb duration = 1460 }
 				clr_country_flag = hydrogen_bomb_goods_needed
 				set_variable = {
