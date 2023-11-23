@@ -185,7 +185,7 @@ political_decisions = {
 			money = 4000000
 			
 			#Only superpowers have the resources to go to the moon for fun
-			OR = { has_country_modifier = un_king1 has_country_modifier = un_king2 }
+			rank = 2
 			
 			war = no
 			
@@ -196,6 +196,7 @@ political_decisions = {
 		}
 
 		effect = {
+			money = -2000000
 			money = -2000000
 			prestige = 100
 			add_country_modifier = { name = develop_moon_mission duration = -1 }
@@ -237,7 +238,7 @@ political_decisions = {
 			money = 8000000
 			
 			#Only superpowers have the resources to go to the moon for fun
-			OR = { has_country_modifier = un_king1 has_country_modifier = un_king2 }
+			rank = 2
 			
 			war = no
 			
@@ -397,7 +398,7 @@ political_decisions = {
 			money = 100000
 			
 			#Only superpowers have the resources to go to the moon for fun
-			OR = { has_country_modifier = un_king1 has_country_modifier = un_king2 }
+			rank 2
 			
 			war = no
 			
