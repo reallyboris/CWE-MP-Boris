@@ -95,11 +95,11 @@ country = {
 
 economy = {
     MAX_DAILY_RESEARCH            = 100,
-    LOAN_BASE_INTEREST            = 0.05,
+    LOAN_BASE_INTEREST            = 0.025,
     BANKRUPTCY_EXTERNAL_LOAN_YEARS    = 10,
     BANKRUPTCY_FACTOR = 0.2,
-    SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 20000,
-    MAX_LOAN_CAP_FROM_BANKS = 20, -- can loan max % of country tax base from single country
+    SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 50000,
+    MAX_LOAN_CAP_FROM_BANKS = 25, -- can loan max % of country tax base from single country
     GUNBOAT_LOW_TAX_CAP = 0.0,
     GUNBOAT_HIGH_TAX_CAP = 1.0,
     GUNBOAT_FLEET_SIZE_FACTOR = 100,
