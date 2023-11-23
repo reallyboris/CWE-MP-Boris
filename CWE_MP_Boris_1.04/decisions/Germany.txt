@@ -387,8 +387,7 @@ IAR = { any_owned_province = { NOT = { has_province_modifier = blood_and_iron_mi
 			
 			OR = { 
 				has_global_flag = german_reunification_allowed
-				is_greater_power = yes
-				is_secondary_power = yes
+				rank = 18
 			}
 
 			OR = { 
