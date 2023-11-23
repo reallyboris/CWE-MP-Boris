@@ -74,14 +74,14 @@ random_country = { limit = { owns = 1755 } relation = { who = THIS value = -100 
 	united_arab_republic = {
 		picture = "united_arab_republic"
 		potential = {
-	capital_scope = { OR = { continent = mena is_core = SUD } }
+			capital_scope = { OR = { continent = mena is_core = SUD } }
 			NOT = { exists = UAR }
 			NOT = { tag = UAR }
 			NOT = { tag = ISP }
 			NOT = { tag = ISR }
 			NOT = { tag = LEV }
 
-			#NOT = { has_global_flag = united_arab_republic }	
+			NOT = { has_global_flag = united_arab_republic }	
 
 		}
 
@@ -111,12 +111,12 @@ random_country = { limit = { owns = 1755 } relation = { who = THIS value = -100 
 		effect = {
 			prestige = 500
 
-			#set_global_flag = united_arab_republic
+			set_global_flag = united_arab_republic
 
 			change_tag = UAR
 	any_country = { 
 	limit = {
-capital_scope = { OR = { continent = mena is_core = SUD } }
+	capital_scope = { OR = { continent = mena is_core = SUD } }
 	exists = yes 
 	primary_culture = arab 
 	OR = { in_sphere = THIS vassal_of = THIS AND = { is_vassal = no relation = { who = THIS value = 200 } } } 
