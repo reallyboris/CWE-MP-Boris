@@ -6098,7 +6098,7 @@ demographic_romani = { }
 
 peace_mission = { icon = 7 } 
 
-united_nations_ga_member = { prestige = 0.01 badboy = -0.01 icon = 7 }
+united_nations_ga_member = { prestige = 0.01 badboy = -0.01 loan_interest = -0.1 icon = 7 }
 
 unsc_permanent_member = { prestige = 0.05 badboy = -0.02 icon = 7 }
 
