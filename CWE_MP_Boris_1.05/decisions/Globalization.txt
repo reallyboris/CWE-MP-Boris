@@ -75,6 +75,146 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 			
+the_imf = {
+		picture = "the_imf"
+		potential = {
+			capital_scope = { continent = europe }
+			NOT = { has_country_flag = the_imf }
+			has_country_modifier = special_drawing_rights
+			year = 1952
+		}
+		allow = {
+			any_greater_power = { 
+				NOT = { tag = THIS }
+				OR = { has_country_flag = dev_bank has_country_flag = the_imf }
+				OR = { NOT = { money = 100000 } has_country_modifier = in_bankrupcy } 
+				has_country_modifier = special_drawing_rights
+			}
+		}
+		effect = {
+			random_country = { 
+				limit = { 
+					OR = { has_country_flag = dev_bank has_country_flag = the_imf }
+					NOT = { tag = THIS }
+					OR = { NOT = { money = 100000 } has_country_modifier = in_bankrupcy } 
+					has_country_modifier = special_drawing_rights
+				}
+				country_event = 15602 
+			}
+			set_country_flag = the_imf
+			country_event = 15605 
+			any_country = { limit = { has_country_modifier = special_drawing_rights } remove_country_modifier = special_drawing_rights clr_country_flag = financial_attack }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	dev_bank = {
+		picture = "dev_bank"
+		potential = {
+			NOT = { has_country_flag = dev_bank }
+			has_country_modifier = special_drawing_rights
+			year = 1952
+		}
+		allow = {
+			any_greater_power = { 
+				NOT = { tag = THIS }
+				OR = { has_country_flag = dev_bank has_country_flag = the_imf }
+				OR = { NOT = { money = 100000 } has_country_modifier = in_bankrupcy } 
+				has_country_modifier = special_drawing_rights
+			}
+		}
+		effect = {
+			random_country = { 
+				limit = { 
+					OR = { has_country_flag = dev_bank has_country_flag = the_imf }
+					NOT = { tag = THIS }
+					OR = { NOT = { money = 100000 } has_country_modifier = in_bankrupcy } 
+					has_country_modifier = special_drawing_rights 
+				}
+				country_event = 15602
+			}
+			set_country_flag = dev_bank
+			clr_country_flag = financial_attack
+			country_event = 15605 
+			any_country = { limit = { has_country_modifier = special_drawing_rights } remove_country_modifier = special_drawing_rights clr_country_flag = financial_attack }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	world_bank = {
+		picture = "world_bank"
+		potential = {
+			rank = 1
+			NOT = { has_country_flag = world_bank }
+			has_country_modifier = special_drawing_rights
+			year = 1952
+		}
+		allow = {
+			rank = 1
+			any_greater_power = { 
+				NOT = { tag = THIS }
+				has_country_flag = world_bank
+				OR = { NOT = { money = 100000 } has_country_modifier = in_bankrupcy } 
+				has_country_modifier = special_drawing_rights
+			}
+		}
+		effect = {
+			random_country = { 
+				limit = { 
+					has_country_flag = world_bank
+					NOT = { tag = THIS }
+					OR = { NOT = { money = 100000 } has_country_modifier = in_bankrupcy } 
+					has_country_modifier = special_drawing_rights
+				}
+				country_event = 15602 
+			}
+			set_country_flag = world_bank
+			clr_country_flag = financial_attack
+			country_event = 15605
+			any_country = { limit = { has_country_modifier = special_drawing_rights } remove_country_modifier = special_drawing_rights clr_country_flag = financial_attack }
+		}
+		ai_will_do = { factor = 1 }
+	}	
+
+	bretton_system = {
+		picture = "bretton_system"
+		potential = {
+			NOT = { year = 1992 }
+			
+			USA = { government = democracy rank = 2 }
+			OR = { USA = { has_country_modifier = bretton_system } tag = USA } # USA should get Bretton Woods first!
+			
+			NOT = { has_global_flag = end_of_bretton_system }
+			NOT = { has_country_modifier = comecon }
+			NOT = { has_country_modifier = bretton_system_excluded }
+			NOT = { has_country_modifier = bretton_system }
+			NOT = { ruling_party_ideology = communist }
+			NOT = { ruling_party_ideology = communist_social }
+			NOT = { government = theocracy }
+
+		}
+		allow = {
+			war = no
+
+			OR = {
+				overlord = { has_country_modifier = bretton_system } 
+				sphere_owner = { has_country_modifier = bretton_system }
+ 
+				has_country_flag = world_bank
+
+				AND = { relation = { who = USA value = 100 } USA = { has_country_modifier = bretton_system } }
+			
+				keynesian_economics = 1
+			}
+		}
+		effect = {
+			prestige = 50
+			badboy = -5
+			add_country_modifier = { name = bretton_system duration = -1 }
+			relation = { who = USA value = 50 }
+		}
+		ai_will_do = { factor = 1 }
+	}		
 
 	#Become a Socialist Democracy
 	become_a_socialist_democracy = {

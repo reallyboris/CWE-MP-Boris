@@ -1,0 +1,292 @@
+#Special Drawing Rights
+country_event = {
+	id = 1412102
+	title = "Special Drawing Rights Revoked"
+	desc = "As we are either no longer a substantial global power or a proper functioning capitalist system, the IMF has decided to withdraw our SDR to prevent misuse of it."
+	picture = "sdr_revoked"
+
+	trigger = {
+		has_country_flag = special_imf_dr
+		OR = { government = theocracy government = proletarian_dictatorship government = proletarian_dictatorship1 is_greater_power = no NOT = { has_country_modifier = imf_member } NOT = { any_owned_province = { trade_goods = credit } } }
+	}
+
+	option = {
+		name = "A loss for our nation"
+		clr_country_flag = special_imf_dr
+		prestige = -25
+		any_owned = { remove_province_modifier = imf_sdr }
+	}
+}
+
+
+#Rotating Chairmanship of the IMF
+country_event = {
+	id = 1300017
+	title = "Chairmanship of the IMF"
+	desc = "The Chairmanship of the IMF is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+		NOT = { has_country_modifier = imf_chairmanship }
+		has_country_flag = imf_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { NOT = { has_country_modifier = imf_chairmanship } has_country_modifier = imf_member has_country_modifier = creditor_nation } } country_event = 1300018 }
+	remove_country_modifier = imf_chairmanship
+	clr_country_flag = imf_chairmanship
+		}
+}
+#Rotating Chairmanship of the IMF - select the new leader
+country_event = {
+	id = 1300018
+	title = "Chairmanship of the IMF"
+	desc = "The Chairmanship of the IMF is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+is_triggered_only = yes
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = imf_chairmanship duration = 1825 }
+set_country_flag = imf_chairmanship
+		}
+}
+#Rotating Chairmanship of the WTO
+country_event = {
+	id = 1300019
+	title = "Chairmanship of the WTO"
+	desc = "The Chairmanship of the WTO is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+	NOT = { has_country_modifier = wto_chairmanship }
+	has_country_flag = wto_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { is_greater_power = yes NOT = { has_country_modifier = wto_chairmanship } has_country_modifier = wto_member } } country_event = 1300020 }
+	remove_country_modifier = wto_chairmanship
+	clr_country_flag = wto_chairmanship
+		}
+}
+#Rotating Chairmanship of the WTO - select the new leader
+country_event = {
+	id = 1300020
+	title = "Chairmanship of the WTO"
+	desc = "The Chairmanship of the WTO is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+is_triggered_only = yes
+	major = yes
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = wto_chairmanship duration = 1825 }
+set_country_flag = wto_chairmanship
+		}
+}
+
+#Rotating Chairmanship of the IBRD
+country_event = {
+	id = 1300021
+	title = "Chairmanship of the IBRD"
+	desc = "The Chairmanship of the IBRD is rotating again. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	trigger = {
+		year = 1946
+NOT = { has_country_modifier = ibrd_chairmanship }
+has_country_flag = ibrd_chairmanship
+	}
+	
+	option = {
+	name = "We had a good run."
+random_country = { limit = { AND = { NOT = { has_country_modifier = ibrd_chairmanship } has_country_modifier = ibrd_member has_country_modifier = creditor_nation } } country_event = 1300022 }
+	remove_country_modifier = ibrd_chairmanship
+	clr_country_flag = ibrd_chairmanship
+		}
+}
+#Rotating Chairmanship of the IBRD - select the new leader
+country_event = {
+	id = 1300022
+	title = "Chairmanship of the IBRD"
+	desc = "The Chairmanship of the IBRD is rotating and the Chairmanship has come to us. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+is_triggered_only = yes
+	major = yes
+	
+	option = {
+	name = "Splendid!"
+prestige = 10
+add_country_modifier = { name = ibrd_chairmanship duration = 1825 }
+set_country_flag = ibrd_chairmanship
+		}
+}
+
+#Rotating Chairmanships USA first - IMF
+country_event = {
+	id = 1300023
+	title = "Chairmanship of the IMF"
+	desc = "The Chairmanship of the IMF is currently vacant so we have been chosen to fill it. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	major = yes
+	
+	trigger = {
+		is_greater_power = yes
+		has_country_modifier = imf_member
+		#NOT = { has_global_flag = imfusafirst }
+		
+		NOT = { has_country_modifier = imf_chairmanship }
+		
+		NOT = { any_greater_power = { has_country_modifier = imf_chairmanship } }
+	}
+	
+	mean_time_to_happen = { months = 6 }
+	
+	option = {
+		name = "Splendid!"
+		prestige = 10
+		add_country_modifier = { name = imf_chairmanship duration = 1825 }
+		set_country_flag = imf_chairmanship
+		set_global_flag = imfusafirst
+		
+		random_owned = { 
+			limit = { owner = { OR = { economic_policy = state_capitalism economic_policy = planned_economy1 economic_policy = planned_economy } } } 
+			owner = { 
+				add_country_modifier = { name = imfhigh duration = -1 } 
+				any_country = { limit = { has_country_modifier = imf_member } add_country_modifier = { name = imfhigh duration = -1 } }
+			} 
+		}
+		random_owned = { 
+			limit = { owner = { economic_policy = interventionism } } 
+			owner = { 
+				add_country_modifier = { name = imfmedium duration = -1 }
+				any_country = { limit = { has_country_modifier = imf_member } add_country_modifier = { name = imfmedium duration = -1 } }
+			} 
+		}
+		random_owned = { 
+			limit = { owner = { economic_policy = laissez_faire } } 
+			owner = { 
+				add_country_modifier = { name = imflow duration = -1 }
+				any_country = { limit = { has_country_modifier = imf_member } add_country_modifier = { name = imflow duration = -1 } }
+			} 
+		}
+		
+	}
+	
+}
+#Rotating Chairmanships USA first - WTO
+country_event = {
+	id = 1300024
+	title = "Chairmanship of the WTO"
+	desc = "The Chairmanship of the WTO is currently vacant so we have been chosen to fill it. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	major = yes
+	
+	trigger = { 
+		is_greater_power = yes
+		has_country_modifier = wto_member
+		#NOT = { has_global_flag = wtousafirst }
+		
+		NOT = { has_country_modifier = wto_chairmanship }
+		
+		NOT = { any_greater_power = { has_country_modifier = wto_chairmanship } }
+	}
+	
+	mean_time_to_happen = { months = 6 }
+	
+	option = {
+		name = "Splendid!"
+		prestige = 10
+		add_country_modifier = { name = wto_chairmanship duration = 1825 }
+		set_country_flag = wto_chairmanship
+		set_global_flag = wtousafirst
+		set_global_flag = wto_created
+		
+		random_owned = { 
+			limit = { owner = { trade_policy = protectionism } } 
+			owner = { 
+				add_country_modifier = { name = wtohigh duration = -1 } 
+				any_country = { limit = { has_country_modifier = wto_member } add_country_modifier = { name = wtohigh duration = -1 } }
+			} 
+		}
+		random_owned = { 
+			limit = { owner = { trade_policy = free_trade NOT = { economic_policy = laissez_faire } } } 
+			owner = { 
+				add_country_modifier = { name = wtomedium duration = -1 }
+				any_country = { limit = { has_country_modifier = wto_member } add_country_modifier = { name = wtomedium duration = -1 } }
+			} 
+		}
+		random_owned = { 
+			limit = { owner = { trade_policy = free_trade economic_policy = laissez_faire } } 
+			owner = { 
+				add_country_modifier = { name = wtolow duration = -1 }
+				any_country = { limit = { has_country_modifier = wto_member } add_country_modifier = { name = wtolow duration = -1 } }
+			} 
+		}
+		
+	}
+	
+}
+#Rotating Chairmanships USA first - IBRD
+country_event = {
+	id = 1300025
+	title = "Chairmanship of the IBRD"
+	desc = "The Chairmanship of the IBRD is currently vacant so we have been chosen to fill it. The Chairmanship only lasts 5 years." 
+	picture = "world_bank"
+	
+	major = yes
+	
+	trigger = { 
+		is_greater_power = yes
+		has_country_modifier = ibrd_member
+		#NOT = { has_global_flag = ibrdusafirst }
+		
+		NOT = { has_country_modifier = ibrd_chairmanship }
+		
+		NOT = { any_greater_power = { has_country_modifier = ibrd_chairmanship } }
+	}
+	
+	mean_time_to_happen = { months = 6 }
+	
+	option = {
+		name = "Splendid!"
+		prestige = 10
+		add_country_modifier = { name = ibrd_chairmanship duration = 1825 }
+		set_country_flag = ibrd_chairmanship
+		set_global_flag = ibrdusafirst
+
+		random_owned = { 
+			limit = { owner = { OR = { economic_policy = state_capitalism economic_policy = planned_economy1 economic_policy = planned_economy } } } 
+			owner = { 
+				add_country_modifier = { name = ibrdhigh_gp duration = -1 } 
+				any_country = { limit = { has_country_modifier = ibrd_member } add_country_modifier = { name = ibrdhigh duration = -1 } }
+			} 
+		}
+		random_owned = { 
+			limit = { owner = { economic_policy = interventionism } } 
+			owner = { 
+				add_country_modifier = { name = ibrdmedium_gp duration = -1 }
+				any_country = { limit = { has_country_modifier = ibrd_member } add_country_modifier = { name = ibrdmedium duration = -1 } }
+			} 
+		}
+		random_owned = { 
+			limit = { owner = { economic_policy = laissez_faire } } 
+			owner = { 
+				add_country_modifier = { name = ibrdlow_gp duration = -1 }
+				any_country = { limit = { has_country_modifier = ibrd_member } add_country_modifier = { name = ibrdlow duration = -1 } }
+			} 
+		}
+		
+	}
+	
+}
