@@ -641,7 +641,7 @@ austrian_school = {
 	year = 1971
 	cost = 9000
 
-	factory_input = -0.005
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -671,7 +671,7 @@ new_keynesian = {
 	year = 1991
 	cost = 12600
 	
-	factory_input = -0.005
+	factory_input = -0.01
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -693,7 +693,7 @@ digitaleconomics_theory = {
 	year = 2000
 	cost = 14400
 
-	factory_input = -0.005
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1
 		modifier = {
@@ -723,7 +723,7 @@ neoeconomics_theory = {
 	year = 2015
 	cost = 14400
 
-	factory_input = -0.005
+	factory_input = -0.01
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -1238,7 +1238,7 @@ toyotism = {
 	year = 1956
 	cost = 7200
 
-	factory_output = 0.02
+	factory_output = 0.025
 		ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1276,7 +1276,7 @@ vanguard_method = {
 	year = 1960
 	cost = 7200
 
-	factory_output = 0.02
+	factory_output = 0.025
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1314,7 +1314,7 @@ lean_manufacturing = {
 	year = 1980
 	cost = 10800
 
-	factory_output = 0.02
+	factory_output = 0.025
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1340,7 +1340,7 @@ post_fordism = {
 	year = 2000
 	cost = 14400
 
-	factory_output = 0.02
+	factory_output = 0.03
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1366,7 +1366,7 @@ neodigital = {
 	year = 2015
 	cost = 14400
 
-	factory_output = 0.02
+	factory_output = 0.03
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1392,7 +1392,7 @@ modern_workforce_management = {
 	year = 2035
 	cost = 18000
 
-	factory_output = 0.02
+	factory_output = 0.03
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1418,7 +1418,7 @@ offshore_software_development = {
 	year = 2050
 	cost = 21600
 
-	factory_output = 0.02
+	factory_output = 0.03
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -1444,7 +1444,7 @@ service_revolution = {
 	year = 2070
 	cost = 25200
 
-	factory_output = 0.02
+	factory_output = 0.04
 	ai_chance = {
 		factor = 1.05
 		modifier = {
