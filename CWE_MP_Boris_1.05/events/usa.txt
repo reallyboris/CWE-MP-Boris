@@ -17,6 +17,15 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA690069"
+		any_pop = { limit = { is_primary_culture = yes OR = { type = capitalists type = aristocrats } } money = 8000 }
+		any_pop = { limit = { is_accepted_culture = yes OR = { type = capitalists type = aristocrats } } money = 3000 }
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 232 } culture = white_anglo } money = 380000 } # New York
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats }  location = { province_id = 232 } culture = jewish } money = 500000 } # New York
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 173 } culture = white_anglo } money = 100000 } # Detroit
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats }  location = { province_id = 173 } culture = jewish } money = 80000 } # Detroit
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 89 } culture = white_anglo } money = 80000 } # LA
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 163 } culture = white_anglo } money = 50000 } # Chicago
+		money = 999999
 		money = 999999
 		money = 999999
 		money = 999999
