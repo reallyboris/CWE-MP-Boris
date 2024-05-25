@@ -23,8 +23,10 @@ country_event = {
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats }  location = { province_id = 232 } culture = jewish } money = 500000 } # New York
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 173 } culture = white_anglo } money = 100000 } # Detroit
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats }  location = { province_id = 173 } culture = jewish } money = 80000 } # Detroit
-		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 89 } culture = white_anglo } money = 80000 } # LA
-		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 163 } culture = white_anglo } money = 50000 } # Chicago
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 89 } culture = white_anglo religion =  protestant} money = 80000 } # LA
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 84 } culture = white_anglo religion =  protestant} money = 80000 } # SF
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 163 } culture = white_anglo religion =  protestant} money = 50000 } # Chicago
+		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 243 } culture = white_anglo religion =  protestant} money = 50000 } # Boston
 		money = 999999
 		money = 999999
 		money = 999999
