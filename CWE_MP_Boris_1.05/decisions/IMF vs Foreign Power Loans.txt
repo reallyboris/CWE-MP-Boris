@@ -61,7 +61,42 @@ political_decisions = {
 			prestige_factor = -0.03
 			money = 50000
 			add_tax_relative_income = 50
-			add_country_modifier = { name = imf_loan duration = 913 }
+			add_country_modifier = { name = imf_loan duration = 730 }
+			social_reform = no_subsidies
+			social_reform = no_child_care 
+			social_reform = no_pensions
+			social_reform = no_health_care
+
+			any_pop = {
+				scaled_militancy = {
+					factor = 10
+					ideology = populist 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = progressive 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = liberal 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = nationalist
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = socialist 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = communist 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = communist_social  
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1

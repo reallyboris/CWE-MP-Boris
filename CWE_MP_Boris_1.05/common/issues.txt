@@ -8,7 +8,7 @@ party_issues = {
 			min_tariff = -0.25
 		}
 		free_trade = {
-			max_tariff = 0.1
+			max_tariff = 0.05
 			min_tariff = -1
 		}
 	}
@@ -103,7 +103,7 @@ party_issues = {
 			factory_maintenance = 0.1
 			factory_owner_cost = 0.8
 			
-			factory_throughput = -0.05
+			factory_throughput = 0.10
 
 			rules = {
 				build_factory = yes
@@ -135,7 +135,7 @@ party_issues = {
 			factory_input = 0.1
 			factory_maintenance = 0.2
 			factory_owner_cost = 1
-			factory_throughput = -0.1
+			factory_throughput = 0.10
 
 			rules = {
 				build_factory = yes
@@ -175,13 +175,16 @@ party_issues = {
 	}
 	citizenship_policy = {
 		residency = { 
+			core_pop_militancy_modifier = -0.02
+			core_pop_consciousness_modifier = -0.02
 			non_accepted_pop_militancy_modifier = 0.05
 		}
 		limited_citizenship = {
-		        non_accepted_pop_militancy_modifier = 0.01
+			core_pop_militancy_modifier = -0.01
+			core_pop_consciousness_modifier = -0.01
 		}
 		full_citizenship = {
-			non_accepted_pop_militancy_modifier = -0.005
+			non_accepted_pop_militancy_modifier = -0.05
 		}
 	}
 	war_policy = {
@@ -204,7 +207,7 @@ party_issues = {
 			min_military_spending = 0.1
 		}
 		pacifism = {
-			max_military_spending = 0.5
+			max_military_spending = 0.75
 			supply_consumption = -0.15
 			mobilization_impact = 2
 			cb_generation_speed_modifier = -0.3
@@ -307,8 +310,9 @@ political_reforms = {
 		administrative = yes
 		next_step_only = yes
 		no_meetings = { 
-			ruling_party_support = 0.25
-			issue_change_speed = -0.5
+			suppression_points_modifier = 0.25
+			ruling_party_support = 0.30
+			issue_change_speed = -0.30
 			global_immigrant_attract = -0.2
 			global_pop_consciousness_modifier = -0.02
 			global_pop_militancy_modifier = -0.02
@@ -323,8 +327,7 @@ political_reforms = {
 		}
 		free_meetings = {
 			suppression_points_modifier = -0.25
-			global_immigrant_attract = 0.2
-			global_pop_consciousness_modifier = 0.03	 
+			global_immigrant_attract = 0.2	 
 		}
 	}
 
@@ -411,7 +414,7 @@ political_reforms = {
 		}
 		gender_promotive = { # non_socialist
 			social_reform_desire = 0.2
-			factory_input = 0.03
+			factory_input = 0.125
 			global_immigrant_attract = 0.2
 			ruling_party_support = 0.05
 		}
@@ -419,7 +422,7 @@ political_reforms = {
 			social_reform_desire = 0.3
 			global_immigrant_attract = 0.3
 			factory_maintenance = 0.50
-			factory_input = 0.06
+			factory_input = 0.25
 			global_pop_consciousness_modifier = 0.01
 		}
 	}
@@ -467,18 +470,21 @@ political_reforms = {
 		next_step_only = yes
 		administrative = yes
 		nobody_gets_out = {
-			research_points_modifier = -0.1
+			research_points_modifier = -0.2
 			global_immigrant_attract = -1.0
 			global_pop_consciousness_modifier = -0.01
+			administrative_multiplier = 3
 		}
 		quota_immigration = {
 			global_immigrant_attract = -0.5
+			administrative_multiplier = 2
 		}
 		naturalization = {
 
 			#global_immigrant_attract = 0
 
 			global_pop_consciousness_modifier = 0.01
+			administrative_multiplier = 1
 		}
 		open_immigration = {
 			global_immigrant_attract = 0.50
@@ -487,6 +493,7 @@ political_reforms = {
 		promoted_immigration = { #
 			global_immigrant_attract = 1
 			global_pop_consciousness_modifier = 0.03
+			administrative_multiplier = 2
 		}
 
 	}
@@ -603,7 +610,7 @@ social_reforms = {
 		eight_work_hours = { # trinket_wage
 			minimum_wage = 1
 			
-			factory_throughput = 0.005
+			factory_throughput = -0.005
 			poor_luxury_needs = 0.025
 			middle_luxury_needs = 0.025
 			
@@ -635,8 +642,8 @@ social_reforms = {
 			minimum_wage = 4
 			
 			factory_throughput = 0.05
-			poor_luxury_needs = 0.5
-			middle_luxury_needs = 0.5
+			poor_luxury_needs = 0.20
+			middle_luxury_needs = 0.20
 			
 			global_immigrant_attract = 0.4
 			global_pop_consciousness_modifier = -0.02
@@ -660,16 +667,16 @@ social_reforms = {
 			global_pop_consciousness_modifier = -0.01
 		}
 		security_clearance_for_gov_services = { # ten_hours
-			administrative_multiplier = 4
+			administrative_multiplier = 3
 			suppression_points_modifier = 0.30
-			global_pop_consciousness_modifier = -0.015
-			global_pop_militancy_modifier = -0.05
+			global_pop_consciousness_modifier = -0.02
+			global_pop_militancy_modifier = -0.06
 			
 		}
 		preemptive_security_actions = { # eight_hours
-			administrative_multiplier = 8
+			administrative_multiplier = 4
 			suppression_points_modifier = 0.40
-			global_pop_consciousness_modifier = -0.02
+			global_pop_consciousness_modifier = -0.03
 			global_pop_militancy_modifier = -0.08
 		}
 	}
@@ -743,25 +750,37 @@ social_reforms = {
 			global_population_growth = 0.001
 			factory_throughput = -0.05
 			global_immigrant_attract = 0.1
-			tax_efficiency = -0.02
+			tax_efficiency = -0.01
+			min_social_spending = 0.05
+			pension_level = 1
+			administrative_multiplier = 1
 		}
 		supported_child_care = { # child_labor_illegal
-			global_population_growth = 0.001
+			global_population_growth = 0.002
 			factory_throughput = -0.10
 			global_immigrant_attract = 0.2
-			tax_efficiency = -0.04
+			tax_efficiency = -0.02
+			min_social_spending = 0.10
+			pension_level = 2
+			administrative_multiplier = 2
 		}
 		parental_leave_child_care = { # 
-			global_population_growth = 0.001
+			global_population_growth = 0.003
 			factory_throughput = -0.15
 			global_immigrant_attract = 0.3
-			tax_efficiency = -0.08
+			tax_efficiency = -0.03
+			min_social_spending = 0.15
+			pension_level = 3
+			administrative_multiplier = 3
 		}
 		state_provided_child_care = { # 
-			global_population_growth = 0.002
+			global_population_growth = 0.004
 			factory_throughput = -0.20
 			global_immigrant_attract = 0.4
-			tax_efficiency = -0.10
+			tax_efficiency = -0.04
+			min_social_spending = 0.20
+			pension_level = 4
+			administrative_multiplier = 4
 		}
 	}
 	pensions = {
@@ -773,23 +792,27 @@ social_reforms = {
 			pension_level = 1
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.1
+			min_social_spending = 0.05
 		}
 		low_pensions = {
 			pension_level = 2
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.2
+			min_social_spending = 0.08
 		}
 		acceptable_pensions = {
 			pension_level = 3
 			global_population_growth = 0.002
 			global_pop_consciousness_modifier = -0.01
 			global_immigrant_attract = 0.3
+			min_social_spending = 0.10
 		}
 		good_pensions = {
 			pension_level = 4
 			global_population_growth = 0.002
 			global_pop_consciousness_modifier = -0.02
 			global_immigrant_attract = 0.4
+			min_social_spending = 0.12
 		}
 	}
 	health_care = {
@@ -800,28 +823,32 @@ social_reforms = {
 		trinket_health_care = {
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.1
-			tax_efficiency = -0.04
 			administrative_multiplier = 1
+			pension_level = 1
+			min_social_spending = 0.05
 		}
 		low_health_care = {
 			global_population_growth = 0.001
 			global_immigrant_attract = 0.2
-			tax_efficiency = -0.08
 			administrative_multiplier = 2
 			global_pop_consciousness_modifier = -0.01
+			pension_level = 2
+			min_social_spending = 0.08
 		}
 		acceptable_health_care = {
-			global_population_growth = 0.001
-			global_immigrant_attract = 0.3
-			tax_efficiency = -0.10
-			administrative_multiplier = 3
-			global_pop_consciousness_modifier = -0.02
+			global_population_growth = 0.003
+			global_immigrant_attract = 0.4
+			administrative_multiplier = 4
+			pension_level = 4
+			min_social_spending = 0.15
+			global_pop_consciousness_modifier = -0.03
 		}
 		good_health_care = {
-			global_population_growth = 0.002
+			global_population_growth = 0.003
 			global_immigrant_attract = 0.4
-			tax_efficiency = -0.15
 			administrative_multiplier = 4
+			pension_level = 4
+			min_social_spending = 0.15
 			global_pop_consciousness_modifier = -0.03
 		}
 	}
@@ -833,31 +860,34 @@ social_reforms = {
 		}
 		trinket_envir = {
 			global_immigrant_attract = 0.1
-			factory_maintenance = 0.1
+			factory_maintenance = 0.05
 			administrative_multiplier = 1
-			factory_throughput = 0.2
-			goods_demand = -0.10
+			RGO_output = -0.10
+			goods_demand = -0.05
 		}
 		low_envir = {
 			global_immigrant_attract = 0.2
-			factory_maintenance = 0.2			
+			factory_maintenance = 0.1
+			factory_throughput = -0.10			
 			administrative_multiplier = 2
-			factory_throughput = 0.15
-			goods_demand = -0.20
+			RGO_output = -0.20
+			goods_demand = -0.10
 		}
 		acceptable_envir = {
 			global_immigrant_attract = 0.3
 			factory_maintenance = 0.3		
+			factory_throughput = -0.15			
 			administrative_multiplier = 3
-			factory_throughput = 0.1
-			goods_demand = -0.30
+			RGO_output = -0.30
+			goods_demand = -0.15
 		}
 		good_envir = {
 			global_immigrant_attract = 0.4
 			factory_maintenance = 0.4
-			factory_throughput = 0.05	
+			factory_throughput = -0.25		
 			administrative_multiplier = 4
-			goods_demand = -0.40
+			RGO_output = -0.40
+			goods_demand = -0.20
 		}
 	}
 	education = {
@@ -867,23 +897,27 @@ social_reforms = {
 		}
 		public_education = {
 			education_efficiency_modifier = 0.10
+			research_points_modifier = 0.05
 			global_immigrant_attract = 0.1
 			administrative_multiplier = 2
 		}
 		subsidised_higher_education = {
 			education_efficiency_modifier = 0.20
+			research_points_modifier = 0.10
 			global_immigrant_attract = 0.2
 			global_pop_consciousness_modifier = 0.01
 			administrative_multiplier = 4
 		}
 		public_higher_education = {
 			education_efficiency_modifier = 0.30
+			research_points_modifier = 0.15
 			global_immigrant_attract = 0.3
 			global_pop_consciousness_modifier = 0.02
 			administrative_multiplier = 6
 		}
 		unlimited_education = {
 			education_efficiency_modifier = 0.40
+			research_points_modifier = 0.20
 			global_immigrant_attract = 0.4
 			global_pop_consciousness_modifier = 0.03
 			administrative_multiplier = 8

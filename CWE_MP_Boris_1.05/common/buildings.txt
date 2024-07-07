@@ -742,15 +742,15 @@ integrated_circuits_factory = {
 	on_completion = factory
 	completion_size = 0.1
 	max_level = 13
-	cost = 300000
+	cost = 80000
 	goods_cost = 
 	{
-		electric_gear = 15000
-		cement = 450
-		steel = 1500
+		electric_gear = 80000
+		cement = 45000
+		steel = 8000
 		machine_parts = 15000
 	}
-	time = 300
+	time = 500
 	visibility = yes
 	onmap = yes
 
@@ -1117,12 +1117,12 @@ automobiles_factory = {
 	cost = 0
 	goods_cost = 
 	{
-		electric_gear = 7
-		cement = 20
-		steel = 20
-		machine_parts = 50
+		electric_gear = 70
+		cement = 200
+		steel = 200
+		machine_parts = 500
 	}
-	time = 30
+	time = 180
 	visibility = yes
 	onmap = yes
 
@@ -1432,7 +1432,7 @@ fort = {
 		electric_gear = 50
 		automobiles = 25
 	}
-	time = 360 
+	time = 1080 
 	visibility = yes
 	onmap = yes
 	max_level = 6
@@ -1440,7 +1440,7 @@ fort = {
 	fort_level = 1
 }
 
-# Not Ref. Gwadar Port
+# Ref. Gwadar Port
 # Ph 1 $248 million
 # Ph 2 $932 million
 # i.e. c1 bil -> 250 £
@@ -1464,7 +1464,7 @@ naval_base = {
 		electric_gear = 50
 		ships = 10
 	}
-	time = 600
+	time = 1080
 	naval_capacity = 1
 	capital = yes
 	onmap = yes
@@ -1494,7 +1494,7 @@ railroad = {
 		machine_parts = 500
 		electric_gear = 50
 	}
-	time = 400
+	time = 720
 	visibility = yes
 	onmap = yes
 	max_level = 7
