@@ -268,7 +268,7 @@ electric_template = {
 fish_canned_food_factory = {       
 	template = factory_template	
 	input_goods = { 
-		fish = 4
+		fish = 8
 		iron = 1	
 	}
 	output_goods = canned_food 
@@ -298,7 +298,7 @@ fish_canned_food_factory = {
 cattle_canned_food_factory = {       
 	template = factory_template	
 	input_goods = { 
-		cattle = 4
+		cattle = 8
 		iron = 1	
 	}
 	output_goods = canned_food 
@@ -327,7 +327,7 @@ cattle_canned_food_factory = {
 wool_canned_food_factory = {       
 	template = factory_template	
 	input_goods = { 
-		wool = 4
+		wool = 8
 		iron = 1	
 	}
 	output_goods = canned_food 
@@ -349,7 +349,7 @@ wool_canned_food_factory = {
 fruit_canned_food_factory = {       
 	template = factory_template	
 	input_goods = { 
-		fruit = 4
+		fruit = 8
 		iron = 1	
 	}
 	output_goods = canned_food 
@@ -379,7 +379,7 @@ fruit_canned_food_factory = {
 grain_canned_food_factory = {       
 	template = factory_template	
 	input_goods = { 
-		grain = 4
+		grain = 8
 		iron = 1	
 	}
 	output_goods = canned_food 
@@ -408,7 +408,7 @@ grain_canned_food_factory = {
 oil_seeds_canned_food_factory = {       
 	template = factory_template	
 	input_goods = { 
-		oil_seeds = 4
+		oil_seeds = 8
 		iron = 1
 	}
 	output_goods = canned_food 
@@ -643,9 +643,8 @@ integrated_circuits_factory = {
 	template = advanced_factory_template
 	input_goods = {    
 		inorganic_chemicals = 4	
-		copper_wire = 3
-		other_minerals = 4
-		aluminium = 1
+		copper_wire = 2
+		other_minerals = 1
 	}
 	output_goods = integrated_circuits 
 	value = 6.5
@@ -668,13 +667,13 @@ integrated_circuits_factory = {
 optics_factory = {       
 	template = advanced_factory_template
 	input_goods = {    
-		plastics = 4
-		glass = 3
-		aluminium = 3
+		plastics = 5
+		glass = 4
+		aluminium = 4
 		machine_parts = 1
 	}
 	output_goods = optics 
-	value = 6
+	value = 11
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -700,12 +699,12 @@ optics_factory = {
 electric_gear_factory = {       
 	template = electric_template
 	input_goods = {    
-		copper_wire = 15
-		plastics = 9
-		aluminium = 9
+		copper_wire = 7.5
+		plastics = 4.5
+		aluminium = 4.5
 	}
 	output_goods = electric_gear 
-	value = 18
+	value = 30
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -1187,10 +1186,10 @@ coal_fuel_factory = {
 clothes_factory = {       
 	template = factory_template
 	input_goods = {    
-		fabric = 5
+		fabric = 6
 	}
 	output_goods = clothes 
-	value = 4
+	value = 5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -1566,7 +1565,7 @@ beverages_factory = {
 	template = factory_template
 	input_goods = {    
 		fruit = 3
-		sugar = 2
+		sugar = 3
 		glass = 3
 	}
 	output_goods = beverages 
@@ -1593,7 +1592,7 @@ beverages_factory = {
 beverages_sugar_factory = {
         template = factory_template
         input_goods = {
-                sugar = 4
+                sugar = 6
                 glass = 3
         }
         output_goods = beverages
@@ -1619,8 +1618,8 @@ beverages_sugar_factory = {
 beverages_coffee_factory = {
         template = factory_template
         input_goods = { 
-                coffee = 1
-		sugar = 2				
+                coffee = 2
+		sugar = 4.5				
                 glass = 3
         }       
         output_goods = beverages
@@ -1647,8 +1646,8 @@ beverages_coffee_factory = {
 beverages_tea_factory = {
         template = factory_template
         input_goods = { 
-                tea = 1
-		sugar = 2
+                tea = 3
+		sugar = 3.5
                 glass = 3
         }       
         output_goods = beverages
@@ -1674,12 +1673,12 @@ beverages_tea_factory = {
 beverage_tobacco_factory = {       
 	template = factory_template
 	input_goods = {    
-		grain = 3
+		grain = 5
 		fruit = 1
 		glass = 3
 	}
 	output_goods = beverage_tobacco 
-	value = 2.8
+	value = 3
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -1828,7 +1827,7 @@ recreation_factory = {
 	template = bank_template
 	input_goods = {    
 		aeroplanes = 1
-		transport = 1
+		transport = 4.5
 		ships = 1
 	}
 	output_goods = recreation 
@@ -1941,7 +1940,7 @@ RGO_template_credit = {
         {
             poptype = farmers
             effect = throughput
-            amount = 11
+            amount = 10
         }
 	}
 	
@@ -2005,84 +2004,84 @@ RGO_template_oil = {
 fishing_wharf = {
 	template = RGO_template_farmers
 	output_goods = fish 
-	value = 2.0
+	value = 1.8
 	farm = yes
 }
 
 cattle_ranch = {
 	template = RGO_template_farmers
 	output_goods = cattle 
-	value = 2.5
+	value = 2.25
 	farm = yes
 }
 
 sheep_ranch = {
 	template = RGO_template_farmers
 	output_goods = wool 
-	value = 2.0
+	value = 1.8
 	farm = yes
 }
 
 orchard = {
 	template = RGO_template_farmers
 	output_goods = fruit 
-	value = 2.0
+	value = 1.8
 	farm = yes
 }
 
 grain_farm = {
 	template = RGO_template_farmers
 	output_goods = grain 
-	value = 2.9
+	value = 2.6
 	farm = yes
 }
 
 timber_lodge = {
 	template = RGO_template_farmers
 	output_goods = timber 
-	value = 2.0
+	value = 1.8
 	farm = yes
 }
 
 oil_seeds_ranch = {
 	template = RGO_template_farmers
 	output_goods = oil_seeds 
-	value = 1.0
+	value = 0.9
 	farm = yes
 }
 
 iron_mine = {
 	template = RGO_template_labourers
 	output_goods = iron
-	value = 4.8
+	value = 4.5
 	mine = yes
 }
 
 other_minerals_mine = {
 	template = RGO_template_labourers
 	output_goods = other_minerals
-	value = 2.0
+	value = 1.8
 	mine = yes
 }
 
 copper_mine = {
 	template = RGO_template_labourers
 	output_goods = copper
-	value = 2.0
+	value = 1.8
 	mine = yes
 }
 
 bauxite_mine = {
 	template = RGO_template_labourers
 	output_goods = bauxite 
-	value = 2.5
+	value = 2.25
 	mine = yes
 }
 
 coal_mine = {
 	template = RGO_template_labourers
 	output_goods = coal 
-	value = 2.5
+	value = 2.25
 	mine = yes
 }
 
@@ -2103,21 +2102,21 @@ petroleum_rig = {
 rubber_lodge = {
 	template = RGO_template_farmers
 	output_goods = rubber 
-	value = 2.5
+	value = 2.25
 	farm = yes
 }
 
 precious_metal_mine = {
 	template = RGO_template_labourers
 	output_goods = gold_silver
-	value = 8.0
+	value = 7.0
 	mine = yes
 }
 
 sugar_plantation = {
 	template = RGO_template_farmers
 	output_goods = sugar 
-	value = 2.5
+	value = 2.25
 	farm = yes
 }
 
@@ -2131,21 +2130,21 @@ tea_plantation = {
 tobacco_plantation = {
 	template = RGO_template_farmers
 	output_goods = tobacco 
-	value = 1.0
+	value = 0.9
 	farm = yes
 }
 
 coffee_plantation = {
 	template = RGO_template_farmers
 	output_goods = coffee 
-	value = 3.0
+	value = 2.0
 	farm = yes
 }
 
 cotton_plantation = {
 	template = RGO_template_farmers
 	output_goods = cotton 
-	value = 1.0
+	value = 0.9
 	farm = yes
 }
 
@@ -2180,7 +2179,7 @@ artisan_fabric_weaver = {
 
 artisan_tailor = {       
 	input_goods = { 
-		fabric = 1
+		fabric = 3
 	}
 	output_goods = clothes 
 	value = 4
@@ -2197,7 +2196,7 @@ artisan_tailor = {
 
 artisan_shoemaker = {       
 	input_goods = { 
-		fabric = 1
+		fabric = 3
 	}
 	output_goods = footwear 
 	value = 3
@@ -2214,8 +2213,8 @@ artisan_shoemaker = {
 
 artisan_luxury_tailor = {       
 	input_goods = { 
-		clothes = 1.5
-		footwear = 1.5
+		clothes = 3
+		footwear = 3
 	}
 	output_goods = clothes_footwear
 	value = 6
@@ -2232,12 +2231,12 @@ artisan_luxury_tailor = {
 
 artisan_juicer = {       
 	input_goods = { 
-		fruit = 1
-		coffee = 0.5
-		tea = 0.5
+		fruit = 2
+		coffee = 1
+		tea = 1
 	}
 	output_goods = beverages
-	value = 2
+	value = 3
 	
 	owner = {
 		poptype = artisans 
@@ -2305,7 +2304,7 @@ artisan_luxury_carpenter = {
 
 artisan_jeweller = {       
 	input_goods = { 
-		gold_silver = 3
+		gold_silver = 2
 		glass = 2
 	}
 	output_goods = jewellery
@@ -2324,10 +2323,10 @@ artisan_jeweller = {
 artisan_cigaratte = {       
 	input_goods = {    
 		paper = 2
-		tobacco = 2
+		tobacco = 4
 	}
 	output_goods = cigarettes 
-	value = 4
+	value = 6
 	owner = {
 		poptype = artisans 
 		effect = output
@@ -2346,7 +2345,7 @@ artisan_electric_gear = {
 		aluminium = 1
 	}
 	output_goods = electric_gear 
-	value = 4
+	value = 8
 	owner = {
 		poptype = artisans 
 		effect = output
@@ -2531,12 +2530,12 @@ artisan_culture = {
 
 artisan_recreation = {       
 	input_goods = {    
-		aeroplanes = 1.5
-		transport = 3
-		ships = 1.5
+		aeroplanes = 1
+		transport = 5
+		ships = 1
 	}
 	output_goods = recreation 
-	value = 12
+	value = 5
 	owner = {
 		poptype = artisans 
 		effect = output
