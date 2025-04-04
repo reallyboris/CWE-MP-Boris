@@ -1,9 +1,9 @@
 owner = NET
 controller = NET
 add_core = NET
-trade_goods = cattle
+trade_goods = natural_gas
 life_rating = 35
-terrain = good_farmland
+terrain = marginal_farmland
 railroad = 1
 colonial = 0
 1992.1.1 = {
