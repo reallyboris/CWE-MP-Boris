@@ -26,6 +26,7 @@ country_event = {
 			modifier = { factor = 0 national_provinces_occupied = 0.50 } 
 		}
 		badboy = 20
+		prestige_factor = -0.18
 	}
 
 	option = {
@@ -37,6 +38,7 @@ country_event = {
 			country_event = 13314322
 		}
 		badboy = 10
+		prestige_factor = -0.15
 		
 		#Allow others to launch nukes
 		clr_global_flag = someone_is_firing_nukes

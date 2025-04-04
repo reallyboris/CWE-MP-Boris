@@ -104,6 +104,7 @@ fire_tactical_nuke = {
 		effect = {
 			add_country_modifier = { name = nukes_used_recently duration = 92 }
 			badboy = 5
+			prestige_factor = -0.08
 			any_country = { limit = { war_with = THIS } country_event = 1610031 }
 		}
 		
