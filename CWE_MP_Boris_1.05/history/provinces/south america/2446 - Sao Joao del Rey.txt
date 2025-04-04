@@ -6,8 +6,18 @@ life_rating = 35
 terrain = deciduous_forest_hills
 colonial = 0
 state_building = {
-	level = 6
-	building = machine_parts_factory
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = beverages_coffee_factory
+	upgrade = yes
+}
+state_building = {
+	level = 5
+	building = cattle_canned_food_factory
 	upgrade = yes
 }
 1992.1.1 = {
@@ -16,9 +26,4 @@ controller = BRZ
 add_core = BRZ
 life_rating = 35
 colonial = 0
-state_building = {
-	level = 3
-	building = beverages_coffee_factory
-	upgrade = yes
-}
 }
