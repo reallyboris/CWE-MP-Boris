@@ -33,7 +33,7 @@ kinda_bad_badboy = {
 }
 
 medium_farm = {
-    local_RGO_throughput = 10
+    local_RGO_throughput = 5
 	icon = 9
 }
 
