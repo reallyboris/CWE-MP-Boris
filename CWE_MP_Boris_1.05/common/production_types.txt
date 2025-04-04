@@ -1050,9 +1050,9 @@ weaponry_factory = {
 	template = advanced_factory_template
 	input_goods = {    
 		steel = 4	
-		electric_gear = 4
-		automobiles = 1
-		machine_parts = 3
+		electric_gear = 2
+		automobiles = 2
+		machine_parts = 5
 	}
 	output_goods = weaponry 
 	value = 4.5
