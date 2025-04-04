@@ -12061,6 +12061,11 @@
 		religion = secularism
 		size = 35
 	 } 
+	 bankers = {
+		culture = polar_bears
+		religion = secularism
+		size = 2000
+	}
 }
 #Belize - Belize (66000/16500 POPS)
 2190 = {

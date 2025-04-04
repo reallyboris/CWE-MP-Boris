@@ -6,6 +6,10 @@ requested_grant = {
 	icon = 10
 }
 
+banker_income_timer = {
+	icon = 10
+}
+
 kinda_bad_badboy = {
 	loan_interest = 10
 	tariff_efficiency_modifier = -0.40

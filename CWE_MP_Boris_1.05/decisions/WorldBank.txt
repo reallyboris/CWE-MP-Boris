@@ -1,0 +1,75 @@
+political_decisions = {
+	banker_income = {
+		potential = {
+			tag = LCT
+		}
+		
+		allow = {
+			NOT = { has_country_flag = banker_income_timer }
+		}
+		
+		effect = {
+			set_country_flag = banker_income_timer
+			add_country_modifier = { name = banker_income_timer duration = 20 }
+			any_pop = {	limit = { culture = polar_bears } money = 30000 }
+		}
+		ai_will_do = { 
+			factor = 1 
+		}
+	}
+
+	banker_income_timer = {
+		potential = {
+			tag = LCT
+		}
+		
+		allow = {
+			has_country_flag = banker_income_timer
+			NOT = { has_country_modifier = banker_income_timer }
+		}
+		
+		effect = {
+			clr_country_flag = banker_income_timer
+		}
+		ai_will_do = { 
+			factor = 1 
+		}
+	}
+
+	banker_core_timer = {
+		potential = {
+			tag = LCT
+		}
+		
+		allow = {
+			has_country_flag = banker_core_timer
+		}
+		
+		effect = {
+			2133 = { remove_core = LCT }
+			2133 = { add_core = ENG }
+			2133 = { secede_province = ENG }
+		}
+		ai_will_do = { 
+			factor = 1 
+		}
+	}
+
+	banker_bretton_timer = {
+		potential = {
+			tag = LCT
+		}
+		
+		allow = {
+			has_global_flag = end_of_bretton_system
+		}
+		
+		effect = {
+			set_country_flag = banker_core_timer
+			any_pop = { limit = { type = bankers } reduce_pop = 0 }
+		}
+		ai_will_do = { 
+			factor = 1 
+		}
+	}
+}

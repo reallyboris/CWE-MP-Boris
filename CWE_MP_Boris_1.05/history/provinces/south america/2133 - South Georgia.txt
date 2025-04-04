@@ -1,6 +1,6 @@
-owner = ENG
-controller = ENG
-add_core = ENG
+owner = LCT
+controller = LCT
+add_core = LCT
 trade_goods = fish
 life_rating = 30
 terrain = tundra_mountains

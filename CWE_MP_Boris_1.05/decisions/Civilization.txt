@@ -4,6 +4,7 @@ political_decisions = {
 		picture = "build_brasilia"
 		potential = {
 			civilized = no
+			NOT = { tag = LCT }
 		}
 		
 		allow = {
