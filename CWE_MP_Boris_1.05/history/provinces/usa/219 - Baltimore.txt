@@ -1,7 +1,7 @@
 owner = USA
 controller = USA
 add_core = USA
-trade_goods = tobacco
+trade_goods = cattle
 life_rating = 35
 terrain = good_farmland
 railroad = 1
@@ -13,18 +13,18 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 1
-	building = machine_parts_factory
-	upgrade = yes
-}
-state_building = {
 	level = 5
 	building = ships_factory
 	upgrade = yes
 }
 state_building = {
 	level = 1
-	building = petroleum_fuel_factory
+	building = machine_parts_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = aluminium_factory
 	upgrade = yes
 }
 1992.1.1 = {

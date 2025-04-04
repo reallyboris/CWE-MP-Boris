@@ -10,28 +10,23 @@ terrain = forested_farmland
 railroad = 1
 colonial = 0
 state_building = {
-	level = 10
+	level = 1
 	building = weaponry_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
-	building = glass_factory
+	level = 1
+	building = transport_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
+	level = 5
 	building = automobiles_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
-	building = cattle_canned_food_factory
-	upgrade = yes
-}
-state_building = {
-	level = 1
-	building = optics_factory
+	level = 5
+	building = petroleum_plastics_factory
 	upgrade = yes
 }
 state_building = {
@@ -40,7 +35,7 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 15
+	level = 18
 	building = petroleum_fuel_factory
 	upgrade = yes
 }

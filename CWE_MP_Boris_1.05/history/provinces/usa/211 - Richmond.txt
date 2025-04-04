@@ -3,24 +3,34 @@ controller = USA
 add_core = USA
 add_core = RNA
 add_core = CSA
-trade_goods = tobacco
+trade_goods = credit
 life_rating = 35
 terrain = good_farmland
 railroad = 1
 colonial = 0
 state_building = {
-	level = 2
+	level = 1
 	building = glass_factory
 	upgrade = yes
 }
 state_building = {
 	level = 2
-	building = optics_factory
+	building = paper_factory
 	upgrade = yes
 }
 state_building = {
 	level = 2
 	building = cigarettes_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = grain_canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = beverages_factory
 	upgrade = yes
 }
 1992.1.1 = {

@@ -11,7 +11,12 @@ colonial = 0
 naval_base = 3
 state_building = {
 	level = 1
-	building = glass_factory
+	building = electric_gear_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = machine_parts_factory
 	upgrade = yes
 }
 state_building = {
@@ -20,13 +25,13 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 3
+	level = 1
 	building = paper_factory
 	upgrade = yes
 }
 state_building = {
-	level = 1
-	building = optics_factory
+	level = 5
+	building = aeroplane_factory
 	upgrade = yes
 }
 1992.1.1 = {

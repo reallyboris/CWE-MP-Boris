@@ -8,23 +8,33 @@ terrain = urban_boston
 railroad = 1
 colonial = 0
 state_building = {
-	level = 3
+	level = 1
 	building = glass_factory
 	upgrade = yes
 }
 state_building = {
-	level = 1
-	building = optics_factory
+	level = 3
+	building = petroleum_fuel_factory
 	upgrade = yes
 }
 state_building = {
 	level = 2
-	building = electric_telecommunications_factory
+	building = education_rnd_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = transport_factory
 	upgrade = yes
 }
 state_building = {
 	level = 5
-	building = education_rnd_factory
+	building = beverages_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = grain_canned_food_factory
 	upgrade = yes
 }
 1992.1.1 = {
@@ -37,6 +47,11 @@ colonial = 0
 state_building = {
 	level = 3
 	building = computers_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = financial_services_factory
 	upgrade = yes
 }
 state_building = {

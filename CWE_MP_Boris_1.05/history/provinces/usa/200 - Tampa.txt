@@ -14,23 +14,23 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 2
-	building = grain_canned_food_factory
+	level = 10
+	building = beverages_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
-	building = optics_factory
-	upgrade = yes
-}
-state_building = {
-	level = 2
+	level = 1
 	building = footwear_factory
 	upgrade = yes
 }
 state_building = {
-	level = 2
-	building = cigarettes_factory
+	level = 5
+	building = fabric_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = rubber_plastics_factory
 	upgrade = yes
 }
 1992.1.1 = {
