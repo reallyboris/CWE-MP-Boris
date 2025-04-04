@@ -88,6 +88,7 @@ country_event = { # Custom Oil Field
 		AND = { year = 1954 owns = 1743 1743 = { NOT = { has_province_modifier = oil_field_custom } } } # libya
 		AND = { year = 1946 owns = 1163 1163 = { NOT = { has_province_modifier = oil_field_custom } } } # Safaniya Oil Field
 		AND = { year = 1946 owns = 1164 1164 = { NOT = { has_province_modifier = oil_field_custom } } } # SAA Oil Field
+		AND = { year = 1922 owns = 2270 2270 = { NOT = { has_province_modifier = oil_field_custom } } } # Bolivar Coastal Field
 		AND = { year = 1948 owns = 935 935 = { NOT = { has_province_modifier = oil_field_custom } } } # Burgan Field
 	}
     year = 1948 
@@ -109,6 +110,7 @@ country_event = { # Custom Oil Field
 				AND = { province_id = 1743 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 1163 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 1164 NOT = { has_province_modifier = oil_field_custom } }
+				AND = { province_id = 2270 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 935 NOT = { has_province_modifier = oil_field_custom } }
 			}
 			produces = petroleum NOT = { has_province_modifier = oil_field_custom } 
@@ -118,37 +120,37 @@ country_event = { # Custom Oil Field
   }
 }
 
-#####MINES AND FARMS EVENTS
-country_event = { # Custom Oil Field small
-  id = 1103
-  title = EVT_1100_NAME
-  desc = EVT_1100_DESC
-  picture = "oil_field"
-
-  trigger = {
-	OR = {
-		AND = { year = 1922 owns = 2270 2270 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Bolivar Coastal Field
-		AND = { year = 1948 owns = 935 935 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Burgan Field
-	}
-    year = 1948 
-  }
-
-  mean_time_to_happen = { months = 12 }
-
-  option = {
-    name = EVT_1100_A
-	any_owned = { 
-		limit = { 
-			OR = { 
-				AND = { province_id = 2270 NOT = { has_province_modifier = oil_field_custom_small } }
-				AND = { province_id = 935 NOT = { has_province_modifier = oil_field_custom_small } }
-			}
-			NOT = { has_province_modifier = oil_field_custom_small } 
-		} 
-		add_province_modifier = { name = oil_field_custom_small duration = -1 } 
-	}
-  }
-}
+######MINES AND FARMS EVENTS
+#country_event = { # Custom Oil Field small
+#  id = 1103
+#  title = EVT_1100_NAME
+#  desc = EVT_1100_DESC
+#  picture = "oil_field"
+#
+#  trigger = {
+#	OR = {
+#		AND = { year = 1922 owns = 2270 2270 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Bolivar Coastal Field
+#		AND = { year = 1948 owns = 935 935 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Burgan Field
+#	}
+#    year = 1948 
+#  }
+#
+#  mean_time_to_happen = { months = 12 }
+#
+#  option = {
+#    name = EVT_1100_A
+#	any_owned = { 
+#		limit = { 
+#			OR = { 
+#				AND = { province_id = 2270 NOT = { has_province_modifier = oil_field_custom_small } }
+#				AND = { province_id = 935 NOT = { has_province_modifier = oil_field_custom_small } }
+#			}
+#			NOT = { has_province_modifier = oil_field_custom_small } 
+#		} 
+#		add_province_modifier = { name = oil_field_custom_small duration = -1 } 
+#	}
+#  }
+#}
 
 #####MINES AND FARMS EVENTS
 country_event = { # Rich soil/ore deposit/oil
