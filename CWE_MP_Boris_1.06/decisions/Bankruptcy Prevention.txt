@@ -1,5 +1,74 @@
 political_decisions = {
 	
+	bankruptreform = {
+		picture = "nwo2_ENG_austerity_1945"
+		potential = {
+			NOT = { money = 100000 } 
+			OR = { 
+				NOT = { social_reform = no_subsidies } 
+				NOT = { social_reform = no_child_care }
+				NOT = { social_reform = no_pensions }
+				NOT = { social_reform = no_health_care }
+				}
+			
+		}
+
+		alert = no
+
+		allow = {
+			election = no
+			war = no
+		}
+		effect = {
+			prestige_factor = -0.1
+			money = 100000
+			add_tax_relative_income = 8
+			social_reform = no_subsidies
+			social_reform = no_child_care 
+			social_reform = no_pensions
+			social_reform = no_health_care
+			add_country_modifier = { name = revolution_chaos duration = 730 }
+
+			any_pop = {
+				scaled_militancy = {
+					factor = 10
+					ideology = populist 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = progressive 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = liberal 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = nationalist
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = socialist 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = communist 
+				}
+				scaled_militancy = {
+					factor = 10
+					ideology = communist_social  
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				money = 50000
+			}
+		}
+	}
+
 	revalue_currency = {
 		picture = "revalue_currency"
 		potential = {
