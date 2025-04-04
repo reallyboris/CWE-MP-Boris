@@ -1059,6 +1059,8 @@ mineral_processing = {
 	#Farms and mines become more efficient
 	farm_rgo_eff = 0.2
 	mine_rgo_eff = 0.2
+
+	activate_building = coal_liquefaction_fuel_factory
 	
 	ai_chance = {
 		factor = 1.1

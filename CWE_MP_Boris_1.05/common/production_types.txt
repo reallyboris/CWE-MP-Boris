@@ -789,6 +789,25 @@ gas_fuel_factory = {
 	}
 }
 
+coal_liquefaction_fuel_factory = {       
+	template = fuel_template
+	input_goods = {    
+		coal = 16
+	} 
+	output_goods = petroleum
+	value = 2
+	bonus = {
+		trigger = { 
+			country = { has_country_flag = spclow }
+		}
+		value = 0.10
+	}
+	bonus = {
+		trigger = { trade_goods_in_state = coal }
+		value = 0.25
+	}
+}
+
 ### FABRIC ###
 
 fabric_factory = {       

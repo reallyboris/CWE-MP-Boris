@@ -455,6 +455,27 @@ gas_fuel_factory = {    # liquefied natural gas
 	pop_build_factory = yes
 }
 
+coal_liquefaction_fuel_factory = {    # liquefied coal
+	type = factory
+	on_completion = factory
+	completion_size = 0.2
+	max_level = 584
+	cost = 0
+	goods_cost = 
+	{
+		electric_gear = 1000
+		cement = 5000
+		steel = 5000
+		machine_parts = 2500
+	}
+	time = 90
+	visibility = yes
+	onmap = yes
+
+	production_type = coal_liquefaction_fuel_factory
+	pop_build_factory = yes
+}
+
 copper_wire_factory = {
 	type = factory
 	on_completion = factory
