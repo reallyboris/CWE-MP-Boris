@@ -110,6 +110,20 @@ political_decisions = {
 					owner = { any_owned = { add_province_modifier = { name = province_monnet_plan duration = 1000 } } }
 				}
 			}
+
+			#Bretton Woods
+			random_owned = { 
+				limit = { owner = { year = 1946 NOT = { year = 1971 } } }
+				owner = { add_country_modifier = { name = bretton_system duration = -1 } }
+			}
+			
+			any_country = {
+				limit = { 
+					NOT = { OR = { ruling_party_ideology = communist ruling_party_ideology = communist_social } } 
+					year = 1946 NOT = { year = 1971 }
+				}
+				add_country_modifier = { name = bretton_system duration = -1 }
+			}
 			
 			
 			#1947 Paris Peace Treaties

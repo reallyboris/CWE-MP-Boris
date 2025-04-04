@@ -1,0 +1,77 @@
+#Bretton Woods for USA
+country_event = {
+	id = 1300013
+	title = "Dollar Convertibility Benefits"
+	desc = "The Dollar Convertiblity of 1 USD to 1 Troy Ounce of Gold offers us much economically stability as the World now uses the American Dollar which is in turn pegged to Gold."
+	picture = "brettonwoodsusa"
+	
+	
+	trigger = {
+		year = 1946
+		has_country_flag = notapplicable
+		government = democracy
+		has_country_modifier = bretton_system
+		NOT = { has_country_flag = usabrettonwoods }
+
+	}
+	
+	option = {
+	name = "Great and have you ever thought of pegging The Dollar to moondust instead?"
+	any_owned = { limit = { trade_goods = credit } add_province_modifier = { name = bretton_woods duration = -1 } }
+		prestige = 10
+		set_country_flag = usabrettonwoods
+		}
+}
+
+#Bretton Woods Reduce Gold Output
+country_event = {
+	id = 1400046
+	title = "Bretton Woods System Effects"
+	desc = EVTDESC1400046
+	picture = "bretton_woods_system_gold"
+	
+trigger = {
+NOT = { tag = USA }
+war = no
+has_country_modifier = bretton_system
+any_owned_province = { AND = { trade_goods = credit NOT = { has_province_modifier = bretton_woods_effect } } }
+any_owned_province = { trade_goods = credit }
+
+#NOT = { has_country_flag = bsystem }
+
+}
+
+option = {
+name = "OK"
+any_owned = { limit = { trade_goods = credit }
+add_province_modifier = { name = bretton_woods_effect duration = -1 } }
+
+#set_country_flag = bsystem
+
+		}
+}
+
+#Kicked out of the Bretton Woods System
+country_event = {
+	id = 1512215
+title = "Kicked out of the Bretton Woods System"
+	desc = "We have been removed from the Bretton Woods System because our government type or ideology does not fit with the goals of the institution."
+	picture = "bretton_woods_system_gold"
+
+trigger = {
+NOT = { tag = USA }
+has_country_modifier = bretton_system
+
+OR = { ruling_party_ideology = communist ruling_party_ideology = communist_social government = theocracy }
+
+}
+
+option = {
+name = "We don't need it anyway!"
+prestige = -50
+remove_country_modifier = bretton_system
+any_owned = { limit = { has_province_modifier = bretton_woods_effect }
+remove_province_modifier = bretton_woods_effect }
+		}
+
+}

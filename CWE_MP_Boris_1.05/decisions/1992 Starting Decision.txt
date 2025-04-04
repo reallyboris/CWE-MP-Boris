@@ -247,6 +247,9 @@ any_country = {
 	set_country_flag = postindusboom
 }
 
+#End of the Bretton Woods System
+set_global_flag = end_of_bretton_system
+
 #Sino-British Joint Declaration
 set_global_flag = HKG_SAR_option
 set_global_flag = MCA_SAR_option
