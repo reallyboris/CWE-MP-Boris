@@ -2,7 +2,7 @@ owner = ENG
 controller = ENG
 add_core = SNG
 trade_goods = credit
-life_rating = 30
+life_rating = 40
 naval_base = 2
 terrain = urban_singapore
 colonial = 0
@@ -12,15 +12,20 @@ state_building = {
 	upgrade = yes
 }
 state_building = {
-	level = 3
+	level = 1
 	building = heating_electricity_factory
+	upgrade = yes
+}
+state_building = {
+	level = 3
+	building = petroleum_fuel_factory
 	upgrade = yes
 }
 1992.1.1 = {
 owner = SNG
 controller = SNG
 add_core = SNG
-life_rating = 30
+life_rating = 40
 railroad = 1
 colonial = 0
 }
