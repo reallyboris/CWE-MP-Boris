@@ -711,7 +711,7 @@
 	soldiers = {
 		culture = andean_white_spanish
 		religion =  catholic 
-		size = 1224
+		size = 1524
 	 } 
 	soldiers = {
 		culture = andean_white_spanish
@@ -721,7 +721,7 @@
 	aristocrats = {
 		culture = andean_white_spanish
 		religion =  catholic 
-		size = 6391
+		size = 6091
 	 } 
 	aristocrats = {
 		culture = andean_white_spanish
@@ -771,42 +771,27 @@
 	artisans = {
 		culture = andean_white_spanish
 		religion =  catholic 
-		size = 5307
+		size = 38389
 	 } 
 	artisans = {
 		culture = andean_white_spanish
 		religion = secularism
-		size = 264
+		size = 3264
 	 } 
 	craftsmen = {
 		culture = andean_white_spanish
 		religion =  catholic 
-		size = 17040
+		size = 21040
 	 } 
 	craftsmen = {
 		culture = andean_white_spanish
 		religion = secularism
-		size = 849
-	 } 
-	farmers = {
-		culture = andean_white_spanish
-		religion =  catholic 
-		size = 33490
-	 } 
-	farmers = {
-		culture = andean_white_spanish
-		religion = secularism
-		size = 1670
+		size = 1309
 	 } 
 	farmers = {
 		culture = mestizo
 		religion =  catholic 
 		size = 87879
-	 } 
-	farmers = {
-		culture = mestizo
-		religion = secularism
-		size = 4382
 	 } 
 }
 #Valera - Valera (494000/123500 POPS)
