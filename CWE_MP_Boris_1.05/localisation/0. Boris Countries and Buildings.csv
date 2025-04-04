@@ -1,0 +1,14 @@
+CODE;ENGLISH;FRENCH;GERMAN;POLISH;SPANISH;HUNGARIAN;CZECH;HUNGARIAN;DUTCH;PORTUGUESE;RUSSIAN;FINNISH;;x;;;;;;;;;;;;;;;;
+coal_liquefaction_fuel_factory;Coal Liquification Plant;;;;;;;x
+coal_liquefaction_fuel_factory_desc;Specific liquefaction technologies generally fall into two categories: direct liquefaction (DCL) and indirect liquefaction (ICL) processes. The economic viability of this technology is questionable.;;;;;;;x
+LCT;Bankeria;Bankéria;Bankeria;;Bankeria;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_ADJ;Bankerian;Libérien;Bankerianisch;;Bankeriana;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_communist;Communist Party;Parti communiste ;Communist Party;;Partido Comunista;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_conservative;Democratic Party;Parti démocrate;Democratic Party;;Partido Demócrata;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_conservative_2;Whig Party;Parti Whig;Whig Party;;Partido Whig;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_traditionalist;Fascist Party;Parti fasciste;Fascist Party;;Partido Fascista;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_liberal;Reform Party;Parti réformateur;Reform Party;;Partido Reformista;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_liberal_2;Pan-African Party;Parti pan-africain;Pan-African Party;;Partido Pan-africano;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_populist;Nationalist Party;Parti nationaliste;Nationalist Party;;Partido Nacionalista;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_progressive;Radical Party;Parti radical;Radical Party;;Partido Radical;;;;;;;;;x;;;;;;;;;;;;;;;;
+LCT_socialist;African Revolutionary Party;Parti révolutionnaire africain;African Revolutionary Party;;Partido Revolucionario Africano;;;;;;;;;x;;;;;;;;;;;;;;;;
