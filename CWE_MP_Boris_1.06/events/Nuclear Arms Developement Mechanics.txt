@@ -381,28 +381,18 @@ prestige = 20
 country_event = {
 	id = 1231442
 	title = "Goods for Atomic Bomb development"
-	desc = "The event will take 1000 of each of these goods 6 times to complete the bomb: §R Optics.  Research and Development.  Cement.  Electricity.  Electric Gear.  Telecommunications§!"
+	desc = "The event will take 100000 of each of these goods 6 times to complete the bomb: §R Dollars§!"
 	picture = "nuclear_disarmament_un"
 	
 	trigger = {
 		has_country_flag = atomic_bomb_goods_needed
-		optics = 1000
-		education_rnd = 1000
-		heating_electricity = 1000
-		electric_gear = 1000
-		cement = 1000
-		telecommunications = 1000
+		money = 100001
 	}
 	mean_time_to_happen = {
 		days = 1
 	}
 	immediate = {
-		optics = -1000
-		education_rnd -1000
-		heating_electricity - 1000
-		electric_gear = -1000
-		cement = -1000
-		telecommunications -1000
+		money -100000
 		change_variable = {
 			which = atomic_bomb_dev
 			value = 1
@@ -438,28 +428,18 @@ country_event = {
 country_event = {
 	id = 1231443
 	title = "Goods for Hydrogen Bomb development"
-	desc = "The event will take 1000 of each of these goods 15 times to complete the bomb: §R Optics.  Research and Development.  Cement.  Electricity.  Electric Gear.  Telecommunications§!"
+	desc = "The event will take 200000 of each of these goods 15 times to complete the bomb: §R Dollars§!"
 	picture = "nuclear_disarmament_un"
 	
 	trigger = {
 		has_country_flag = hydrogen_bomb_goods_needed
-		optics = 1000
-		education_rnd = 1000
-		heating_electricity = 1000
-		electric_gear = 1000
-		cement = 1000
-		telecommunications = 1000
+		money = 200000
 	}
 	mean_time_to_happen = {
 		days = 1
 	}
 	immediate = {
-		optics = -1000
-		education_rnd -1000
-		heating_electricity - 1000
-		electric_gear = -1000
-		cement = -1000
-		telecommunications -1000
+		money = -200000
 		change_variable = {
 			which = hydrogen_bomb_dev
 			value = 1
