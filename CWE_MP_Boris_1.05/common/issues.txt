@@ -641,9 +641,9 @@ social_reforms = {
 		eight_work_hours = { # trinket_wage
 			minimum_wage = 1
 			
-			factory_throughput = -0.005
-			poor_luxury_needs = 0.025
-			middle_luxury_needs = 0.025
+			factory_throughput = -0.05
+			poor_luxury_needs = -0.05
+			middle_luxury_needs = -0.05
 			
 			global_immigrant_attract = 0.1
 			administrative_multiplier = 1
@@ -651,9 +651,9 @@ social_reforms = {
 		paid_vacation_hours = { # low_minimum_wage
 			minimum_wage = 2
 			
-			factory_throughput = 0.01
-			poor_luxury_needs = 0.05
-			middle_luxury_needs = 0.05
+			factory_throughput = -0.10
+			poor_luxury_needs = -0.10
+			middle_luxury_needs = -0.10
 			
 			global_immigrant_attract = 0.2
 			administrative_multiplier = 2
@@ -661,9 +661,9 @@ social_reforms = {
 		paid_sick_leave_hours = { # acceptable_minimum_wage
 			minimum_wage = 3
 			
-			factory_throughput = 0.015
-			poor_luxury_needs = 0.1
-			middle_luxury_needs = 0.1
+			factory_throughput = -0.15
+			poor_luxury_needs = -0.15
+			middle_luxury_needs = -0.15
 			
 			global_immigrant_attract = 0.3
 			global_pop_consciousness_modifier = -0.01
@@ -832,18 +832,18 @@ social_reforms = {
 			min_social_spending = 0.08
 		}
 		acceptable_pensions = {
-			pension_level = 3
+			pension_level = 6
 			global_population_growth = 0.002
 			global_pop_consciousness_modifier = -0.01
 			global_immigrant_attract = 0.3
-			min_social_spending = 0.10
+			min_social_spending = 0.09
 		}
 		good_pensions = {
-			pension_level = 4
-			global_population_growth = 0.002
+			pension_level = 15
+			global_population_growth = 0.003
 			global_pop_consciousness_modifier = -0.02
 			global_immigrant_attract = 0.4
-			min_social_spending = 0.12
+			min_social_spending = 0.1
 		}
 	}
 	health_care = {
@@ -867,19 +867,19 @@ social_reforms = {
 			min_social_spending = 0.08
 		}
 		acceptable_health_care = {
-			global_population_growth = 0.003
+			global_population_growth = 0.002
 			global_immigrant_attract = 0.4
 			administrative_multiplier = 4
-			pension_level = 4
-			min_social_spending = 0.15
+			pension_level = 6
+			min_social_spending = 0.09
 			global_pop_consciousness_modifier = -0.03
 		}
 		good_health_care = {
 			global_population_growth = 0.003
 			global_immigrant_attract = 0.4
 			administrative_multiplier = 4
-			pension_level = 4
-			min_social_spending = 0.15
+			pension_level = 18
+			min_social_spending = 0.1
 			global_pop_consciousness_modifier = -0.03
 		}
 	}
@@ -897,7 +897,7 @@ social_reforms = {
 			goods_demand = -0.05
 		}
 		low_envir = {
-			global_immigrant_attract = 0.2
+			global_immigrant_attract = 0.15
 			factory_maintenance = 0.1
 			factory_throughput = -0.10			
 			administrative_multiplier = 2
@@ -905,7 +905,7 @@ social_reforms = {
 			goods_demand = -0.10
 		}
 		acceptable_envir = {
-			global_immigrant_attract = 0.3
+			global_immigrant_attract = 0.2
 			factory_maintenance = 0.3		
 			factory_throughput = -0.15			
 			administrative_multiplier = 3
@@ -913,7 +913,7 @@ social_reforms = {
 			goods_demand = -0.15
 		}
 		good_envir = {
-			global_immigrant_attract = 0.4
+			global_immigrant_attract = 0.25
 			factory_maintenance = 0.4
 			factory_throughput = -0.25		
 			administrative_multiplier = 4
@@ -974,17 +974,17 @@ social_reforms = {
 			global_pop_militancy_modifier = -0.04
 		}
 		anti_terror_surveillance  = { # large_endowment
-			administrative_multiplier = 4
+			administrative_multiplier = 3
 			pension_level = 3
 			unemployment_benefit = 3
-			global_pop_consciousness_modifier = -0.03
+			global_pop_consciousness_modifier = -0.04
 			global_pop_militancy_modifier = -0.06
 		}
 		the_safety_grid = { # massive_endowment
-			administrative_multiplier = 8
+			administrative_multiplier = 4
 			pension_level = 4
 			unemployment_benefit = 4
-			global_pop_consciousness_modifier = -0.04
+			global_pop_consciousness_modifier = -0.05
 			global_pop_militancy_modifier = -0.08
 		}
 	}
@@ -1469,6 +1469,7 @@ military_reforms = {
 		yes_foreign_training = {
 			#unit stats improve	
 			land_organisation = 0.1
+			mobilisation_size = 0.02
 			technology_cost = 8000
 			civilization_progress_modifier = 0
 			
