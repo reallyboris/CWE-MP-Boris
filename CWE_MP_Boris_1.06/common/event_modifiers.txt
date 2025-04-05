@@ -11,7 +11,7 @@ banker_income_timer = {
 }
 
 government_sanitarium_big = {
-	population_growth = 0.05
+	population_growth = 0.025
 	icon = 19
 }
 kinda_bad_badboy = {
