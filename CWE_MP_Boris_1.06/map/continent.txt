@@ -32,6 +32,7 @@ europe = {
 		1050 1051 1056 1053 1054 1055 1057 3345 3361
 	} 
 	assimilation_rate = -0.5 
+	population_growth = -0.00015
 	farm_rgo_size = 1.0 
 	mine_rgo_size = 1.0 
 } 
@@ -100,6 +101,7 @@ africa = {
 		1755 2096 2619 3360
 	} 
 	assimilation_rate = -0.5
+	population_growth = 0.0002
 	farm_rgo_size = 2.0 
 	mine_rgo_size = 2.0 
 } 
@@ -125,6 +127,7 @@ mena = {
 		2585 2586 2564 2687 3341
 	} 
 	assimilation_rate = -0.75
+	population_growth = 0.0002
 	farm_rgo_size = 2.0 
 	mine_rgo_size = 2.0 
 } 
@@ -166,6 +169,7 @@ south_america = {
 		2532 2549 2550 2554 2578 2600 3339
 	} 
 	assimilation_rate = 0.125
+	population_growth = 0.0001
 	farm_rgo_size = 2.0 
 	mine_rgo_size = 2.0 
 } 
