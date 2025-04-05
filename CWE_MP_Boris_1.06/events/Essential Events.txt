@@ -175,7 +175,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = { tag = THI }
+		OR = { tag = URU }
 
 	}
 	
@@ -185,9 +185,7 @@ country_event = {
 		any_country = { limit = { exists = yes  } 
 		any_owned = {
 			limit = { OR = { is_core = THI is_core = MSY is_core = PHI is_core = DAI is_core = SVI is_core = BRU is_core = SNG is_core = BUR is_core = CAM is_core = LUA is_core = TAI is_core = FMS is_core = MEX is_core = SAF is_core = IDO is_core = SAA is_core = IRQ is_core = PER is_core = KUW is_core = QAT is_core = BAH is_core = UAE is_core = ISR } }
-			add_province_modifier = { name = government_sanitarium duration = 800 }
-			add_province_modifier = { name = government_sanitarium duration = 750 }
-			add_province_modifier = { name = government_sanitarium duration = 700 }
+			add_province_modifier = { name = government_sanitarium_big duration = 800 }
 		}
 
 		}

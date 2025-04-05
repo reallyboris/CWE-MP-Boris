@@ -10,6 +10,10 @@ banker_income_timer = {
 	icon = 10
 }
 
+government_sanitarium_big = {
+	population_growth = 0.05
+	icon = 19
+}
 kinda_bad_badboy = {
 	loan_interest = 10
 	tariff_efficiency_modifier = -0.40
