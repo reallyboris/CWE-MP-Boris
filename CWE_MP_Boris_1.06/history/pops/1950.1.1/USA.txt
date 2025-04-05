@@ -3707,7 +3707,7 @@
 		size = 1849
 	 } 
 }
-#Houston - Houston (4041000/1010250 POPS)
+#Houston - Houston (709000/715000 POPS)
 132 = {
 	capitalists = {
 		culture = white_anglo
@@ -3772,7 +3772,7 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 30758
+		size = 25758
 	 } 
 	clerks = {
 		culture = white_anglo
@@ -3792,35 +3792,55 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 93811
+		size = 88686
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 9278
+		size = 4278
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 331177
+		size = 281177
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 37698
+		size = 17698
+	 } 
+	farmers = {
+		culture = mesoamerican_white_spanish
+		religion =  catholic 
+		size = 18386
+	 } 
+	farmers = {
+		culture = mesoamerican_white_spanish
+		religion = secularism
+		size = 1818
 	 } 
 	farmers = {
 		culture = afro_american
 		religion =  protestant 
-		size = 217411
+		size = 107411
 	 } 
 	farmers = {
 		culture = afro_american
 		religion = secularism
-		size = 25458
+		size = 20458
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 18386
+	 } 
+	farmers = {
+		culture = mestizo
+		religion = secularism
+		size = 1818
 	 } 
 }
-#Austin - Austin (1806000/451500 POPS)
+#Austin - Austin (132,459/201525 POPS)
 133 = {
 	capitalists = {
 		culture = white_anglo
@@ -3885,7 +3905,7 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 13746
+		size = 8746
 	 } 
 	clerks = {
 		culture = white_anglo
@@ -3895,7 +3915,7 @@
 	artisans = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 13058
+		size = 8058
 	 } 
 	artisans = {
 		culture = white_anglo
@@ -3905,65 +3925,50 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 41926
+		size = 20876
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 4146
+		size = 3846
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 260746
+		size = 80640
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 25788
+		size = 11788
 	 } 
 	farmers = {
 		culture = mesoamerican_white_spanish
 		religion =  catholic 
-		size = 16434
-	 } 
-	farmers = {
-		culture = mesoamerican_white_spanish
-		religion = secularism
-		size = 1625
+		size = 11434
 	 } 
 	farmers = {
 		culture = afro_american
 		religion =  protestant 
-		size = 12325
-	 } 
-	farmers = {
-		culture = afro_american
-		religion = secularism
-		size = 1219
+		size = 10325
 	 } 
 	farmers = {
 		culture = mestizo
 		religion =  catholic 
-		size = 12325
-	 } 
-	farmers = {
-		culture = mestizo
-		religion = secularism
-		size = 1219
+		size = 10325
 	 } 
 }
-#Dallas - Dallas (4287000/1071750 POPS)
+#Dallas - Dallas (866000/471750 POPS)
 134 = {
 	capitalists = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 5851
+		size = 2851
 	 } 
 	capitalists = {
 		culture = white_anglo
 		religion = secularism
-		size = 578
+		size = 278
 	 } 
 	officers = {
 		culture = white_anglo
@@ -3978,7 +3983,7 @@
 	soldiers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 32060
+		size = 20060
 	 } 
 	soldiers = {
 		culture = white_anglo
@@ -3988,82 +3993,92 @@
 	aristocrats = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 24381
+		size = 8181
 	 } 
 	aristocrats = {
 		culture = white_anglo
 		religion = secularism
-		size = 2411
+		size = 811
 	 } 
 	bureaucrats = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 5851
+		size = 3851
 	 } 
 	bureaucrats = {
 		culture = white_anglo
 		religion = secularism
-		size = 578
+		size = 500
 	 } 
 	clergymen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 19505
+		size = 15005
 	 } 
 	clergymen = {
 		culture = white_anglo
 		religion = secularism
-		size = 1929
+		size = 1429
 	 } 
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 32629
+		size = 18829
 	 } 
 	clerks = {
 		culture = white_anglo
 		religion = secularism
-		size = 3227
+		size = 2007
 	 } 
 	artisans = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 30998
+		size = 10898
 	 } 
 	artisans = {
 		culture = white_anglo
 		religion = secularism
-		size = 3065
+		size = 1065
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 182081
+		size = 88523
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 9842
+		size = 8840
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 100182
+		size = 120182
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 56391
+		size = 10284
 	 } 
 	farmers = {
+		culture = mesoamerican_white_spanish
+		religion =  catholic 
+		size = 9752
+	 } 
+	craftsmen = {
 		culture = afro_american
 		religion =  protestant 
-		size = 67035
+		size = 105735
 	 } 
 	farmers = {
 		culture = afro_american
 		religion = secularism
 		size = 11574
+	 } 
+	farmers = {
+		culture = mestizo
+		religion =  catholic 
+		size = 19505
 	 } 
 }
 #Lubbock - Lubbock (271000/67750 POPS)
@@ -4292,7 +4307,7 @@
 		size = 333
 	 } 
 }
-#San Antonio - San Antonio (1756000/439000 POPS)
+#San Antonio - San Antonio (454000/359000 POPS)
 137 = {
 	capitalists = {
 		culture = white_anglo
@@ -4367,7 +4382,7 @@
 	artisans = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 12697
+		size = 8697
 	 } 
 	artisans = {
 		culture = white_anglo
@@ -4377,7 +4392,7 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 40765
+		size = 39765
 	 } 
 	craftsmen = {
 		culture = white_anglo
@@ -4387,27 +4402,22 @@
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 237548
+		size = 172313
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 23493
+		size = 16493
 	 } 
 	farmers = {
 		culture = mesoamerican_white_spanish
 		religion =  catholic 
-		size = 15979
-	 } 
-	farmers = {
-		culture = mesoamerican_white_spanish
-		religion = secularism
-		size = 1580
+		size = 10979
 	 } 
 	farmers = {
 		culture = afro_american
 		religion =  protestant 
-		size = 27964
+		size = 25964
 	 } 
 	farmers = {
 		culture = afro_american
@@ -4417,12 +4427,7 @@
 	farmers = {
 		culture = mestizo
 		religion =  catholic 
-		size = 11984
-	 } 
-	farmers = {
-		culture = mestizo
-		religion = secularism
-		size = 1185
+		size = 8984
 	 } 
 }
 #Laredo - Laredo (370000/92500 POPS)
@@ -6853,7 +6858,7 @@
 		religion = secularism
 		size = 437
 	 } 
-	farmers = {
+	soldiers = {
 		culture = chinese
 		religion =  taoism 
 		size = 11713
@@ -7246,24 +7251,24 @@
 #Seoul - Seoul (5554000/1388500 POPS)
 1624 = {
 	officers = {
-		culture = chinese
+		culture = korean
 		religion =  taoism 
 		size = 3623
 	 } 
 	officers = {
-		culture = chinese
+		culture = korean
 		religion = secularism
 		size = 541
 	 } 
 	soldiers = {
-		culture = chinese
+		culture = korean
 		religion =  taoism 
 		size = 14495
 	 } 
 	soldiers = {
 		culture = korean
 		religion = secularism
-		size = 20166
+		size = 2166
 	 } 
 	aristocrats = {
 		culture = chinese
@@ -7333,7 +7338,7 @@
 	craftsmen = {
 		culture = korean
 		religion = secularism
-		size = 102927
+		size = 132927
 	 } 
 }
 #Inchon - Inchon (1292000/323000 POPS)
@@ -7351,7 +7356,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 23372
+		size = 3372
 	 } 
 	soldiers = {
 		culture = korean
@@ -7411,7 +7416,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 186939
+		size = 206939
 	 } 
 	farmers = {
 		culture = korean
@@ -7521,7 +7526,7 @@
 		religion = secularism
 		size = 63537
 	 } 
-	farmers = {
+	craftsmen = {
 		culture = afro_american
 		religion =  protestant 
 		size = 151255
@@ -7547,7 +7552,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 9903
+		size = 903
 	 } 
 	soldiers = {
 		culture = korean
@@ -7607,7 +7612,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 45419
+		size = 55419
 	 } 
 	farmers = {
 		culture = korean
@@ -7630,7 +7635,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 9903
+		size = 903
 	 } 
 	soldiers = {
 		culture = korean
@@ -7690,7 +7695,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 45419
+		size = 55419
 	 } 
 	farmers = {
 		culture = korean
@@ -7713,7 +7718,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 13901
+		size = 3901
 	 } 
 	soldiers = {
 		culture = korean
@@ -7773,7 +7778,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 229455
+		size = 239455
 	 } 
 	farmers = {
 		culture = korean
@@ -7796,7 +7801,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 16175
+		size = 6175
 	 } 
 	soldiers = {
 		culture = korean
@@ -7856,7 +7861,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 368964
+		size = 378964
 	 } 
 	farmers = {
 		culture = korean
@@ -7879,7 +7884,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 13160
+		size = 3160
 	 } 
 	soldiers = {
 		culture = korean
@@ -7939,7 +7944,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 183966
+		size = 193966
 	 } 
 	farmers = {
 		culture = korean
@@ -7962,7 +7967,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 16149
+		size = 6149
 	 } 
 	soldiers = {
 		culture = korean
@@ -8022,7 +8027,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 367362
+		size = 377362
 	 } 
 	farmers = {
 		culture = korean
@@ -8045,7 +8050,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 9928
+		size = 2928
 	 } 
 	soldiers = {
 		culture = korean
@@ -8105,7 +8110,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 169711
+		size = 179711
 	 } 
 	farmers = {
 		culture = korean
@@ -8128,7 +8133,7 @@
 	soldiers = {
 		culture = korean
 		religion =  taoism 
-		size = 9694
+		size = 694
 	 } 
 	soldiers = {
 		culture = korean
@@ -8188,7 +8193,7 @@
 	farmers = {
 		culture = korean
 		religion =  taoism 
-		size = 32605
+		size = 42605
 	 } 
 	farmers = {
 		culture = korean
@@ -9532,7 +9537,7 @@
 		religion = secularism
 		size = 5850
 	 } 
-	farmers = {
+	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
 		size = 333094
@@ -16078,17 +16083,17 @@
 		size = 460
 	 } 
 }
-#New York - New York (4852000/1213000 POPS)
+#New York - New York (1750000/7116441  POPS)
 232 = {
 	capitalists = {
 		culture = jewish
 		religion =  jewish 
-		size = 10000
+		size = 13000
 	 } 
 	capitalists = {
 		culture = white_anglo
 		religion = secularism
-		size = 15000
+		size = 10000
 	 } 
 	officers = {
 		culture = white_anglo
@@ -16123,7 +16128,7 @@
 	bureaucrats = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 20000
+		size = 25000
 	 } 
 	bureaucrats = {
 		culture = white_anglo
@@ -16133,57 +16138,62 @@
 	clergymen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 25000
+		size = 50000
 	 } 
 	clergymen = {
 		culture = white_anglo
 		religion = secularism
-		size = 30000
-	 } 
-	artisans = {
-		culture = white_anglo
-		religion =  protestant 
-		size = 175000
-	 } 
-	artisans = {
-		culture = white_anglo
-		religion = secularism
 		size = 100000
 	 } 
+	artisans = {
+		culture = white_anglo
+		religion =  protestant 
+		size = 100000
+	 } 
+	artisans = {
+		culture = white_anglo
+		religion = secularism
+		size = 50000
+	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 112639
+		size = 112599
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 11140
+		size = 11180
 	 } 
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 226550
+		size = 250000
+	 } 
+	labourers = {
+		culture = white_anglo
+		religion = protestant
+		size = 150008
 	 } 
 	labourers = {
 		culture = white_anglo
 		religion = secularism
-		size = 812130
+		size = 50000
 	 } 
 	labourers = {
 		culture = jewish
 		religion =  jewish 
-		size = 81683
-	 } 
-	labourers = {
-		culture = jewish
-		religion = secularism
-		size = 8078
-	 } 
+		size = 98883
+	 }  
 	labourers = {
 		culture = afro_american
 		religion =  protestant 
 		size = 66229
+	 } 
+	labourers = {
+		culture = afro_american
+		religion = secularism
+		size = 6550
 	 } 
 }
 #Long Island - Long Island (2473000/618250 POPS)
@@ -17311,12 +17321,12 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 75117
+		size = 20117
 	 } 
 	clerks = {
 		culture = white_anglo
 		religion = secularism
-		size = 6989
+		size = 1989
 	 } 
 	artisans = {
 		culture = white_anglo
@@ -17331,22 +17341,22 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 206357
+		size = 61357
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 21068
+		size = 6068
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 197223
+		size = 397223
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 19285
+		size = 39285
 	 } 
 	farmers = {
 		culture = jewish
@@ -21965,7 +21975,12 @@
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 34505
+		size = 17505
+	 } 
+	 farmers = {
+		culture = polynesian
+		religion =  protestant 
+		size = 17505
 	 } 
 	farmers = {
 		culture = polynesian
@@ -22181,7 +22196,7 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 23726
+		size = 17726
 	 } 
 	clerks = {
 		culture = white_anglo
@@ -22201,22 +22216,22 @@
 	craftsmen = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 99067
+		size = 54067
 	 } 
 	craftsmen = {
 		culture = white_anglo
 		religion = secularism
-		size = 9347
+		size = 5347
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 323344
+		size = 373344
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 31924
+		size = 36924
 	 } 
 	farmers = {
 		culture = afro_american
@@ -22851,7 +22866,7 @@
 		religion =  protestant 
 		size = 436339
 	 } 
-	farmers = {
+	craftsmen = {
 		culture = white_anglo
 		religion = secularism
 		size = 43154
@@ -23178,7 +23193,7 @@
 	clerks = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 23397
+		size = 33397
 	 } 
 	clerks = {
 		culture = white_anglo
@@ -23188,7 +23203,7 @@
 	artisans = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 22227
+		size = 172227
 	 } 
 	artisans = {
 		culture = white_anglo
@@ -23208,17 +23223,17 @@
 	farmers = {
 		culture = white_anglo
 		religion =  protestant 
-		size = 496965
+		size = 356965
 	 } 
 	farmers = {
 		culture = white_anglo
 		religion = secularism
-		size = 49150
+		size = 34150
 	 } 
 	farmers = {
 		culture = jewish
 		religion =  jewish 
-		size = 16784
+		size = 11784
 	 } 
 	farmers = {
 		culture = jewish
@@ -23339,7 +23354,7 @@
 		size = 488
 	 } 
 }
-#Los Angeles - Los Angeles (7407000/1851750 POPS)
+#Los Angeles - Los Angeles (3703500/1851750 POPS)
 89 = {
 	capitalists = {
 		culture = jewish

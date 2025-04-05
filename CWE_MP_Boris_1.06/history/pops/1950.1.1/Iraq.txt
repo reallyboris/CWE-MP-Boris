@@ -15,11 +15,6 @@
 		religion =  sunni 
 		size = 2914
 	 } 
-	soldiers = {
-		culture = arab_mesopotamian
-		religion = sunni
-		size = 3000
-	 } 
 	farmers = {
 		culture = arab_mesopotamian
 		religion =  sunni 
@@ -61,11 +56,6 @@
 		religion =  sunni 
 		size = 1027
 	 } 
-	soldiers = {
-		culture = arab_mesopotamian
-		religion = sunni
-		size = 5000
-	 } 
 	artisans = {
 		culture = kurdish
 		religion =  sunni 
@@ -101,11 +91,6 @@
 		culture = arab_mesopotamian
 		religion =  sunni 
 		size = 1227
-	 } 
-	soldiers = {
-		culture = arab_mesopotamian
-		religion = sunni
-		size = 5000
 	 } 
 	artisans = {
 		culture = arab_mesopotamian
@@ -382,12 +367,12 @@
 	artisans = {
 		culture = arab_mesopotamian
 		religion =  shiite 
-		size = 2256
+		size = 62256
 	 } 
 	farmers = {
 		culture = arab_mesopotamian
 		religion =  shiite 
-		size = 77209
+		size = 17209
 	 } 
 
 	#For Pan-Arab and National Arab

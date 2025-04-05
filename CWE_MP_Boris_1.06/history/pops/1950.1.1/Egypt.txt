@@ -5,15 +5,15 @@
 		religion =  jewish 
 		size = 5620
 	 } 
-	officers = {
-		culture = egyptian
-		religion = sunni
-		size = 4056
+	capitalists = {
+		culture = jewish
+		religion = secularism
+		size = 56
 	 } 
 	soldiers = {
 		culture = egyptian
 		religion =  sunni 
-		size = 20049
+		size = 1049
 	 } 
 	aristocrats = {
 		culture = egyptian
@@ -53,7 +53,7 @@
 	farmers = {
 		culture = egyptian
 		religion =  orthodox 
-		size = 261045
+		size = 181045
 	 } 
 	farmers = {
 		culture = egyptian
@@ -266,11 +266,6 @@
 		religion =  jewish 
 		size = 3628
 	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 10003
-	 } 
 	capitalists = {
 		culture = jewish
 		religion = secularism
@@ -279,7 +274,7 @@
 	aristocrats = {
 		culture = egyptian
 		religion =  sunni 
-		size = 29320
+		size = 129320
 	 } 
 	clergymen = {
 		culture = egyptian
@@ -395,15 +390,10 @@
 		religion =  sunni 
 		size = 1060
 	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 4000
-	 } 
 	farmers = {
 		culture = egyptian
 		religion =  sunni 
-		size = 19275
+		size = 23275
 	 } 
 
 	#For Pan-Arab and National Arab
@@ -591,11 +581,6 @@
 		religion =  sunni 
 		size = 10520
 	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 20000
-	 } 
 	capitalists = {
 		culture = egyptian
 		religion =  sunni 
@@ -614,7 +599,7 @@
 	farmers = {
 		culture = egyptian
 		religion =  sunni 
-		size = 105520
+		size = 125520
 	 } 
 	farmers = {
 		culture = egyptian
@@ -652,11 +637,6 @@
 		religion =  sunni 
 		size = 1547
 	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 13000
-	 } 
 	artisans = {
 		culture = egyptian
 		religion =  sunni 
@@ -665,7 +645,7 @@
 	farmers = {
 		culture = egyptian
 		religion =  sunni 
-		size = 115919
+		size = 135919
 	 } 
 
 	#For Pan-Arab and National Arab
@@ -688,11 +668,6 @@
 		religion =  sunni 
 		size = 1408
 	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 7003
-	 } 
 	clergymen = {
 		culture = egyptian
 		religion =  sunni 
@@ -706,7 +681,7 @@
 	farmers = {
 		culture = egyptian
 		religion =  sunni 
-		size = 260465
+		size = 247465
 	 } 
 
 	#For Pan-Arab and National Arab
@@ -728,11 +703,6 @@
 		culture = egyptian
 		religion =  sunni 
 		size = 1697
-	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 9023
 	 } 
 	artisans = {
 		culture = egyptian
@@ -775,11 +745,6 @@
 		religion =  sunni 
 		size = 1390
 	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 9023
-	 } 
 	farmers = {
 		culture = egyptian
 		religion =  sunni 
@@ -820,11 +785,6 @@
 		culture = egyptian
 		religion =  sunni 
 		size = 1118
-	 } 
-	soldiers = {
-		culture = egyptian
-		religion =  sunni 
-		size = 9023
 	 } 
 	farmers = {
 		culture = egyptian

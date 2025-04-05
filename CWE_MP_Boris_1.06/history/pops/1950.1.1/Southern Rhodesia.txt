@@ -86,12 +86,12 @@
 		size = 18329
 	 } 
 	farmers = {
-		culture = indian
-		religion = hindu
+		culture = coloured
+		religion = protestant
 		size = 1809
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 201489
 	 } 
@@ -184,37 +184,37 @@
 		size = 379
 	 } 
 	clergymen = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 856
 	 } 
 	artisans = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 3278
 	 } 
 	artisans = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 899
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 84259
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 3688
 	 } 
 	farmers = {
-		culture = nguni
+		culture = ovambo
 		religion =  protestant 
 		size = 7459
 	 } 
 	farmers = {
-		culture = nguni
+		culture = ovambo
 		religion = secularism
 		size = 1108
 	 } 
@@ -272,32 +272,32 @@
 		size = 94
 	 } 
 	capitalists = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 699
 	 } 
 	clergymen = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 2259
 	 } 
 	clergymen = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 624
 	 } 
 	artisans = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 19589
 	 } 
 	artisans = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 709
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 99056
 	 } 
@@ -307,7 +307,7 @@
 		size = 75
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 3526
 	 } 
@@ -390,27 +390,27 @@
 		size = 1585
 	 } 
 	farmers = {
-		culture = indian
-		religion = hindu
+		culture = coloured
+		religion = protestant
 		size = 555
 	 } 
 	farmers = {
-		culture = nguni
+		culture = zulu
 		religion =  protestant 
 		size = 11036
 	 } 
 	farmers = {
-		culture = nguni
+		culture = zulu
 		religion = secularism
 		size = 1801
 	 } 
 	farmers = {
-		culture = venda
+		culture = zulu
 		religion =  protestant 
 		size = 9241
 	 } 
 	farmers = {
-		culture = venda
+		culture = zulu
 		religion = secularism
 		size = 903
 	 } 
@@ -418,87 +418,87 @@
 #Hwange - Hwange (749000/187250 POPS)
 2072 = {
 	officers = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 775
 	 } 
 	officers = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 429
 	 } 
 	soldiers = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 1289
 	 } 
 	soldiers = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 325
 	 } 
 	aristocrats = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 8408
 	 } 
 	aristocrats = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 923
 	 } 
 	bureaucrats = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 869
 	 } 
 	bureaucrats = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 366
 	 } 
 	capitalists = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 1889
 	 } 
 	capitalists = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 569
 	 } 
 	clergymen = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 3080
 	 } 
 	clergymen = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 689
 	 } 
 	artisans = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 3703
 	 } 
 	artisans = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 705
 	 } 
 	farmers = {
-		culture = tonga
+		culture = ovambo
 		religion =  protestant 
 		size = 17401
 	 } 
 	farmers = {
-		culture = tonga
+		culture = ovambo
 		religion = secularism
 		size = 1289
 	 } 
 	farmers = {
-		culture = nguni
+		culture = ovambo
 		religion =  protestant 
 		size = 15905
 	 } 
@@ -508,7 +508,7 @@
 		size = 72
 	 } 
 	farmers = {
-		culture = nguni
+		culture = ovambo
 		religion = secularism
 		size = 4169
 	 } 
@@ -596,7 +596,7 @@
 		size = 185
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 9825
 	 } 
@@ -606,7 +606,7 @@
 		size = 69
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 836
 	 } 
@@ -664,32 +664,32 @@
 		size = 152
 	 } 
 	capitalists = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 714
 	 } 
 	clergymen = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 3323
 	 } 
 	clergymen = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 605
 	 } 
 	artisans = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 3804
 	 } 
 	artisans = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 675
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion =  protestant 
 		size = 17345
 	 } 
@@ -699,7 +699,7 @@
 		size = 67
 	 } 
 	farmers = {
-		culture = shona
+		culture = zulu
 		religion = secularism
 		size = 4745
 	 } 

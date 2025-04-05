@@ -11,52 +11,52 @@
 		size = 7
 	 } 
 	aristocrats = {
-		culture = swazi
+		culture = zulu
 		religion =  protestant 
 		size = 2707
 	 } 
 	aristocrats = {
-		culture = swazi
+		culture = zulu
 		religion = secularism
 		size = 62
 	 } 
 	bureaucrats = {
-		culture = swazi
+		culture = zulu
 		religion =  protestant 
 		size = 67
 	 } 
 	bureaucrats = {
-		culture = swazi
+		culture = zulu
 		religion = secularism
 		size = 1
 	 } 
 	clergymen = {
-		culture = swazi
+		culture = zulu
 		religion =  protestant 
 		size = 676
 	 } 
 	clergymen = {
-		culture = swazi
+		culture = zulu
 		religion = secularism
 		size = 15
 	 } 
 	artisans = {
-		culture = swazi
+		culture = zulu
 		religion =  protestant 
 		size = 514
 	 } 
 	artisans = {
-		culture = swazi
+		culture = zulu
 		religion = secularism
 		size = 11
 	 } 
 	farmers = {
-		culture = swazi
+		culture = zulu
 		religion =  protestant 
 		size = 58310
 	 } 
 	farmers = {
-		culture = swazi
+		culture = zulu
 		religion = secularism
 		size = 1342
 	 } 
@@ -71,32 +71,32 @@
 		size = 3
 	 } 
 	farmers = {
-		culture = british
+		culture = afrikaaner
 		religion =  protestant 
 		size = 202
 	 } 
 	farmers = {
-		culture = british
+		culture = afrikaaner
 		religion = secularism
 		size = 4
 	 } 
 	farmers = {
-		culture = british
+		culture = zulu
 		religion =  protestant 
 		size = 3384
 	 } 
 	farmers = {
-		culture = british
+		culture = zulu
 		religion = secularism
 		size = 77
 	 } 
 	farmers = {
-		culture = british
+		culture = zulu
 		religion =  protestant 
 		size = 1353
 	 } 
 	farmers = {
-		culture = british
+		culture = zulu
 		religion = secularism
 		size = 31
 	 } 
