@@ -76,14 +76,14 @@ is_triggered_only = yes
 
 		add_country_modifier = { name = recently_attacked_nuke duration = 31 }
 
-		add_country_modifer = { name = nuke_fallout duration = 1825 }
+		add_country_modifer = { name = nuke_fallout duration = 365 }
 
 		#any_pop = { reduce_pop = 0.90 }
 
 		set_country_flag = has_nuke_clouds
 
 		any_owned = { limit = { is_capital = yes }
-		add_province_modifier = { name = nuke_low duration = 1825 }
+		add_province_modifier = { name = nuke_low duration = 365 }
 		any_pop = { reduce_pop = 0.90 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -93,7 +93,7 @@ is_triggered_only = yes
 		}
 
 		any_owned = { limit = { total_pops = 1000000 }
-		add_province_modifier = { name = nuke_low duration = 1825 }
+		add_province_modifier = { name = nuke_low duration = 365 }
 		any_pop = { reduce_pop = 0.90 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -125,14 +125,14 @@ is_triggered_only = yes
 			limit = { NOT = { tag = REB } neighbour = THIS }
 			remove_country_modifier = { name = nuke_neighbour_fallout }
 			remove_country_modifier = { name = nuke_distant_fallout }
-			add_country_modifier = { name = nuke_neighbour_fallout duration = 1825 }
+			add_country_modifier = { name = nuke_neighbour_fallout duration = 365 }
 		}
 
 		any_country = {
 			limit = { NOT = { neighbour = THIS } }
 			remove_country_modifier = { name = nuke_neighbour_fallout }
 			remove_country_modifier = { name = nuke_distant_fallout }
-			add_country_modifier = { name = nuke_distant_fallout duration = 1825 }
+			add_country_modifier = { name = nuke_distant_fallout duration = 365 }
 		}
 
 		prestige_factor = -0.1
@@ -141,14 +141,14 @@ is_triggered_only = yes
 
 		add_country_modifier = { name = recently_attacked_nuke duration = 31 }
 
-		add_country_modifier = { name = nuke_fallout duration = 1825 }
+		add_country_modifier = { name = nuke_fallout duration = 365 }
 
 		#any_pop = { reduce_pop = 0.80 }
 
 		set_country_flag = has_nuke_clouds
 
 		any_owned = { limit = { is_capital = yes }
-		add_province_modifier = { name = nuke_medium duration = 1825 }
+		add_province_modifier = { name = nuke_medium duration = 365 }
 		any_pop = { reduce_pop = 0.80 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -158,7 +158,7 @@ is_triggered_only = yes
 		}
 
 		any_owned = { limit = { AND = { total_pops = 500000 NOT = { total_pops = 1000000 } } }
-		add_province_modifier = { name = nuke_low duration = 1825 }
+		add_province_modifier = { name = nuke_low duration = 365 }
 		any_pop = { reduce_pop = 0.90 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -168,7 +168,7 @@ is_triggered_only = yes
 		}
 
 		any_owned = { limit = { total_pops = 1000000 }
-		add_province_modifier = { name = nuke_medium duration = 1825 }
+		add_province_modifier = { name = nuke_medium duration = 365 }
 		any_pop = { reduce_pop = 0.80 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -201,14 +201,14 @@ is_triggered_only = yes
 			limit = { NOT = { tag = REB } neighbour = THIS }
 			remove_country_modifier = { name = nuke_neighbour_fallout }
 			remove_country_modifier = { name = nuke_distant_fallout }
-			add_country_modifier = { name = nuke_neighbour_fallout duration = 1825 }
+			add_country_modifier = { name = nuke_neighbour_fallout duration = 365 }
 		}
 
 		any_country = {
 			limit = { NOT = { neighbour = THIS } }
 			remove_country_modifier = { name = nuke_neighbour_fallout }
 			remove_country_modifier = { name = nuke_distant_fallout }
-			add_country_modifier = { name = nuke_distant_fallout duration = 1825 }
+			add_country_modifier = { name = nuke_distant_fallout duration = 365 }
 		}
 
 		prestige_factor = -0.15
@@ -217,14 +217,14 @@ is_triggered_only = yes
 
 		add_country_modifier = { name = recently_attacked_nuke duration = 31 }
 
-		add_country_modifier = { name = nuke_fallout duration = 1825 }
+		add_country_modifier = { name = nuke_fallout duration = 365 }
 
 		#any_pop = { reduce_pop = 0.70 }
 
 		set_country_flag = has_nuke_clouds
 
 		any_owned = { limit = { is_capital = yes }
-		add_province_modifier = { name = nuke_high duration = 1825 }
+		add_province_modifier = { name = nuke_high duration = 365 }
 		any_pop = { reduce_pop = 0.70 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -234,7 +234,7 @@ is_triggered_only = yes
 		}
 
 		any_owned = { limit = { AND = { total_pops = 250000 NOT = { total_pops = 500000 } } }
-		add_province_modifier = { name = nuke_low duration = 1825 }
+		add_province_modifier = { name = nuke_low duration = 365 }
 		any_pop = { reduce_pop = 0.90 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -244,7 +244,7 @@ is_triggered_only = yes
 		}
 
 		any_owned = { limit = { AND = { total_pops = 500000 NOT = { total_pops = 1000000 } } }
-		add_province_modifier = { name = nuke_medium duration = 1825 }
+		add_province_modifier = { name = nuke_medium duration = 365 }
 		any_pop = { reduce_pop = 0.80 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
@@ -254,7 +254,7 @@ is_triggered_only = yes
 		}
 
 		any_owned = { limit = { total_pops = 1000000 }
-		add_province_modifier = { name = nuke_high duration = 1825 }
+		add_province_modifier = { name = nuke_high duration = 365 }
 		any_pop = { reduce_pop = 0.70 }
 		set_province_flag = disease
 		set_province_flag = nuked_before
