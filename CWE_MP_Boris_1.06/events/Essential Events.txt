@@ -62,7 +62,7 @@ country_event = {
 	
 	option = {
 		name = "Money really does grows on trees!"
-		any_owned = { owner = { money = 10000 } }
+		any_owned = { owner = { money = 50000 } }
 		any_owned = { owner = { fuel = 1 } }
 		any_pop = { limit = { culture = french } money = 5 }
 		any_pop = { limit = { culture = white_french } money = 10 }
@@ -99,7 +99,7 @@ country_event = {
 	
 	option = {
 		name = "Money really does grows on trees!"
-		any_owned = { owner = { money = 10000 } }
+		any_owned = { owner = { money = 50000 } }
 		any_pop = { limit = { culture = french } money = 5 }
 		any_pop = { limit = { culture = white_french } money = 10 }
 		any_pop = { limit = { culture = jewish } money = 10 }
