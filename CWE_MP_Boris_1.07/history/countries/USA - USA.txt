@@ -37,7 +37,7 @@ public_meetings = free_meetings
 
 # Social Reforms
 safety_regulations = some_regulations
-pensions = trinket_pensions
+pensions = low_pensions
 education = self_financed_education
 health_care = no_health_care
 security_reform = police
