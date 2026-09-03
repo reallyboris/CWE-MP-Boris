@@ -6,6 +6,11 @@ requested_grant = {
 	icon = 10
 }
 
+asia_edu = {
+	education_efficiency_modifier = 0.07
+	icon = 19
+}
+
 banker_income_timer = {
 	icon = 10
 }
@@ -14,13 +19,20 @@ government_sanitarium_big = {
 	population_growth = 0.025
 	icon = 19
 }
+
+un_sanctions_veto = {
+	global_pop_militancy_modifier = 0.05
+	core_pop_consciousness_modifier = 0.05
+	icon = 4
+}
+
 kinda_bad_badboy = {
 	loan_interest = 10
 	tariff_efficiency_modifier = -0.40
 	mobilisation_economy_impact = 2
 	diplomatic_points_modifier = -0.6
 	factory_owner_cost = 1
-	global_immigrant_attract = -2
+	global_immigrant_attract = -0.2
 	org_regain = -0.05
 	land_organisation = -0.02
 	naval_organisation = -0.02
@@ -36,15 +48,84 @@ kinda_bad_badboy = {
 	icon = 8
 }
 
+
+
+bureaucrats_fix_cooldown = {
+	icon = 12
+}
+
+crat_1 = {
+    icon = 6
+}
+
+crat_2 = {
+    icon = 6
+}
+
+crat_3 = {
+    icon = 6
+}
+
+crat_4 = {
+    icon = 6
+}
+
+crat_5 = {
+    icon = 6
+}
+
+crat_6 = {
+    icon = 6
+}
+
+crat_7 = {
+    icon = 6
+}
+
+crat_8 = {
+    icon = 6
+}
+
+crat_9 = {
+    icon = 6
+}
+
+crat_10 = {
+    icon = 6
+}
+
 medium_farm = {
     local_RGO_throughput = 5
 	icon = 9
 }
 
 us_immigration_start_fix ={
-immigrant_attract = 2.5
-max_tax = 0.29
+global_immigrant_attract = 2
 global_assimilation_rate = 0.5
+icon = 13
+}
+
+us_immigration_city ={
+immigrant_attract = 2
+icon = 23
+}
+
+us_tax_start_fix ={
+max_tax = 0.19
+RGO_throughput = 0.3
+RGO_output = 0.3
+min_social_spending = 0.5
+RGO_throughput = 0.1
+RGO_output = 0.1
+icon = 13
+}
+
+us_exception ={
+min_tax = -0.1
+factory_throughput = 0.25
+RGO_throughput = 0.1
+RGO_output = 0.15
+icon = 23
 }
 
 pop_farm_debuff_timer = {
@@ -52,44 +133,68 @@ pop_farm_debuff_timer = {
 }
 
 pop_farm_debuff_1 = {
-local_RGO_output = -0.1
+local_RGO_output = -0.2
 local_RGO_throughput = -0.1
     icon = 18
 }
 
 pop_farm_debuff_2 = {
-local_RGO_output = -0.225
+local_RGO_output = -0.325
 local_RGO_throughput = -0.225
     icon = 18
 }
 
 pop_farm_debuff_3 = {
-local_RGO_output = -0.4
+local_RGO_output = -0.5
 local_RGO_throughput = -0.4
     icon = 18
 }
 
 pop_farm_debuff_4 = {
-local_RGO_output = -0.525
+local_RGO_output = -0.625
 local_RGO_throughput = -0.525
     icon = 18
 }
 
 pop_farm_debuff_5 = {
-local_RGO_output = -0.65
+local_RGO_output = -0.75
 local_RGO_throughput = -0.65
     icon = 18
 }
 
 pop_farm_debuff_6 = {
-local_RGO_output = -0.675
+local_RGO_output = -0.875
 local_RGO_throughput = -0.675
     icon = 18
 }
 
 pop_farm_debuff_7 = {
-local_RGO_output = -0.725
+local_RGO_output = -0.95
 local_RGO_throughput = -0.725
+    icon = 18
+}
+
+pop_farm_debuff_8 = {
+local_RGO_output = -1.05
+local_RGO_throughput = -0.825
+    icon = 18
+}
+
+pop_farm_debuff_9 = {
+local_RGO_output = -1.2
+local_RGO_throughput = -0.95
+    icon = 18
+}
+
+pop_farm_debuff_10 = {
+local_RGO_output = -1.3
+local_RGO_throughput = -1.05
+    icon = 18
+}
+
+pop_farm_debuff_11 = {
+local_RGO_output = -1.5
+local_RGO_throughput = -1.2
     icon = 18
 }
 
@@ -99,7 +204,7 @@ oil_field_custom_small = {
 }
 
 oil_field_custom = { 
-    local_RGO_throughput = 45
+    local_RGO_throughput = 75
 	icon = 9
 }
 
@@ -486,7 +591,7 @@ icon = 10
 }
 
 stagflation = {
-tax_efficiency = -0.05
+tax_efficiency = -0.01
 factory_owner_cost = 0.05
 factory_output = -0.1
 factory_input = 0.1
@@ -689,7 +794,7 @@ reducing_corruption = {
 political_reform_desire = 0.5
 research_points_modifier = -0.1
 leadership_modifier = -0.2
-tax_efficiency = 0.05
+tax_efficiency = 0.1
 icon = 5
 }
 
@@ -697,8 +802,8 @@ icon = 5
 
 decolonise_request = {
 assimilation_rate = -0.5
-pop_consciousness_modifier = 0.5
-pop_militancy_modifier = 0.5
+pop_consciousness_modifier = 0.05
+pop_militancy_modifier = 0.05
 local_RGO_throughput = -0.25
 local_factory_throughput = -0.25
 icon = 8
@@ -808,7 +913,7 @@ icon = 13
 occupied_province = {
 immigrant_attract = -0.5
 immigrant_push = 0.5
-assimilation_rate = -0.5
+assimilation_rate = -1
 pop_militancy_modifier = 0.05
 number_of_voters = -1
 icon = 20
@@ -949,13 +1054,13 @@ icon = 6
 cento_member = {
 	tax_efficiency = -0.01
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
-	leadership_modifier = 0.1
+#	org_regain = 0.2
+#	land_organisation = 0.2
+#	land_unit_start_experience = 10
+	leadership_modifier = 0.05
 	min_military_spending = 0.1
-	army_tech_research_bonus = 0.1
-	navy_tech_research_bonus = 0.1
+	army_tech_research_bonus = 0.05
+	navy_tech_research_bonus = 0.05
 	icon = 5
 }
 
@@ -968,13 +1073,13 @@ leave_alliance_cento = {
 seato_member = {
 	tax_efficiency = -0.01
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
-	leadership_modifier = 0.1
+#	org_regain = 0.2
+#	land_organisation = 0.2
+#	land_unit_start_experience = 10
+	leadership_modifier = 0.05
 	min_military_spending = 0.1
-	army_tech_research_bonus = 0.1
-	navy_tech_research_bonus = 0.1
+	army_tech_research_bonus = 0.05
+	navy_tech_research_bonus = 0.05
 	icon = 5
 }
 
@@ -1223,15 +1328,16 @@ icon = 5
 }
 
 chinese_military = {
-tax_efficiency = 0.10
-leadership_modifier = 0.5
-land_unit_start_experience = 10
-land_organisation = 0.5
-mobilization_economy_impact = -0.5
-mobilisation_size = 0.5
-org_regain = 0.5
+tax_efficiency = 0.5
+leadership_modifier = 0.25
+land_unit_start_experience = 2.5
+land_organisation = 0.25
+mobilization_economy_impact = -0.25
+mobilisation_size = 0.8
+org_regain = 0.75
 suppression_points_modifier = 0.5
-war_exhaustion = -2
+min_military_spending = -0.75
+war_exhaustion = -3
 icon = 5
 }
 
@@ -1570,9 +1676,9 @@ industry_tech_research_bonus = -0.1
 commerce_tech_research_bonus = -0.1
 culture_tech_research_bonus = -0.1
 war_exhaustion = -2
-naval_organisation = 0.1
-land_unit_start_experience = 10
-land_organisation = 0.2
+#naval_organisation = 0.05
+#land_unit_start_experience = 10
+#land_organisation = 0.1
 suppression_points_modifier = 0.2
 icon = 15
 }
@@ -1675,8 +1781,8 @@ icon = 14
 ### UN Infamy Sanctions ###
 
 un_polit_sanc = {
-ruling_party_support = -0.5
-political_reform_desire = 0.25
+ruling_party_support = -0.1
+political_reform_desire = 0.05
 research_points_modifier = -0.05
 icon = 14
 }
@@ -1752,10 +1858,10 @@ icon = 15
 
 decolonise_yes = {
 local_ruling_party_support = -0.8
-pop_militancy_modifier = 0.5
+pop_militancy_modifier = 0.4
 local_factory_throughput = -0.25
 local_RGO_output = -0.25
-pop_consciousness_modifier = 0.4
+pop_consciousness_modifier = 0.2
 icon = 20
 }
 
@@ -1884,12 +1990,12 @@ visegrad = {
 ### High Powered Computing ###
 
 hcphigh = {
-	land_organisation = 0.1
-	naval_organisation = 0.1
+	land_organisation = 0.05
+	naval_organisation = 0.05
 	land_unit_start_experience = 5
 	leadership_modifier = 0.1
 	tax_efficiency = -0.04
-	org_regain = 0.1
+	org_regain = 0.05
 	icon = 15
 }
 
@@ -2045,13 +2151,14 @@ icon = 18
 }
 
 war_bombed = { 
-immigrant_push = 5
-local_artisan_output = -0.25
-pop_militancy_modifier = 0.05
-local_factory_throughput = -0.25
+immigrant_push = 1
+local_artisan_output = -0.2
+pop_militancy_modifier = 0.02
+local_factory_throughput = -0.1
 social_reform_desire = 0.5
-local_factory_input = 0.20
-immigrant_attract = -1.75
+local_factory_input = 0.10
+immigrant_attract = -2
+population_growth = -0.001
 icon = 18  
 }
 
@@ -2136,8 +2243,11 @@ icon = 4
 doctrinehigh = {
 tax_efficiency = -0.02
 leadership_modifier = 0.2
-land_unit_start_experience = 20
-naval_unit_start_experience = 20
+land_unit_start_experience = 5
+naval_unit_start_experience = 5
+org_regain = 0.02
+land_organisation = 0.02
+naval_organisation = 0.02
 supply_consumption = 0.10
 icon = 15
 }
@@ -2145,9 +2255,9 @@ icon = 15
 doctrinemedium = {
 tax_efficiency = -0.01
 leadership_modifier = 0.1
-org_regain = 0.1
-land_organisation = 0.1
-naval_organisation = 0.1
+org_regain = 0.01
+land_organisation = 0.01
+naval_organisation = 0.01
 supply_consumption = 0.05
 icon = 16
 }
@@ -2155,8 +2265,8 @@ icon = 16
 doctrinelow = {
 supply_consumption = -0.05
 badboy = -0.05
-land_unit_start_experience = -10
-naval_unit_start_experience = -10
+land_unit_start_experience = -5
+naval_unit_start_experience = -5
 icon = 1
 }
 
@@ -2954,10 +3064,10 @@ icon = 4
 ### Central Bank Interest Rates ###
 
 cbihigh = {
-loan_interest = 0.10
+loan_interest = 0.05
 factory_owner_cost = 0.025
-rich_income_modifier = 0.10
-poor_income_modifier = -0.10
+#rich_income_modifier = 0.10
+#poor_income_modifier = -0.10
 goods_demand = -0.05
 icon = 13
 }
@@ -2967,10 +3077,10 @@ icon = 13
 }
 
 cbilow = {
-loan_interest = -0.10
+loan_interest = -0.05
 factory_owner_cost = -0.025
-rich_income_modifier = -0.20
-poor_income_modifier = 0.10
+#rich_income_modifier = -0.20
+#poor_income_modifier = 0.10
 goods_demand = 0.05
 icon = 13
 }
@@ -3556,9 +3666,9 @@ polar_expedition_underway = {
 ### Nuclear Blackmail ###
 
 nuke_blackmail = {
-import_cost = 0.25
-factory_owner_cost = 0.020
-prestige = -0.01
+import_cost = -0.25
+factory_owner_cost = -0.020
+prestige = 0.01
 tax_efficiency = 0.025
 icon = 23
 }
@@ -3715,6 +3825,13 @@ oic_member = { prestige = 0.05 icon = 7 }
 oic_chairmanship = { prestige = 0.010 icon = 7 }
 
 ### UN Peace Mechanism ###
+
+called_allies_un_sanctions = {	
+	prestige = -0.01
+	icon = 18
+}
+
+
 
 stop_un_spam = {	
 	prestige = 0.01
@@ -4093,6 +4210,7 @@ low_government_corruption = {
 minimal_government_corruption = {
 
 	#Political effects
+	global_pop_militancy_modifier = -0.02
 	global_pop_consciousness_modifier = -0.02
 	
 	icon = 1
@@ -4254,11 +4372,11 @@ suppression_points_modifier = -0.5
 support_government = {
 	tax_efficiency = 0.05
 	
-	leadership_modifier = 0.20
+	leadership_modifier = 0.1
 	
-	org_regain = 0.10
-	land_organisation = 0.15
-	naval_organisation = 0.15
+	org_regain = 0.03
+	land_organisation = 0.05
+	naval_organisation = 0.05
 	
 	supply_consumption = -0.05
 	icon = 18
@@ -4625,7 +4743,7 @@ cd_timer = {
 
 nato_leader = {
 	leadership_modifier = 0.05
-	org_regain = 0.05
+#	org_regain = 0.02
 	influence_modifier = 0.1
 	icon = 7
 }
@@ -4634,10 +4752,10 @@ natohigh_gp = {
 	rich_income_modifier = -0.05
 	middle_income_modifier = -0.05
 	poor_income_modifier = -0.05
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
-	leadership_modifier = 0.1
+#	org_regain = 0.1
+#	land_organisation = 0.1
+#	land_unit_start_experience = 5
+	leadership_modifier = 0.05
 	min_military_spending = 0.30
 	icon = 21
 }
@@ -4653,20 +4771,17 @@ natomedium_gp = {
 natolow_gp = {
 	min_military_spending = -0.20
 	factory_owner_cost = -0.05
-	factory_throughput = 0.01
+	factory_throughput = 0.05
 	research_points_modifier = 0.05
 	icon = 21
 }
 
 natolow = {
-	rich_income_modifier = -0.05
-	middle_income_modifier = -0.05
-	poor_income_modifier = -0.05
-	org_regain = 0.1
-	land_organisation = 0.1
-	land_unit_start_experience = 10
-	leadership_modifier = 0.1
-	min_military_spending = 0.30
+#	org_regain = 0.05
+#	land_organisation = 0.05
+#	land_unit_start_experience = 5
+	leadership_modifier = 0.05
+	min_military_spending = 0.20
 	icon = 21
 }
 
@@ -4681,7 +4796,7 @@ natomedium = {
 natohigh = {
 	min_military_spending = -0.10
 	factory_owner_cost = -0.05
-	factory_throughput = 0.01
+	factory_throughput = 0.05
 	research_points_modifier = 0.05
 	icon = 21
 }
@@ -4695,7 +4810,7 @@ icon = 18
 }
 
 oil_crisis = {
-local_RGO_throughput = -90
+local_RGO_throughput = -99
 icon = 18
 }
 
@@ -4710,7 +4825,7 @@ icon = 3
 }
 
 oil_low = {
-local_RGO_output = -0.25
+local_RGO_output = -0.5
 icon = 4
 }
 
@@ -4901,7 +5016,7 @@ icon = 16
 
 nuke_sanctions = {
 import_cost = 0.50
-loan_interest = 2.5
+loan_interest = 0.5
 tax_efficiency = -0.05
 badboy = 0.02
 icon = 24
@@ -4953,23 +5068,13 @@ icon = 24
 }
 
 develop_atomic_bomb = {
-tax_efficiency = -0.12
-badboy = 0.01
-icon = 24
-}
-
-develop_atomic_bomb_start = {
+tax_efficiency = -0.04
 badboy = 0.01
 icon = 24
 }
 
 develop_hydrogen_bomb = {
-tax_efficiency = -0.20
-badboy = 0.01
-icon = 24
-}
-
-develop_hydrogen_bomb_start = {
+tax_efficiency = -0.08
 badboy = 0.01
 icon = 24
 }
@@ -4986,57 +5091,58 @@ icon = 23
 
 nuke_high = {
 immigrant_push = 10
-population_growth = -0.01
+population_growth = -0.06
 immigrant_attract = -3
 pop_militancy_modifier = 0.20
-local_RGO_throughput = -1
+local_RGO_throughput = -0.75
 local_factory_output = -1.70
 icon = 26
 }
 
 nuke_medium = {
 immigrant_push = 5
-population_growth = -0.005
+population_growth = -0.03
 immigrant_attract = -2
 pop_militancy_modifier = 0.10
-local_RGO_throughput = -0.85
+local_RGO_throughput = -0.50
 local_factory_output = -0.90
 icon = 26
 }
 
 nuke_low = {
 immigrant_push = 2.5
-population_growth = -0.001
+population_growth = -0.015
 immigrant_attract = -1
 pop_militancy_modifier = 0.05
-local_RGO_throughput = -0.5
+local_RGO_throughput = -0.25
 local_factory_output = -0.30
 icon = 26
 }
 
 tactical_nuked = {
 immigrant_push = 0.5
+population_growth = -0.01
 immigrant_attract = -1
 pop_militancy_modifier = 0.05
 local_RGO_throughput = -0.25
-local_factory_output = -0.25
+local_factory_output = -0.30
 icon = 26
 }
 
 nuke_fallout = {
 immigrant_push = 0.20
-global_population_growth = -0.002
+global_population_growth = -0.003
 immigrant_attract = -0.50
 core_pop_militancy_modifier = 0.03
-RGO_throughput = -0.20
-factory_output = -0.20
+RGO_throughput = -0.30
+factory_output = -0.30
 icon = 24
 }
 
 nuke_neighbour_fallout = {
 immigrant_push = 0.10
-global_population_growth = -0.001
-immigrant_attract = -0.20
+global_population_growth = -0.002
+immigrant_attract = -0.25
 core_pop_militancy_modifier = 0.02
 RGO_throughput = -0.20
 factory_output = -0.20
@@ -5047,7 +5153,7 @@ nuke_distant_fallout = {
 immigrant_push = 0.05
 global_population_growth = -0.001
 immigrant_attract = -0.125
-core_pop_militancy_modifier = 0.02
+core_pop_militancy_modifier = 0.01
 RGO_throughput = -0.20
 factory_output = -0.20
 icon = 24
@@ -5158,9 +5264,6 @@ icon = 16
 }
 
 cold_war_low = {
-
-#global_pop_consciousness_modifier = -0.25
-
 badboy = -0.01
 icon = 16
 }
@@ -5240,9 +5343,9 @@ icon = 9
 
 ###
 keiretsu = {
-    local_factory_throughput = 0.5
-	local_factory_output = 0.5
-    local_RGO_throughput = 0.5
+    local_factory_throughput = 0.05
+	local_factory_output = 0.05
+    local_RGO_throughput = 0.05
 	icon = 9
 }
 
@@ -5530,19 +5633,16 @@ commhigh_gp = {
 	rich_income_modifier = -0.10
 	middle_income_modifier = -0.10
 	poor_income_modifier = -0.10
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
 	leadership_modifier = 0.1
-	min_military_spending = 0.60
+	min_military_spending = 0.5
 	supply_consumption = 0.10
 	icon = 19
 }
 
 commmedium_gp = {
-	min_military_spending = 0.40
+	min_military_spending = 0.35
 	factory_owner_cost = -0.010
-	factory_throughput = 0.10
+	factory_throughput = 0.010
 	research_points_modifier = 0.05
 	icon = 19
 }
@@ -5550,8 +5650,8 @@ commmedium_gp = {
 commlow_gp = {
 	min_military_spending = 0.20
 	social_reform_desire = 0.20
-	factory_owner_cost = -0.020
-	factory_throughput = 0.20
+	factory_owner_cost = -0.025
+	factory_throughput = 0.025
 	research_points_modifier = 0.10
 	factory_input = -0.01
 	tax_efficiency = -0.05
@@ -5560,23 +5660,17 @@ commlow_gp = {
 }
 
 commhigh = {
-	rich_income_modifier = -0.10
-	middle_income_modifier = -0.10
-	poor_income_modifier = -0.10
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
-	leadership_modifier = 0.1
-	min_military_spending = 0.60
+	leadership_modifier = 0.02
+	min_military_spending = 0.50
 	supply_consumption = 0.05
 	icon = 19
 }
 
 commmedium = {
-	min_military_spending = 0.40
+	min_military_spending = 0.35
 	factory_owner_cost = -0.01
-	factory_throughput = 0.10
-	RGO_throughput = 0.10
+	factory_throughput = 0.01
+	RGO_throughput = 0.01
 	import_cost = -0.1
 	tax_efficiency = 0.025
 	research_points_modifier = 0.025
@@ -5586,8 +5680,8 @@ commmedium = {
 commlow = {
 	min_military_spending = 0.20
 	factory_owner_cost = -0.02
-	factory_throughput = 0.20
-	RGO_throughput = 0.20
+	factory_throughput = 0.025
+	RGO_throughput = 0.025
 	import_cost = -0.2
 	tax_efficiency = 0.05
 	research_points_modifier = 0.05
@@ -5599,12 +5693,6 @@ commlow = {
 ### Democratic Bloc Leader Options ###
 
 demohigh_gp = {
-	rich_income_modifier = -0.05
-	middle_income_modifier = -0.05
-	poor_income_modifier = -0.05
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
 	leadership_modifier = 0.1
 	min_military_spending = 0.30
 	icon = 21
@@ -5612,15 +5700,15 @@ demohigh_gp = {
 
 demomedium_gp = {
 	min_military_spending = 0.10
-	factory_owner_cost = -0.05
-	factory_throughput = 0.10
+	factory_owner_cost = -0.025
+	factory_throughput = 0.025
 	research_points_modifier = 0.05
 	icon = 21
 }
 
 demolow_gp = {
 	factory_owner_cost = -0.010
-	factory_throughput = 0.20
+	factory_throughput = 0.10
 	research_points_modifier = 0.10
 	icon = 21
 }
@@ -5629,9 +5717,9 @@ demohigh = {
 	rich_income_modifier = -0.05
 	middle_income_modifier = -0.05
 	poor_income_modifier = -0.05
-	org_regain = 0.1
-	land_organisation = 0.1
-	land_unit_start_experience = 10
+#	org_regain = 0.05
+#	land_organisation = 0.05
+#	land_unit_start_experience = 2.5
 	leadership_modifier = 0.1
 	min_military_spending = 0.30
 	icon = 21
@@ -5640,14 +5728,14 @@ demohigh = {
 demomedium = {
 	min_military_spending = 0.10
 	factory_owner_cost = -0.05
-	factory_throughput = 0.10
+	factory_throughput = 0.025
 	research_points_modifier = 0.025
 	icon = 21
 }
 
 demolow = {
 	factory_owner_cost = -0.010
-	factory_throughput = 0.20
+	factory_throughput = 0.05
 	research_points_modifier = 0.05
 	icon = 21
 }
@@ -6107,7 +6195,7 @@ demographic_romani = { }
 
 peace_mission = { icon = 7 } 
 
-united_nations_ga_member = { prestige = 0.01 badboy = -0.01 loan_interest = -0.1 icon = 7 }
+united_nations_ga_member = { prestige = 0.01 badboy = -0.01 icon = 7 }
 
 unsc_permanent_member = { prestige = 0.05 badboy = -0.02 icon = 7 }
 
@@ -6380,10 +6468,10 @@ g8 = {
 leekuanyew = {
 tax_efficiency = 0.25
 research_points_modifier = 0.50
-education_efficiency_modifier = 0.10
+education_efficiency_modifier = 0.15
 culture_tech_research_bonus = 0.5
 industry_tech_research_bonus = 0.5
-RGO_output = 0.25
+RGO_output = 0.35
 prestige = 0.01
 icon = 3
 }
@@ -6538,9 +6626,9 @@ democratic_bloc_leader = {
 	tariff_efficiency_modifier = 0.10
 	
 	#Economic effects
-	RGO_output = 0.20
+	RGO_output = 0.25
 	factory_output = 0.20
-	factory_owner_cost = -0.020
+	factory_throughput = 0.2
 
 	#Research points
 	research_points = 1.50
@@ -6659,8 +6747,8 @@ icon = 5
 }
 
 nationalist_agitation = {
-	pop_consciousness_modifier = 0.75
-	pop_militancy_modifier = 0.75
+	pop_consciousness_modifier = 0.2
+	pop_militancy_modifier = 0.25
 	icon = 18
 }
 
@@ -6700,12 +6788,11 @@ boycott_fascism = {
 colonial_unrest = {
 	local_RGO_throughput = -0.6
 	pop_consciousness_modifier = 0.05
-	non_accepted_pop_militancy_modifier = 1
 	icon = 20
 }
 colonial_promise = {
 	local_RGO_throughput = -0.1
-	pop_consciousness_modifier = 0.25
+	pop_consciousness_modifier = 0.05
 	icon = 7
 }
 
@@ -6739,8 +6826,8 @@ rocket_test = {
 	local_factory_output = 0.25
 	local_RGO_throughput = 0.25
 	immigrant_attract = 0.25
-	immigrant_push = -0.75
-	population_growth = 0.002
+	immigrant_push = -0.25
+	population_growth = 0.0002
 	icon = 5
 }
 
@@ -6927,7 +7014,7 @@ naval_school = {
 }
 
 colonial_dry_spell = {
-	pop_militancy_modifier = 0.75
+	pop_militancy_modifier = 0.05
 	farm_RGO_eff = -0.20
 	icon = 14
 }
@@ -6935,7 +7022,7 @@ colonial_dry_spell = {
 colonial_exploitation = {
 	farm_RGO_eff = 0.10
 	mine_RGO_eff = 0.10
-	non_accepted_pop_militancy_modifier = 0.75
+	pop_militancy_modifier = 0.1
 	icon = 18
 }
 
@@ -6950,7 +7037,7 @@ german_scientists = {
 }
 
 colonial_mismanagement = {
-	pop_militancy_modifier = 0.2
+	pop_militancy_modifier = -0.02
 	farm_rgo_eff = -0.5
 	mine_rgo_eff = -0.5
 	icon = 2
@@ -6960,14 +7047,13 @@ baby_boom = {
 	global_population_growth = 0.01
 	research_points_modifier = -0.125
 	tax_efficiency = -0.025
-	factory_output = -0.075
 	icon = 17
 }
 
 contraception_decay = {
 	tax_efficiency = -0.025
 	global_population_growth = 0.002
-	factory_throughput = -0.075
+	#factory_throughput = -0.025
 	icon = 18
 }
 
@@ -7084,12 +7170,12 @@ natural_disaster = {
 	icon = 4
 }
 famine = {
-	population_growth = -0.002
+	population_growth = -0.02
 	icon = 20
 }
 
 global_famine = {
-	global_population_growth = -0.002
+	global_population_growth = -0.02
 	icon = 18
 }
 
@@ -7140,7 +7226,7 @@ destitution_and_poverty = {
 
 ##### NATIONALIST UPRISINGS #####
 minority_building_restrictions = {
-	non_accepted_pop_militancy_modifier = 0.75
+	non_accepted_pop_militancy_modifier = 0.02
 	assimilation_rate = 0.05
 	icon = 16
 }
@@ -7258,7 +7344,8 @@ local_stock_exchange = {
 economic_boom = {
 	factory_throughput = 0.125
 	factory_output = 0.125
-	RGO_output = 0.25
+	RGO_throughput = 0.2
+	RGO_output = 0.2
 	tax_efficiency = 0.05
 	rich_income_modifier = 0.20
 	middle_income_modifier = 0.10
@@ -7317,12 +7404,12 @@ unrecognized_government  = {
  
 ### Great War ###
 
-#international_pariah = {
-#	diplomatic_points_modifier = -0.25
-#	non_accepted_pop_militancy_modifier = 0.1
-#	prestige = -0.01
-#	icon = 4
-#}
+international_pariah = {
+	diplomatic_points_modifier = -0.25
+	non_accepted_pop_militancy_modifier = 0.1
+	prestige = -0.01
+	icon = 4
+}
 
 apartheid = {
 	prestige = -0.01
@@ -7771,16 +7858,14 @@ transition_to_dictatorship = {
 }
 
 promised_autonomy = {
-    pop_consciousness_modifier = 0.5
-    pop_militancy_modifier = 0.05
+    pop_consciousness_modifier = 0.02
+    pop_militancy_modifier = 0.01
 	icon = 15
 }
 
 denied_independence = {
-    pop_consciousness_modifier = 0.5
-    pop_militancy_modifier = 0.5
-	non_accepted_pop_militancy_modifier = 1
-	local_RGO_throughput = -0.75
+    pop_consciousness_modifier = 0.02
+    pop_militancy_modifier = 0.05
 	icon = 16
 }
 
@@ -7790,9 +7875,9 @@ neutral_nation_marker = { icon = 9 }
 
 alliance_nato = {
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.02
+#	land_organisation = 0.02
+	land_unit_start_experience = 1
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7802,9 +7887,9 @@ alliance_nato = {
 
 alliance_sato = {
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.02
+#	land_organisation = 0.02
+	land_unit_start_experience = 1
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7822,9 +7907,9 @@ leave_alliance_nato = {
 
 rio_pact = {
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.2
+#	land_organisation = 0.2
+#	land_unit_start_experience = 10
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7836,9 +7921,9 @@ leave_rio_pact = {
 }
 warsaw_pact = {
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.02
+#	land_organisation = 0.02
+	land_unit_start_experience = 1
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7851,9 +7936,9 @@ leave_warsaw_pact = {
 csto_alliance = {
 	icon = 7
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.2
+#	land_organisation = 0.2
+#	land_unit_start_experience = 10
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7864,9 +7949,9 @@ leave_csto_alliance = {
 }
 anzus_alliance = {
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.2
+#	land_organisation = 0.2
+	land_unit_start_experience = 1
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7878,9 +7963,9 @@ leave_anzus_alliance = {
 }
 sco_pact = {
     prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.2
+#	land_organisation = 0.2
+#	land_unit_start_experience = 10
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -7893,9 +7978,9 @@ leave_sco_pact = {
 alliance_MedPac = {
 	tax_efficiency = -0.01
 	prestige = 0.01
-	org_regain = 0.2
-	land_organisation = 0.2
-	land_unit_start_experience = 10
+#	org_regain = 0.2
+#	land_organisation = 0.2
+#	land_unit_start_experience = 10
 	leadership_modifier = 0.1
 	min_military_spending = 0.1
 	army_tech_research_bonus = 0.1
@@ -8026,69 +8111,3 @@ change_ruling_party = {
 	icon = 6
 }
 
-songun = {
-	supply_consumption = 0.10
-        core_pop_militancy_modifier = 0.01
-        mobilisation_size = 0.3
-	icon = 2
-}
-
-
-closed_borders = {
-        core_pop_militancy_modifier = 0.05
-	icon = 2
-}
-
-jewish_diaspora = {
-    icon = 20
-}
-
-law_changed_by_force1 = {
-    icon = 6
-}
-
-crat_1 = {
-    icon = 6
-}
-
-crat_2 = {
-    icon = 6
-}
-
-crat_3 = {
-    icon = 6
-}
-
-crat_4 = {
-    icon = 6
-}
-
-crat_5 = {
-    icon = 6
-}
-
-crat_6 = {
-    icon = 6
-}
-
-crat_7 = {
-    icon = 6
-}
-
-crat_8 = {
-    icon = 6
-}
-
-crat_9 = {
-    icon = 6
-}
-
-crat_10 = {
-    icon = 6
-}
-
-unemployment_fix_nation = {
-	icon = 6
-	rgo_output = -0.99
-	rgo_throughput = -0.99
-}
