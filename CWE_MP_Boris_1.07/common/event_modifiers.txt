@@ -2,6 +2,43 @@
 # scriptable and usable for event-system below.
 ##################################################################################################
 
+unemployment_fix_nation = {
+	icon = 6
+	rgo_output = -0.99
+	rgo_throughput = -0.99
+}
+
+develop_atomic_bomb_start = {
+badboy = 0.01
+icon = 24
+}
+
+develop_hydrogen_bomb_start = {
+badboy = 0.01
+icon = 24
+}
+
+law_changed_by_force1 = {
+    icon = 6
+}
+
+songun = {
+	supply_consumption = 0.10
+        core_pop_militancy_modifier = 0.01
+        mobilisation_size = 0.3
+	icon = 2
+}
+
+
+closed_borders = {
+        core_pop_militancy_modifier = 0.05
+	icon = 2
+}
+
+jewish_diaspora = {
+    icon = 20
+}
+
 requested_grant = {
 	icon = 10
 }
