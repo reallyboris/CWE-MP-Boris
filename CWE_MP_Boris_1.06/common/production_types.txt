@@ -51,6 +51,7 @@ advanced_factory_template = {
 		electric_gear = 0.2
 		transport = 0.2
 		education_rnd = 0.2
+		computers = 0.3
 	}
 	
 	owner = {
@@ -85,10 +86,11 @@ advanced_factory_template = {
 #Service factory template
 bank_template = {
 	efficiency = {
-		heating_electricity = 0.8
+		heating_electricity = 1
 		paper = 0.2
 		gold_silver = 0.2
 		education_rnd = 0.2
+		computers = 1
 	}
 	
 	owner = {
@@ -483,10 +485,10 @@ steel_factory = {
 lumber_factory = {       
 	template = factory_template
 	input_goods = {    
-		timber = 20	
+		timber = 17	
 	}
 	output_goods = lumber 
-	value = 10
+	value = 16.5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -507,7 +509,7 @@ copper_wire_factory = {
 		copper = 5	
 	} 
 	output_goods = copper_wire 
-	value = 3.5
+	value = 4.6
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -527,7 +529,7 @@ inorganic_chemicals_factory = {
 		bauxite = 2
 	}
 	output_goods = inorganic_chemicals 
-	value = 2.6
+	value = 3.4
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -547,10 +549,10 @@ inorganic_chemicals_factory = {
 paper_factory = {       
 	template = factory_template
 	input_goods = {    
-		timber = 8
+		timber = 7.5
 	}
 	output_goods = paper 
-	value = 3.2
+	value = 5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -617,11 +619,11 @@ machine_parts_factory = {
 aluminium_factory = {       
 	template = advanced_factory_template
 	input_goods = {    
-		bauxite = 6
+		bauxite = 7
 		coal = 3
 	}
 	output_goods = aluminium 
-	value = 6
+	value = 8.5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -642,12 +644,13 @@ aluminium_factory = {
 integrated_circuits_factory = {       
 	template = advanced_factory_template
 	input_goods = {    
-		inorganic_chemicals = 4	
-		copper_wire = 2
-		other_minerals = 1
+		inorganic_chemicals = 5	
+		copper_wire = 8
+		electric_gear = 1
+		heating_electricity = 12
 	}
 	output_goods = integrated_circuits 
-	value = 6.5
+	value = 9
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -673,7 +676,7 @@ optics_factory = {
 		machine_parts = 1
 	}
 	output_goods = optics 
-	value = 11
+	value = 14
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -699,7 +702,7 @@ optics_factory = {
 electric_gear_factory = {       
 	template = electric_template
 	input_goods = {    
-		copper_wire = 7.5
+		copper_wire = 8
 		plastics = 4.5
 		aluminium = 4.5
 	}
@@ -732,9 +735,9 @@ electric_gear_factory = {
 bio_fuel_factory = {       
 	template = fuel_template
 	input_goods = {    
-		grain = 6
+		grain = 8
 	} 
-	output_goods = fuel 
+	output_goods = petroleum 
 	value = 2
 	bonus = {
 		trigger = { 
@@ -744,7 +747,7 @@ bio_fuel_factory = {
 	}
 	bonus = {
 		trigger = { trade_goods_in_state = grain }
-		value = 0.5
+		value = 0.25
 	}
 }
 
@@ -795,7 +798,7 @@ coal_liquefaction_fuel_factory = {
 		coal = 16
 	} 
 	output_goods = petroleum
-	value = 2
+	value = 2.1
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -836,7 +839,7 @@ petroleum_fabric_factory = {
 		petroleum = 3	
 	}
 	output_goods = fabric 
-	value = 5
+	value = 6.6
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -898,7 +901,7 @@ synthetic_rubber_factory = {
 		petroleum = 5
 	}
 	output_goods = rubber
-	value = 8
+	value = 10.5
 	bonus = {
 		trigger = {
 			country = { has_country_flag = spclow }
@@ -920,7 +923,7 @@ petroleum_plastics_factory = {
 		petroleum = 5
 	}
 	output_goods = plastics 
-	value = 8
+	value = 10.5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -940,7 +943,7 @@ rubber_plastics_factory = {
 		rubber = 5
 	}
 	output_goods = plastics 
-	value = 6.7
+	value = 8
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -988,7 +991,7 @@ ships_factory = {
 	}
 	output_goods = ships 
 	is_coastal = yes
-	value = 7.5
+	value = 10
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -1018,7 +1021,7 @@ aeroplane_factory = {
 		machine_parts = 4
 	}
 	output_goods = aeroplanes 
-	value = 8
+	value = 10.5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -1069,12 +1072,12 @@ weaponry_factory = {
 	template = advanced_factory_template
 	input_goods = {    
 		steel = 4	
-		electric_gear = 2
-		automobiles = 2
-		machine_parts = 5
+		electric_gear = 4
+		automobiles = 1
+		machine_parts = 3
 	}
 	output_goods = weaponry 
-	value = 4.5
+	value = 6
 	bonus = {
 		trigger = { has_country_flag = spcno }
 		value = 0.10
@@ -1097,12 +1100,12 @@ advanced_weaponry_factory = {
 	template = advanced_factory_template
 	input_goods = {    
 		steel = 4	
-		telecommunications = 3
 		electric_gear = 2
+		telecommunications = 3
 		machine_parts = 3
 	}
 	output_goods = weaponry 
-	value = 4.5
+	value = 6
 	bonus = {
 		trigger = { has_country_flag = spcno }
 		value = 0.10
@@ -1164,10 +1167,10 @@ heating_electricity_gas_factory = {
 nuclear_fuel_factory = {    
 	template = power_plant_template
 	input_goods = {    
-		other_minerals = 10
+		other_minerals = 50
 	} 
 	output_goods = heating_electricity
-	value = 10
+	value = 11
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -1183,10 +1186,10 @@ nuclear_fuel_factory = {
 coal_fuel_factory = {    
 	template = fuel_template
 	input_goods = {    
-		coal = 4
+		coal = 17.5
 	} 
 	output_goods = heating_electricity
-	value = 2.2
+	value = 6
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spclow }
@@ -1196,7 +1199,7 @@ coal_fuel_factory = {
 
 	bonus = {
 		trigger = { trade_goods_in_state = coal }
-		value = 0.50
+		value = 0.25
 	}
 }
 
@@ -1292,7 +1295,7 @@ footwear_factory = {
 furniture_factory = {       
 	template = factory_template
 	input_goods = {    
-		lumber = 10	
+		lumber = 11.5	
 		fabric = 3
 	}
 	output_goods = furniture 
@@ -1328,7 +1331,7 @@ pharmaceuticals_factory = {
 		inorganic_chemicals = 3
 	}
 	output_goods = pharmaceuticals 
-	value = 9.3
+	value = 12
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spchigh }
@@ -1359,7 +1362,7 @@ computers_factory = {
 		aluminium = 2
 	}
 	output_goods = computers 
-	value = 10.2
+	value = 14
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -1386,7 +1389,7 @@ electric_telecommunications_factory = {
 		other_minerals = 1
 	}
 	output_goods = telecommunications 
-	value = 5.8
+	value = 7.5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -1407,12 +1410,13 @@ electric_telecommunications_factory = {
 telecommunications_factory = {       
 	template = advanced_factory_template
 	input_goods = {    
-		electric_gear = 1
-		machine_parts = 1
-		other_minerals = 1	
+		electric_gear = 1.5
+		machine_parts = 1.5
+		other_minerals = 1
+		copper_wire = 1
 	}
 	output_goods = telecommunications 
-	value = 5.4
+	value = 7
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -1438,7 +1442,7 @@ automobiles_factory = {
 		machine_parts = 3.5 
 	}
 	output_goods = automobiles 
-	value = 9
+	value = 12
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spcmedium }
@@ -1467,7 +1471,7 @@ jewellery_factory = {
 		glass = 1
 	}
 	output_goods = jewellery
-	value = 6
+	value = 8
 	bonus = {
 		trigger = { trade_goods_in_state = gold_silver }
 		value = 0.125
@@ -1534,7 +1538,7 @@ communication_factory = {
 		integrated_circuits = 3
 		computers = 1
 		optics = 1
-		telecommunications = 1
+		telecommunications = 2
 	}
 	output_goods = communication 
 	value = 8.5
@@ -1730,7 +1734,7 @@ health_factory = {
 		pharmaceuticals = 5	
 	}
 	output_goods = health 
-	value = 3.8
+	value = 5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spchigh }
@@ -1787,7 +1791,7 @@ education_rnd_factory = {
 		paper = 2
 	}
 	output_goods = education_rnd 
-	value = 4.4
+	value = 5.9
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spchigh }
@@ -1880,12 +1884,12 @@ recreation_factory = {
 financial_services_factory = {       
 	template = bank_template
 	input_goods = { 
-		gold_silver = 2
+		gold_silver = 3.5
 		paper = 1
-		heating_electricity = 1
+		heating_electricity = 1.5
 	}
 	output_goods = financial_services 
-	value = 2
+	value = 2.5
 	bonus = {
 		trigger = { 
 			country = { has_country_flag = spchigh }
