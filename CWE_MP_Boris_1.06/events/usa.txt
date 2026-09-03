@@ -20,50 +20,91 @@ country_event = {
 		any_pop = { limit = { is_primary_culture = yes OR = { type = capitalists type = aristocrats } } money = 8000 }
 		any_pop = { limit = { is_accepted_culture = yes OR = { type = capitalists type = aristocrats } } money = 3000 }
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 232 } culture = white_anglo } money = 380000 } # New York
+		any_pop = { limit = { OR = { type = clerks }  location = { province_id = 232 } culture = white_anglo } money = 800000 } # New York
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats }  location = { province_id = 232 } culture = jewish } money = 500000 } # New York
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 173 } culture = white_anglo } money = 100000 } # Detroit
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats }  location = { province_id = 173 } culture = jewish } money = 80000 } # Detroit
+		any_pop = { limit = { OR = { type = clerks }  location = { province_id = 173 } culture = white_anglo } money = 200000 } # Detroit
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 89 } culture = white_anglo religion =  protestant} money = 80000 } # LA
+		any_pop = { limit = { OR = { type = clerks }  location = { province_id = 89} culture = white_anglo } money = 150000 } # LA
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 84 } culture = white_anglo religion =  protestant} money = 80000 } # SF
+		any_pop = { limit = { OR = { type = clerks }  location = { province_id = 84 } culture = white_anglo } money = 150000 } # SF
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 163 } culture = white_anglo religion =  protestant} money = 50000 } # Chicago
+		any_pop = { limit = { OR = { type = clerks }  location = { province_id = 163 } culture = white_anglo } money = 100000 } # Chicago
 		any_pop = { limit = { OR = { type = capitalists type = aristocrats type = clerks type = craftsmen type = farmers type = labourers type = artisans }  location = { province_id = 243 } culture = white_anglo religion =  protestant} money = 50000 } # Boston
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		money = 999999
-		add_country_modifier = { name = us_immigration_start_fix duration = 365 } 
+		any_pop = { limit = { OR = { type = clerks }  location = { province_id = 243 } culture = white_anglo } money = 100000 } # Boston
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		money = 1999999
+		add_country_modifier = { name = us_immigration_start_fix duration = 780 } 
+		add_country_modifier = { name = us_tax_start_fix duration = 3650 } 
+		add_country_modifier = { name = us_exception duration = -1 } 
+		any_owned = {
+			limit = { OR = { is_core = USA } }
+			add_province_modifier = { name = government_sanitarium duration = 200 }
+		}
+		any_owned = {
+			limit = { AND = { produces = petroleum is_core = USA } }
+			add_province_modifier = { name = oil_field duration = 900 }
+		}
+		any_owned = {
+			limit = { OR = { produces = coal produces = iron } }
+			add_province_modifier = { name = oil_field duration = 1200 }
+		}
+		any_owned = { 
+			limit = { province_id = 89 } 
+			add_province_modifier = { name = us_immigration_city duration = 500 } 
+		}
+		any_owned = { 
+			limit = { province_id = 84 } 
+			add_province_modifier = { name = us_immigration_city duration = 500 } 
+		}
+		any_owned = { 
+			limit = { province_id = 232 } 
+			add_province_modifier = { name = us_immigration_city duration = 500 } 
+		}
+		USA = { country_event = 1104 }
+		AST = { country_event = 1104 }
+		USA = { country_event = 1105 }
+		AST = { country_event = 1105 }
 	}
 }
 
