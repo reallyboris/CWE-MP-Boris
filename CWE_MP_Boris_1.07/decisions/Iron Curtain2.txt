@@ -8,7 +8,7 @@ political_decisions = {
 					}
 		
 		allow = {
-NOT = { has_country_modifier = law_changed_by_force1 }
+NOT = { has_country_modifier = law_changed_by_force }
 war = no
 immigration_policy = nobody_gets_out
 ai = no
@@ -17,7 +17,7 @@ ai = no
 		}
 			alert = no
 		effect = {
-add_country_modifier = { name = law_changed_by_force1 duration = 650 }
+add_country_modifier = { name = law_changed_by_force duration = 650 }
 political_reform = quota_immigration
 remove_country_modifier = closed_borders
 					}
@@ -45,7 +45,7 @@ OR = { ruling_party_ideology = communist ruling_party_ideology = traditionalist 
 			alert = no
 		effect = {
 political_reform = nobody_gets_out
-add_country_modifier = { name = law_changed_by_force1 duration = 650 }
+add_country_modifier = { name = law_changed_by_force duration = 650 }
 add_country_modifier = { name = closed_borders duration = -1 }
 					}
 
