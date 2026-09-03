@@ -104,6 +104,7 @@ country_event = {
 		name = "We must kill the traitors!"
 
 		prestige_factor = -0.05
+		remove_country_modifier = us_exception
 
 		#Release rebel tag
 		any_country = { 

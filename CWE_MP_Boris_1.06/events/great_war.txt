@@ -527,6 +527,7 @@ country_event = {
 		remove_country_modifier = great_war
 		remove_country_modifier = great_war2
 		remove_country_modifier = great_war3
+		remove_country_modifier = us_exception
 		war_exhaustion = 40
 
 		#if over the badboy limit, reduce infamy to 20, otherwise reduce infamy by 10
