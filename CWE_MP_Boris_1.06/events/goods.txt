@@ -16,7 +16,7 @@ country_event = { # Medium Oil Field 15+ bill barels
     year = 1948 
   }
 
-  mean_time_to_happen = { months = 12 }
+  mean_time_to_happen = { months = 24 }
 
   option = {
     name = EVT_1100_A
@@ -52,7 +52,7 @@ country_event = { # Large Oil Field 30+ bill barels
     year = 1948 
   }
 
-  mean_time_to_happen = { months = 12 }
+  mean_time_to_happen = { months = 24 }
 
   option = {
     name = EVT_1100_A
@@ -94,7 +94,7 @@ country_event = { # Custom Oil Field
     year = 1948 
   }
 
-  mean_time_to_happen = { months = 12 }
+  mean_time_to_happen = { months = 24 }
 
   option = {
     name = EVT_1100_A
@@ -113,44 +113,42 @@ country_event = { # Custom Oil Field
 				AND = { province_id = 2270 NOT = { has_province_modifier = oil_field_custom } }
 				AND = { province_id = 935 NOT = { has_province_modifier = oil_field_custom } }
 			}
+			OR = {
 			produces = petroleum NOT = { has_province_modifier = oil_field_custom } 
+			produces = natural_gas NOT = { has_province_modifier = oil_field_custom } 
+			}
+
 		} 
 		add_province_modifier = { name = oil_field_custom duration = -1 } 
 	}
   }
 }
 
-######MINES AND FARMS EVENTS
-#country_event = { # Custom Oil Field small
-#  id = 1103
-#  title = EVT_1100_NAME
-#  desc = EVT_1100_DESC
-#  picture = "oil_field"
-#
-#  trigger = {
-#	OR = {
-#		AND = { year = 1922 owns = 2270 2270 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Bolivar Coastal Field
-#		AND = { year = 1948 owns = 935 935 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Burgan Field
-#	}
-#    year = 1948 
-#  }
-#
-#  mean_time_to_happen = { months = 12 }
-#
-#  option = {
-#    name = EVT_1100_A
-#	any_owned = { 
-#		limit = { 
-#			OR = { 
-#				AND = { province_id = 2270 NOT = { has_province_modifier = oil_field_custom_small } }
-#				AND = { province_id = 935 NOT = { has_province_modifier = oil_field_custom_small } }
-#			}
-#			NOT = { has_province_modifier = oil_field_custom_small } 
-#		} 
-#		add_province_modifier = { name = oil_field_custom_small duration = -1 } 
-#	}
-#  }
-#}
+#####MINES AND FARMS EVENTS
+country_event = { # Custom Oil Field small
+  id = 1103
+  title = EVT_1100_NAME
+  desc = EVT_1100_DESC
+  picture = "oil_field"
+
+  trigger = {
+	year = 1948
+	AND = { year = 1972 owns = 305 305 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Norway
+  }
+
+  mean_time_to_happen = { months = 24 }
+
+  option = {
+    name = EVT_1100_A
+	any_owned = { 
+		limit = { 
+			AND = { province_id = 305 NOT = { has_province_modifier = oil_field_custom_small } }
+			NOT = { has_province_modifier = oil_field_custom_small } 
+		} 
+		add_province_modifier = { name = oil_field_custom_small duration = -1 } 
+	}
+  }
+}
 
 #####MINES AND FARMS EVENTS
 country_event = { # Rich soil/ore deposit/oil
@@ -161,20 +159,21 @@ country_event = { # Rich soil/ore deposit/oil
 
   trigger = {
 	OR = {
-		AND = { year = 1945 owns = 2472 2472 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Canberra
-		AND = { year = 1945 owns = 2470 2470 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Pt. Mac
-		AND = { year = 1945 owns = 2474 2474 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Moree
-		AND = { year = 1945 owns = 2602 2602 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
-		AND = { year = 1945 owns = 2502 2502 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
-		AND = { year = 1945 owns = 2500 2500 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
-		AND = { year = 1945 owns = 2504 2504 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
-		AND = { year = 1945 owns = 2499 2499 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
-		AND = { year = 1945 owns = 2604 2604 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2472 2472 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Canberra
+		AND = { owns = 2470 2470 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Pt. Mac
+		AND = { owns = 2474 2474 = { NOT = { has_province_modifier = oil_field_custom_small } } } # Moree
+		AND = { owns = 2602 2602 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2502 2502 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2500 2500 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2504 2504 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2499 2499 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2492 2492 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
+		AND = { owns = 2604 2604 = { NOT = { has_province_modifier = oil_field_custom_small } } } # AST
 	}
     year = 1945 
   }
 
-  mean_time_to_happen = { months = 12 }
+  mean_time_to_happen = { months = 24 }
 
   option = {
     name = EVT_1100_A
@@ -184,6 +183,7 @@ country_event = { # Rich soil/ore deposit/oil
 				AND = { province_id = 2472 NOT = { has_province_modifier = oil_field_custom_small } }
 				AND = { province_id = 2470 NOT = { has_province_modifier = oil_field_custom_small } }
 				AND = { province_id = 2474 NOT = { has_province_modifier = oil_field_custom_small } }
+				AND = { province_id = 2492 NOT = { has_province_modifier = oil_field_custom_small } }
 				AND = { province_id = 2499 NOT = { has_province_modifier = oil_field_custom_small } }
 				AND = { province_id = 2500 NOT = { has_province_modifier = oil_field_custom_small } }
 				AND = { province_id = 2502 NOT = { has_province_modifier = oil_field_custom_small } }
@@ -207,36 +207,39 @@ country_event = { # Rich soil/ore deposit
 
   trigger = {
 	OR = {
-		AND = { year = 1945 owns = 86 86 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 119 119 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 120 120 = { NOT = { has_province_modifier = medium_farm } } } #all 1xx provinces are American
-		AND = { year = 1945 owns = 124 124 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 125 125 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 127 126 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 126 127 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 128 128 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 129 129 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 130 130 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 131 131 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 143 143 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 144 144 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 151 151 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 152 152 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 153 153 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 154 154 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 160 160 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 166 166 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 169 169 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 170 170 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 181 181 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 187 187 = { NOT = { has_province_modifier = medium_farm } } }
-		AND = { year = 1945 owns = 193 193 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 86 86 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 119 119 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 2497 2497 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 2491 2491 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 2471 2471 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 120 120 = { NOT = { has_province_modifier = medium_farm } } } #all 1xx provinces are American
+		AND = { owns = 124 124 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 125 125 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 127 126 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 126 127 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 128 128 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 129 129 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 130 130 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 131 131 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 143 143 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 144 144 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 151 151 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 152 152 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 153 153 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 154 154 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 160 160 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 166 166 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 169 169 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 170 170 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 181 181 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 187 187 = { NOT = { has_province_modifier = medium_farm } } }
+		AND = { owns = 193 193 = { NOT = { has_province_modifier = medium_farm } } }
 
 	}
     year = 1946 
   }
 
-  mean_time_to_happen = { months = 12 }
+  mean_time_to_happen = { months = 24 }
 
   option = {
     name = EVT_1105_A
@@ -244,6 +247,9 @@ country_event = { # Rich soil/ore deposit
 		limit = { 
 			OR = { 
 				AND = { province_id = 86 NOT = { has_province_modifier = medium_farm } }
+				AND = { province_id = 2497 NOT = { has_province_modifier = medium_farm } }
+				AND = { province_id = 2491 NOT = { has_province_modifier = medium_farm } }
+				AND = { province_id = 2471 NOT = { has_province_modifier = medium_farm } }
 				AND = { province_id = 119 NOT = { has_province_modifier = medium_farm } }
 				AND = { province_id = 120 NOT = { has_province_modifier = medium_farm } } #all 1xx provinces are American
 				AND = { province_id = 124 NOT = { has_province_modifier = medium_farm } } 
@@ -271,6 +277,34 @@ country_event = { # Rich soil/ore deposit
 			NOT = { has_province_modifier = medium_farm } 
 		} 
 		add_province_modifier = { name = medium_farm duration = -1 } 
+	}
+  }
+}
+
+##SDR Cleanup
+country_event = {
+  id = 1106
+  title = EVT_1106_NAME
+  desc = EVT_1106_DESC
+  picture = "special_imf_dr"
+
+  trigger = {
+	AND = {
+		has_country_flag = special_imf_dr
+		any_owned_province = { AND = { produces = credit NOT = { has_province_modifier = imf_sdr } } }
+	}
+    year = 1968 
+  }
+
+  mean_time_to_happen = { months = 24 }
+
+  option = {
+    name = EVT_1106_A
+	any_owned = { 
+		limit = { 
+			trade_goods = credit NOT = { has_province_modifier = imf_sdr } 
+		} 
+		add_province_modifier = { name = imf_sdr duration = -1 } 
 	}
   }
 }
